@@ -42,3 +42,25 @@ C:\Users\Ryce\Downloads\Com Arch Proj\Sweet-Liberty-Control-ver-1\Sweet_Liberty\
 C:\Users\Ryce\Downloads\Com Arch Proj\Sweet-Liberty-Control-ver-1\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.csproj.CoreCompileInputs.cache
 C:\Users\Ryce\Downloads\Com Arch Proj\Sweet-Liberty-Control-ver-1\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.exe
 C:\Users\Ryce\Downloads\Com Arch Proj\Sweet-Liberty-Control-ver-1\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.pdb
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\terminal.wav
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\Long Night of Solace.wav
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\Initial UI Design.exe.config
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\Initial UI Design.exe
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\Initial UI Design.pdb
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\Interop.WMPLib.dll
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.csproj.AssemblyReference.cache
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Interop.WMPLib.dll
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.csproj.ResolveComReference.cache
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial_UI_Design.Form1.resources
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial_UI_Design.Properties.Resources.resources
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.csproj.GenerateResource.cache
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.csproj.CoreCompileInputs.cache
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.exe
+C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.pdb
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\Resources\FSSinclairTrial-Bold.otf
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\downSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\leftSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\rightSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\upSound.wav

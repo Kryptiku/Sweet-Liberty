@@ -8,20 +8,11 @@ using System.Threading.Tasks;
 public class Ideas
 {
 
-    public static void DisplayText(string text)
-    {
-        foreach (char c in text)
-        {
-            Console.Write(c);
-            Thread.Sleep(30);
-        }
-    }
+   
 
     public static void IdeasCompiled()
     {
         string playerName = "Alpha-Three";
-
-        Sound.playMusic("Long Night of Solace.wav");
 
 
         string log1 = "Log 1 of Squadron Alpha of the Executor of Family Values... or what's left of it.\n" +
@@ -33,7 +24,7 @@ public class Ideas
 
         string log2 = "Log 2. Found an abandoned outpost. Looks like it was thrashed around.\n" +
                 "Frozen bodies everywhere. Nothing useful. Chunks of metal are rooted deep into the snow.\n" +
-                "Could get inside. Might find something. Can't tell if there's anything hiding inside.\n";
+                "Could get inside. Might find something. Can't tell if there's anything hiding inside.";
 
         string log3 = "Log 3. Went inside an abandoned outpost room. Seems it was scavenged about.\n" +
                 "Whole place is empty. Can't see anything. Save for a terminal emitting light on the far side of the room.\n" +
@@ -76,7 +67,7 @@ public class Ideas
 
 
 
-        DisplayText(log1);
+     
         Console.ReadLine();
     }
 }

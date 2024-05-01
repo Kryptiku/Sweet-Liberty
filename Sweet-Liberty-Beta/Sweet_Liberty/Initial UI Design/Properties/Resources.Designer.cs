@@ -63,6 +63,16 @@ namespace Initial_UI_Design.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _69_696289_filter_sticker_vhs_nany_transparent_glitch_texture_png {
+            get {
+                object obj = ResourceManager.GetObject("69-696289_filter-sticker-vhs-nany-transparent-glitch-texture-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_up {
             get {
                 object obj = ResourceManager.GetObject("arrow_up", resourceCulture);

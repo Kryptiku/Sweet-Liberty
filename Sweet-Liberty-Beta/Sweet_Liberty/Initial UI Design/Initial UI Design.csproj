@@ -84,6 +84,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\FSSinclairTrial-Bold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -107,6 +110,19 @@
     <None Include="assets\cmd_close_button.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="downSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="leftSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rightSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="upSound.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\69-696289_filter-sticker-vhs-nany-transparent-glitch-texture-png.png" />
     <Content Include="terminal.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

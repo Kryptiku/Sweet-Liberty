@@ -7,14 +7,8 @@ using System.Threading.Tasks;
 
 
 public class Sound
-{
-    public static void playMusic(string filepath)
-    {
-
-
-    }
-
-    public static void playSoundEffect(string filepath)
+{ 
+    public static void PlaySoundEffect(string filepath)
     {
         SoundPlayer soundPlayer = new SoundPlayer();
         soundPlayer.SoundLocation = filepath;
