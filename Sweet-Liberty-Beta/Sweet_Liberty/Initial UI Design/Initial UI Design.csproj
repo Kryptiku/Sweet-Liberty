@@ -110,6 +110,7 @@
     <None Include="assets\cmd_close_button.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="assets\hold_btn.png" />
     <Content Include="downSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

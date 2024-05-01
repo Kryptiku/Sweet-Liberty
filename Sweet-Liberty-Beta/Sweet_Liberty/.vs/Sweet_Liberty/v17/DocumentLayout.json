@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|c:\\users\\ryce\\source\\repos\\sweet-liberty\\sweet-liberty-beta\\sweet_liberty\\initial ui design\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|solutionrelative:initial ui design\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\initial ui design\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|solutionrelative:initial ui design\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\initial ui design\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|solutionrelative:initial ui design\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\initial ui design\\ideas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|solutionrelative:initial ui design\\ideas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\initial ui design\\sound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|solutionrelative:initial ui design\\sound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\initial ui design\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|solutionrelative:initial ui design\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\initial ui design\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|solutionrelative:initial ui design\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\initial ui design\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Initial UI Design\\Initial UI Design.csproj|solutionrelative:initial ui design\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Form1.cs",
+              "RelativeDocumentMoniker": "Initial UI Design\\Form1.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Form1.cs [Design]",
+              "RelativeToolTip": "Initial UI Design\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:04:27.413Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Form1.cs",
+              "RelativeDocumentMoniker": "Initial UI Design\\Form1.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Form1.cs",
+              "RelativeToolTip": "Initial UI Design\\Form1.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAgwDEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:04:27.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Initial UI Design\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Form1.Designer.cs",
+              "RelativeToolTip": "Initial UI Design\\Form1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:04:27.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Location.cs",
+              "RelativeDocumentMoniker": "Initial UI Design\\Location.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Location.cs",
+              "RelativeToolTip": "Initial UI Design\\Location.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:04:27.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Player.cs",
+              "RelativeDocumentMoniker": "Initial UI Design\\Player.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Player.cs",
+              "RelativeToolTip": "Initial UI Design\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:04:27.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Log.cs",
+              "RelativeDocumentMoniker": "Initial UI Design\\Log.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Log.cs",
+              "RelativeToolTip": "Initial UI Design\\Log.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:04:27.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ideas.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Ideas.cs",
+              "RelativeDocumentMoniker": "Initial UI Design\\Ideas.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Ideas.cs",
+              "RelativeToolTip": "Initial UI Design\\Ideas.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAhwEUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:04:27.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sound.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Sound.cs",
+              "RelativeDocumentMoniker": "Initial UI Design\\Sound.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet-Liberty-Beta\\Sweet_Liberty\\Initial UI Design\\Sound.cs",
+              "RelativeToolTip": "Initial UI Design\\Sound.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T14:04:27.412Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

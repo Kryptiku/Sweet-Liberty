@@ -44,7 +44,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.listInventory = new System.Windows.Forms.ComboBox();
             this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
+            this.label1 = new System.Windows.Forms.Label();
             this.pickup_lbl = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.pickup_btn = new System.Windows.Forms.Button();
             this.inventory_btn = new System.Windows.Forms.Button();
             this.buttonRight = new System.Windows.Forms.Button();
@@ -178,7 +180,7 @@
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Black;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.splitContainer1.Panel1.Controls.Add(this.panel3);
-            this.splitContainer1.Panel1.Font = new System.Drawing.Font("FS Sinclair Trial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.splitContainer1.Panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.splitContainer1.Panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(127)))));
             this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(20, 30, 0, 0);
             this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
@@ -190,7 +192,9 @@
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.listInventory);
             this.splitContainer1.Panel2.Controls.Add(this.MXP);
+            this.splitContainer1.Panel2.Controls.Add(this.label1);
             this.splitContainer1.Panel2.Controls.Add(this.pickup_lbl);
+            this.splitContainer1.Panel2.Controls.Add(this.button4);
             this.splitContainer1.Panel2.Controls.Add(this.pickup_btn);
             this.splitContainer1.Panel2.Controls.Add(this.inventory_btn);
             this.splitContainer1.Panel2.Controls.Add(this.buttonRight);
@@ -206,10 +210,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(20)))), ((int)(((byte)(18)))));
             this.panel3.Controls.Add(this.display);
-            this.panel3.Location = new System.Drawing.Point(23, 17);
+            this.panel3.Location = new System.Drawing.Point(26, 17);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(16, 20, 6, 6);
-            this.panel3.Size = new System.Drawing.Size(1330, 390);
+            this.panel3.Size = new System.Drawing.Size(1338, 390);
             this.panel3.TabIndex = 0;
             // 
             // display
@@ -217,7 +221,7 @@
             this.display.AutoSize = true;
             this.display.Location = new System.Drawing.Point(16, 23);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(0, 35);
+            this.display.Size = new System.Drawing.Size(0, 32);
             this.display.TabIndex = 0;
             // 
             // button3
@@ -249,7 +253,7 @@
             this.listInventory.FormattingEnabled = true;
             this.listInventory.Location = new System.Drawing.Point(58, 65);
             this.listInventory.Name = "listInventory";
-            this.listInventory.Size = new System.Drawing.Size(243, 20);
+            this.listInventory.Size = new System.Drawing.Size(243, 24);
             this.listInventory.TabIndex = 11;
             // 
             // MXP
@@ -262,16 +266,40 @@
             this.MXP.TabIndex = 10;
             this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1163, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 16);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Hold";
+            this.label1.Click += new System.EventHandler(this.pickup_lbl_Click);
+            // 
             // pickup_lbl
             // 
             this.pickup_lbl.AutoSize = true;
-            this.pickup_lbl.Font = new System.Drawing.Font("Artemus", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pickup_lbl.Location = new System.Drawing.Point(1245, 68);
+            this.pickup_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pickup_lbl.Location = new System.Drawing.Point(1249, 68);
             this.pickup_lbl.Name = "pickup_lbl";
-            this.pickup_lbl.Size = new System.Drawing.Size(64, 12);
+            this.pickup_lbl.Size = new System.Drawing.Size(54, 16);
             this.pickup_lbl.TabIndex = 9;
             this.pickup_lbl.Text = "Pickup";
             this.pickup_lbl.Click += new System.EventHandler(this.pickup_lbl_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::Initial_UI_Design.Properties.Resources.hold_btn;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(1159, 24);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(48, 40);
+            this.button4.TabIndex = 6;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.pickup_btn_Click);
             // 
             // pickup_btn
             // 
@@ -384,7 +412,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.control1);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Artemus", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.AliceBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -434,6 +462,8 @@
         private System.Windows.Forms.ComboBox listInventory;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label display;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button4;
     }
 }
 
