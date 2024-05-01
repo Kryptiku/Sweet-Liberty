@@ -1,0 +1,10 @@
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\bin\Debug\Initial UI Design.exe.config
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\bin\Debug\Initial UI Design.exe
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\bin\Debug\Initial UI Design.pdb
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\obj\Debug\Initial UI Design.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\obj\Debug\Initial_UI_Design.Form1.resources
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\obj\Debug\Initial_UI_Design.Properties.Resources.resources
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\obj\Debug\Initial UI Design.csproj.GenerateResource.cache
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\obj\Debug\Initial UI Design.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\obj\Debug\Initial UI Design.exe
+C:\Users\ACER\source\repos\Sweet_Library\Initial UI Design\obj\Debug\Initial UI Design.pdb
