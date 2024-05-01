@@ -88,10 +88,10 @@ namespace Initial_UI_Design
         }
 
         private void MainFormLoad(object sender, EventArgs e){CreateGame();}
-        private void BtnNorthClick(object sender, EventArgs e) { Sound.PlaySoundEffect("upSound.wav"); Go("north"); }
-        private void BtnEastClick(object sender, EventArgs e) { Sound.PlaySoundEffect("rightSound.wav"); Go("east"); }
-        private void BtnSouthClick(object sender, EventArgs e) { Sound.PlaySoundEffect("downSound.wav"); Go("south"); }
-        private void BtnWestClick(object sender, EventArgs e) { Sound.PlaySoundEffect("leftSound.wav"); Go("west"); }
+        private void ButtonUpClick(object sender, EventArgs e) { Sound.PlaySoundEffect("upSound.wav"); Go("north"); }
+        private void ButtonRightClick(object sender, EventArgs e) { Sound.PlaySoundEffect("rightSound.wav"); Go("east"); }
+        private void ButtonDownClick(object sender, EventArgs e) { Sound.PlaySoundEffect("downSound.wav"); Go("south"); }
+        private void ButtonLeftClick(object sender, EventArgs e) { Sound.PlaySoundEffect("leftSound.wav"); Go("west"); }
 
 
         private void DisplayStory(string AddText, bool clear = false)
