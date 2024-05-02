@@ -77,7 +77,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1388, 38);
+            this.panel1.Size = new System.Drawing.Size(1370, 38);
             this.panel1.TabIndex = 0;
             // 
             // flowLayoutPanel2
@@ -89,7 +89,7 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel2.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1263, 0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(1245, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(123, 36);
             this.flowLayoutPanel2.TabIndex = 7;
@@ -202,7 +202,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.buttonDown);
             this.splitContainer1.Panel2.Controls.Add(this.buttonUp);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1388, 620);
+            this.splitContainer1.Size = new System.Drawing.Size(1370, 620);
             this.splitContainer1.SplitterDistance = 429;
             this.splitContainer1.TabIndex = 2;
             // 
@@ -210,7 +210,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(20)))), ((int)(((byte)(18)))));
             this.panel3.Controls.Add(this.display);
-            this.panel3.Font = new System.Drawing.Font("FS Sinclair Trial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(26, 17);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(16, 20, 6, 6);
@@ -223,14 +223,14 @@
             this.display.AutoSize = true;
             this.display.Location = new System.Drawing.Point(16, 23);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(0, 35);
+            this.display.Size = new System.Drawing.Size(0, 26);
             this.display.TabIndex = 0;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button3.Location = new System.Drawing.Point(191, 95);
             this.button3.Name = "button3";
@@ -243,7 +243,7 @@
             // 
             this.Drop.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Drop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Drop.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Drop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Drop.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Drop.Location = new System.Drawing.Point(58, 95);
             this.Drop.Name = "Drop";
@@ -258,7 +258,7 @@
             this.listInventory.FormattingEnabled = true;
             this.listInventory.Location = new System.Drawing.Point(58, 65);
             this.listInventory.Name = "listInventory";
-            this.listInventory.Size = new System.Drawing.Size(243, 24);
+            this.listInventory.Size = new System.Drawing.Size(243, 21);
             this.listInventory.TabIndex = 11;
             // 
             // label1
@@ -267,7 +267,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(1163, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 16);
+            this.label1.Size = new System.Drawing.Size(33, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Hold";
             this.label1.Click += new System.EventHandler(this.pickup_lbl_Click);
@@ -278,7 +278,7 @@
             this.pickup_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pickup_lbl.Location = new System.Drawing.Point(1249, 68);
             this.pickup_lbl.Name = "pickup_lbl";
-            this.pickup_lbl.Size = new System.Drawing.Size(54, 16);
+            this.pickup_lbl.Size = new System.Drawing.Size(46, 13);
             this.pickup_lbl.TabIndex = 9;
             this.pickup_lbl.Text = "Pickup";
             this.pickup_lbl.Click += new System.EventHandler(this.pickup_lbl_Click);
@@ -294,7 +294,7 @@
             this.button4.Size = new System.Drawing.Size(48, 40);
             this.button4.TabIndex = 6;
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.pickup_btn_Click);
+            this.button4.Click += new System.EventHandler(this.hold_btn_Click);
             // 
             // pickup_btn
             // 
@@ -382,7 +382,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 38);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1388, 620);
+            this.panel2.Size = new System.Drawing.Size(1370, 620);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
             // 
@@ -413,7 +413,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1388, 658);
+            this.ClientSize = new System.Drawing.Size(1370, 658);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.control1);
             this.Controls.Add(this.panel1);

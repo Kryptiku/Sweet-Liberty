@@ -44,7 +44,7 @@ namespace Initial_UI_Design
         {
             InitializeComponent();
             SetCustomFont();
-            timer.Interval = 30; // Interval in milliseconds
+            timer.Interval = 75; // Interval in milliseconds
             timer.Tick += Timer_Tick;
         }
 
@@ -150,7 +150,8 @@ namespace Initial_UI_Design
             // Locations 
             dictLocations.Add("StartingArea", new Location("StartingArea",
                         "The Cold Wasteland",
-                        "Log 1 of Squadron Alpha of the Executor of Family Values... or what's left of it.\n" +
+                        "-- Log 1 --\nof Squadron Alpha of the Executor of Family Values\n" +
+                        ".\n.\n.\nor what's left of it.\n" +
                         "Two of my squadmates abandoned me on Lacaille Sector, in Lesath...\n" +
                         "and my other squadmate got caught in an Eagle Napalm Strike during extraction... He didn't make it.\n" +
                         "It's really cold. Blizzards everywhere. Pitch dark. Can't see shit.\n" +
@@ -161,14 +162,14 @@ namespace Initial_UI_Design
 
             dictLocations.Add("Outpost", new Location("Outpost",
                        "Abandoned Outpost",
-                       "Log 2. Found an abandoned outpost. Looks like it was thrashed around.\n" +
+                       "-- Log 2 --\nFound an abandoned outpost. Looks like it was thrashed around.\n" +
                        "Frozen bodies everywhere. Nothing useful. Chunks of metal are rooted deep into the snow.\n" +
                        "Could get inside. Might find something. Can't tell if there's anything hiding inside.",
                        "OutpostRoom", "", "StartingArea", "Stronghold"));
 
             dictLocations.Add("OutpostRoom", new Location("OutpostRoom",
                        "Outpost Room",
-                       "Log 3. Went inside an abandoned outpost room. Seems it was scavenged about.\n" +
+                       "-- Log 3 --\nWent inside an abandoned outpost room. Seems it was scavenged about.\n" +
                        "Whole place is empty. Can't see anything. Save for a terminal emitting light on the far side of the room.\n" +
                        "Probably something useful there-- shit!\n" +
                        "Ah, it's just a rat. Fuck.", 
@@ -176,7 +177,7 @@ namespace Initial_UI_Design
 
             dictLocations.Add("OutpostTerminal", new Location("OutpostTerminal",
                        "Outpost Terminal",
-                       "Log 4. Went to the terminal. It might be on, but any touch on it doesn't make it respond.\n" +
+                       "-- Log 4 -- Went to the terminal. It might be on, but any touch on it doesn't make it respond.\n" +
                        "Found a Breaker underneath the terminal. A fully loaded automatic shotgun. Might be useful to pick up.",
                        "", "", "OutpostRoom", "",
                        new List<Item> { dictItems["Breaker"] }));
@@ -326,6 +327,11 @@ namespace Initial_UI_Design
         }
 
         private void DropClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hold_btn_Click(object sender, EventArgs e)
         {
 
         }
