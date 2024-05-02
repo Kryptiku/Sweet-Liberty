@@ -84,9 +84,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Resources\FSSinclairTrial-Bold.otf">
+    <None Include="Resources\FsSinclairFont.bmp" />
+    <EmbeddedResource Include="Resources\FSSinclairTrial-Bold.otf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -191,6 +191,16 @@ namespace Initial_UI_Design.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] FSSinclairTrial_Bold {
+            get {
+                object obj = ResourceManager.GetObject("FSSinclairTrial_Bold", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap hold_btn {

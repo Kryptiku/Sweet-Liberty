@@ -18,6 +18,7 @@ namespace Initial_UI_Design
     public partial class Form1 : Form
     {
 
+
         private Location currentLocation;
         private string NorthExit;
         private string EastExit;
@@ -31,9 +32,18 @@ namespace Initial_UI_Design
         private int timerIndex = 0;
         private string textToAdd = "";
 
+        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
+            IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
+
+        private PrivateFontCollection fonts = new PrivateFontCollection();
+
+        Font FsSinclair;
+
         public Form1()
         {
             InitializeComponent();
+            SetCustomFont();
             timer.Interval = 30; // Interval in milliseconds
             timer.Tick += Timer_Tick;
         }
@@ -88,15 +98,17 @@ namespace Initial_UI_Design
             }
         }
 
-        private void SetCustomFont(string filepath)
+        private void SetCustomFont()
         {
-            PrivateFontCollection fontCollection = new PrivateFontCollection();
-            fontCollection.AddFontFile(filepath);
-            foreach (Control c in this.Controls)
-            {
+            byte[] fontData = Properties.Resources.FSSinclairTrial_Bold;
+            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
+            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            uint dummy = 0;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.FSSinclairTrial_Bold.Length);
+            AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.FSSinclairTrial_Bold.Length, IntPtr.Zero, ref dummy);
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
-                c.Font = new Font(fontCollection.Families[0], c.Font.Size, c.Font.Style);
-            }
+            myFont = new Font(fonts.Families[0], 16.0F);
         }
 
         private void MainFormLoad(object sender, EventArgs e){CreateGame();}
@@ -121,7 +133,7 @@ namespace Initial_UI_Design
 
         private void CreateGame()
         {
-            SetCustomFont("Resources/FSSinclairTrial-Bold.otf");
+            display.Font = FsSinclair;
 
             PlayMusic("Long Night of Solace.wav");
             Sound.PlaySoundEffect("terminal.wav");
