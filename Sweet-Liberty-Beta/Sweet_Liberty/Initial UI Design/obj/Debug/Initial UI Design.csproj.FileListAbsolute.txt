@@ -59,7 +59,6 @@ C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Ini
 C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.csproj.CoreCompileInputs.cache
 C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.exe
 C:\Users\acer\Source\Repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.pdb
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\Resources\FSSinclairTrial-Bold.otf
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\downSound.wav
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\leftSound.wav
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\rightSound.wav
@@ -86,3 +85,4 @@ C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet-Liberty-Beta\Sweet_Liberty\Initia
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.csproj.CoreCompileInputs.cache
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.exe
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\obj\Debug\Initial UI Design.pdb
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Initial UI Design\bin\Debug\Resources\FSSinclairTrial-Bold.otf

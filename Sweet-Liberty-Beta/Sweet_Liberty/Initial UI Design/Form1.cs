@@ -88,14 +88,14 @@ namespace Initial_UI_Design
             }
         }
 
-        private void SetCustomFont(string filepath, int size)
+        private void SetCustomFont(string filepath)
         {
             PrivateFontCollection fontCollection = new PrivateFontCollection();
             fontCollection.AddFontFile(filepath);
             foreach (Control c in this.Controls)
             {
 
-                c.Font = new Font(fontCollection.Families[0], size, FontStyle.Regular);
+                c.Font = new Font(fontCollection.Families[0], c.Font.Size, c.Font.Style);
             }
         }
 
@@ -121,7 +121,7 @@ namespace Initial_UI_Design
 
         private void CreateGame()
         {
-            SetCustomFont("Resources/FSSinclairTrial-Bold.otf", 16);
+            SetCustomFont("Resources/FSSinclairTrial-Bold.otf");
 
             PlayMusic("Long Night of Solace.wav");
             Sound.PlaySoundEffect("terminal.wav");
