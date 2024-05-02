@@ -108,7 +108,7 @@ namespace Initial_UI_Design
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.FSSinclairTrial_Bold.Length, IntPtr.Zero, ref dummy);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
-            myFont = new Font(fonts.Families[0], 16.0F);
+            FsSinclair = new Font(fonts.Families[0], 16.0F);
         }
 
         private void MainFormLoad(object sender, EventArgs e){CreateGame();}
