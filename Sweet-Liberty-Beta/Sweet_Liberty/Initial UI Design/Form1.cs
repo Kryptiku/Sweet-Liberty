@@ -11,6 +11,7 @@ using System.Media;
 using static System.Net.Mime.MediaTypeNames;
 using System.Threading;
 using System.Timers;
+using System.Drawing.Text;
 
 namespace Initial_UI_Design
 {
@@ -87,6 +88,17 @@ namespace Initial_UI_Design
             }
         }
 
+        private void SetCustomFont(string filepath)
+        {
+            PrivateFontCollection fontCollection = new PrivateFontCollection();
+            fontCollection.AddFontFile(filepath);
+            foreach (Control c in this.Controls)
+            {
+
+                c.Font = new Font(fontCollection.Families[0], 15, FontStyle.Regular);
+            }
+        }
+
         private void MainFormLoad(object sender, EventArgs e){CreateGame();}
         private void ButtonUpClick(object sender, EventArgs e) { Sound.PlaySoundEffect("upSound.wav"); Go("north"); }
         private void ButtonRightClick(object sender, EventArgs e) { Sound.PlaySoundEffect("rightSound.wav"); Go("east"); }
@@ -109,6 +121,8 @@ namespace Initial_UI_Design
 
         private void CreateGame()
         {
+            SetCustomFont("FSSinclairTrial-Bold.otf");
+
             PlayMusic("Long Night of Solace.wav");
             Sound.PlaySoundEffect("terminal.wav");
 
