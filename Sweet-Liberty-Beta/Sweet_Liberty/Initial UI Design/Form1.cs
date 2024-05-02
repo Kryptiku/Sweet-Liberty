@@ -288,5 +288,10 @@ namespace Initial_UI_Design
         {
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

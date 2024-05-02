@@ -210,18 +210,20 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(20)))), ((int)(((byte)(18)))));
             this.panel3.Controls.Add(this.display);
+            this.panel3.Font = new System.Drawing.Font("FS Sinclair Trial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(26, 17);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(16, 20, 6, 6);
             this.panel3.Size = new System.Drawing.Size(1338, 390);
             this.panel3.TabIndex = 0;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // display
             // 
             this.display.AutoSize = true;
             this.display.Location = new System.Drawing.Point(16, 23);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(0, 32);
+            this.display.Size = new System.Drawing.Size(0, 35);
             this.display.TabIndex = 0;
             // 
             // button3
