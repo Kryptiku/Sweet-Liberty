@@ -41,9 +41,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Drop = new System.Windows.Forms.Button();
             this.listInventory = new System.Windows.Forms.ComboBox();
-            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
             this.label1 = new System.Windows.Forms.Label();
             this.pickup_lbl = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -55,6 +54,7 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -64,8 +64,8 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MXP)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MXP)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -189,7 +189,7 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Desktop;
             this.splitContainer1.Panel2.Controls.Add(this.button3);
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
+            this.splitContainer1.Panel2.Controls.Add(this.Drop);
             this.splitContainer1.Panel2.Controls.Add(this.listInventory);
             this.splitContainer1.Panel2.Controls.Add(this.MXP);
             this.splitContainer1.Panel2.Controls.Add(this.label1);
@@ -230,6 +230,7 @@
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.button3.Location = new System.Drawing.Point(191, 95);
             this.button3.Name = "button3";
@@ -238,17 +239,19 @@
             this.button3.Text = "Use";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // Drop
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button2.Location = new System.Drawing.Point(58, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 31);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Drop";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Drop.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Drop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Drop.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Drop.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.Drop.Location = new System.Drawing.Point(58, 95);
+            this.Drop.Name = "Drop";
+            this.Drop.Size = new System.Drawing.Size(110, 31);
+            this.Drop.TabIndex = 12;
+            this.Drop.Text = "Drop";
+            this.Drop.UseVisualStyleBackColor = false;
+            this.Drop.Click += new System.EventHandler(this.DropClick);
             // 
             // listInventory
             // 
@@ -257,16 +260,6 @@
             this.listInventory.Name = "listInventory";
             this.listInventory.Size = new System.Drawing.Size(243, 24);
             this.listInventory.TabIndex = 11;
-            // 
-            // MXP
-            // 
-            this.MXP.Enabled = true;
-            this.MXP.Location = new System.Drawing.Point(879, 119);
-            this.MXP.Name = "MXP";
-            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
-            this.MXP.Size = new System.Drawing.Size(411, 56);
-            this.MXP.TabIndex = 10;
-            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
             // label1
             // 
@@ -406,6 +399,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
+            // MXP
+            // 
+            this.MXP.Enabled = true;
+            this.MXP.Location = new System.Drawing.Point(879, 119);
+            this.MXP.Name = "MXP";
+            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
+            this.MXP.Size = new System.Drawing.Size(411, 56);
+            this.MXP.TabIndex = 10;
+            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -432,8 +435,8 @@
             this.splitContainer1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MXP)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MXP)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -460,7 +463,7 @@
         private System.Windows.Forms.Panel panel2;
         private AxWMPLib.AxWindowsMediaPlayer MXP;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Drop;
         private System.Windows.Forms.ComboBox listInventory;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label display;
