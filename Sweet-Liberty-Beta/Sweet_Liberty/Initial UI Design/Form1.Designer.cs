@@ -40,6 +40,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Label();
+            this.labelHold = new System.Windows.Forms.Label();
             this.buttonUse = new System.Windows.Forms.Button();
             this.buttonDrop = new System.Windows.Forms.Button();
             this.listInventory = new System.Windows.Forms.ComboBox();
@@ -55,7 +56,6 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.labelHold = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -228,11 +228,20 @@
             this.display.Size = new System.Drawing.Size(0, 32);
             this.display.TabIndex = 0;
             // 
+            // labelHold
+            // 
+            this.labelHold.AutoSize = true;
+            this.labelHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHold.Location = new System.Drawing.Point(1157, 95);
+            this.labelHold.Name = "labelHold";
+            this.labelHold.Size = new System.Drawing.Size(0, 16);
+            this.labelHold.TabIndex = 15;
+            // 
             // buttonUse
             // 
             this.buttonUse.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonUse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUse.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUse.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonUse.Location = new System.Drawing.Point(191, 95);
             this.buttonUse.Name = "buttonUse";
@@ -245,7 +254,7 @@
             // 
             this.buttonDrop.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonDrop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDrop.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDrop.ForeColor = System.Drawing.SystemColors.Desktop;
             this.buttonDrop.Location = new System.Drawing.Point(58, 95);
             this.buttonDrop.Name = "buttonDrop";
@@ -276,10 +285,10 @@
             // nameHold
             // 
             this.nameHold.AutoSize = true;
-            this.nameHold.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameHold.Location = new System.Drawing.Point(1163, 68);
             this.nameHold.Name = "nameHold";
-            this.nameHold.Size = new System.Drawing.Size(35, 16);
+            this.nameHold.Size = new System.Drawing.Size(40, 16);
             this.nameHold.TabIndex = 9;
             this.nameHold.Text = "Hold";
             this.nameHold.Click += new System.EventHandler(this.pickup_lbl_Click);
@@ -287,10 +296,10 @@
             // namePickup
             // 
             this.namePickup.AutoSize = true;
-            this.namePickup.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePickup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePickup.Location = new System.Drawing.Point(1249, 68);
             this.namePickup.Name = "namePickup";
-            this.namePickup.Size = new System.Drawing.Size(49, 16);
+            this.namePickup.Size = new System.Drawing.Size(54, 16);
             this.namePickup.TabIndex = 9;
             this.namePickup.Text = "Pickup";
             this.namePickup.Click += new System.EventHandler(this.pickup_lbl_Click);
@@ -411,15 +420,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
-            // labelHold
-            // 
-            this.labelHold.AutoSize = true;
-            this.labelHold.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHold.Location = new System.Drawing.Point(1157, 95);
-            this.labelHold.Name = "labelHold";
-            this.labelHold.Size = new System.Drawing.Size(0, 16);
-            this.labelHold.TabIndex = 15;
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -431,10 +431,12 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.AliceBlue;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sweet Liberty ";
             this.Load += new System.EventHandler(this.MainFormLoad);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

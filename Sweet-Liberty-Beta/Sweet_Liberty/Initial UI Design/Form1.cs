@@ -131,6 +131,15 @@ namespace Initial_UI_Design
         private void ButtonPickUpClick(object sender, EventArgs e) { TakeItem(); }
         private void ButtonHoldClick(object sender, EventArgs e) { HoldItem(); }
 
+        // Keyboard Controls
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.W || e.KeyCode == Keys.Up) { Go("north"); }
+            if (e.KeyCode == Keys.D || e.KeyCode == Keys.Right) { Go("east"); }
+            if (e.KeyCode == Keys.S || e.KeyCode == Keys.Down) { Go("south"); }
+            if (e.KeyCode == Keys.A || e.KeyCode == Keys.Left) { Go("west"); }
+        }
+
 
         private void DisplayStory(string AddText, bool clear = false)
         {
@@ -395,6 +404,6 @@ namespace Initial_UI_Design
 
         }
 
-
+       
     }
 }
