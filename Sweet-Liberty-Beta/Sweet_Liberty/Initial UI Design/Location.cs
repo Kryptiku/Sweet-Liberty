@@ -46,5 +46,18 @@ public class Location
         }
     }
 
+    public void AddItem(Item item)
+    {
+        Items.Add(item.Name, item);
+    }
+    public void RemoveItem(Item item)
+    {
+        Items.Remove(item.Name);
+    }
+    public void RemoveItem(string itemName)
+    {
+        Items.Remove(itemName);
+    }
+
 }
 

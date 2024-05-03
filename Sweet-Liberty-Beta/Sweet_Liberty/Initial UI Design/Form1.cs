@@ -44,13 +44,13 @@ namespace Initial_UI_Design
         {
             InitializeComponent();
             SetCustomFont();
-            timer.Interval = 75; // Interval in milliseconds
-            timer.Tick += Timer_Tick;
+            timer.Interval = 20; // Interval in milliseconds
+            timer.Tick += TimerTick;
         }
 
         private void Go(string Direction)
         {
-            //has to be an exit here else button would not be enabled
+            // has to be an exit here else button would not be enabled
             Location checkLocation = currentLocation;
             switch (Direction)
             {
@@ -62,6 +62,7 @@ namespace Initial_UI_Design
             }
             if (checkLocation != currentLocation)
             {
+                CheckMusic(currentLocation.Name);
                 Play();
             }
         }
@@ -85,16 +86,27 @@ namespace Initial_UI_Design
             }
         }
 
-        private void Timer_Tick(object sender, EventArgs e)
+        private void TimerTick(object sender, EventArgs e)
         {
+            // Ticks decide when it is appropriate to do actions
+
             if (timerIndex < textToAdd.Length)
             {
                 display.Text += textToAdd[timerIndex];
                 timerIndex++;
+                DisableButton(buttonUp);
+                DisableButton(buttonDown);
+                DisableButton(buttonLeft);
+                DisableButton(buttonRight);
+                DisableButton(buttonHold);
+                DisableButton(buttonPickUp);
             }
             else
             {
-                timer.Stop(); // Stop the timer when the entire string has been displayed
+                EnableButton(buttonHold);
+                EnableButton(buttonPickUp);
+                DisplayCompass();
+                timer.Stop(); 
             }
         }
 
@@ -116,6 +128,8 @@ namespace Initial_UI_Design
         private void ButtonRightClick(object sender, EventArgs e) { Sound.PlaySoundEffect("rightSound.wav"); Go("east"); }
         private void ButtonDownClick(object sender, EventArgs e) { Sound.PlaySoundEffect("downSound.wav"); Go("south"); }
         private void ButtonLeftClick(object sender, EventArgs e) { Sound.PlaySoundEffect("leftSound.wav"); Go("west"); }
+        private void ButtonPickUpClick(object sender, EventArgs e) { TakeItem(); }
+        private void ButtonHoldClick(object sender, EventArgs e) { HoldItem(); }
 
 
         private void DisplayStory(string AddText, bool clear = false)
@@ -150,10 +164,10 @@ namespace Initial_UI_Design
             // Locations 
             dictLocations.Add("StartingArea", new Location("StartingArea",
                         "The Cold Wasteland",
-                        "-- Log 1 --\nof Squadron Alpha of the Executor of Family Values\n" +
-                        ".\n.\n.\nor what's left of it.\n" +
-                        "Two of my squadmates abandoned me on Lacaille Sector, in Lesath...\n" +
-                        "and my other squadmate got caught in an Eagle Napalm Strike during extraction... He didn't make it.\n" +
+                        "-- Log 1 --\nThis is Squadron Alpha of the Executor of Family Values\n" +
+                        ".\n.\n.\nOr what's left of it.\n" +
+                        "Two of my squadmates abandoned me on the Lacaille Sector, in Lesath...\n" +
+                        "And my other squadmate got caught in an Eagle Napalm Strike during extraction... He didn't make it.\n" +
                         "It's really cold. Blizzards everywhere. Pitch dark. Can't see shit.\n" +
                         "Automatons everywhere. Gotta hide. They must be searching for me.\n" +
                         "Saw a Stim. Probably a good idea to pick it up.",
@@ -177,7 +191,7 @@ namespace Initial_UI_Design
 
             dictLocations.Add("OutpostTerminal", new Location("OutpostTerminal",
                        "Outpost Terminal",
-                       "-- Log 4 -- Went to the terminal. It might be on, but any touch on it doesn't make it respond.\n" +
+                       "-- Log 4 -- \nWent to the terminal. It might be on, but any touch on it doesn't make it respond.\n" +
                        "Found a Breaker underneath the terminal. A fully loaded automatic shotgun. Might be useful to pick up.",
                        "", "", "OutpostRoom", "",
                        new List<Item> { dictItems["Breaker"] }));
@@ -196,6 +210,49 @@ namespace Initial_UI_Design
             
         }
 
+        private void TakeItem()
+        {
+            foreach (var itemEntry in currentLocation.Items)
+            {
+
+                string itemName = itemEntry.Key;
+
+                if (dictItems.ContainsKey(itemName))
+                {
+                    Player.AddToInventory(dictItems[itemName]);
+                    DisplayStory($"\nYou take the {itemName}.");
+                }
+                else
+                {
+                    DisplayStory("There's no item to pick up.");
+                }
+            }
+
+            // Clear the items from the current location
+            currentLocation.Items.Clear();
+
+            // Update the display
+            DisplayInventory();
+        }
+        private void HoldItem()
+        {
+            if (listInventory.SelectedItem != null)
+            {
+                // return the current item held to inventory and take new item
+                Player.GetItemFromInventory(listInventory.SelectedItem.ToString());
+                DisplayStory($"\nYou get the {Player.ItemInHand.Name} from your supply pack.");
+                DisplayInventory();
+                DisplayHand();
+            }
+
+            else
+            {
+                DisplayStory("\nYou have no item selected.");
+            }
+            
+        }
+
+
         private void Play()
         {
             //fill description
@@ -206,7 +263,7 @@ namespace Initial_UI_Design
             WestExit = currentLocation.LocationToWest;
             DisplayInventory();
             DisplayCompass();
-            // DisplayHand();
+            DisplayHand();
         }
 
         private void DisplayInventory()
@@ -221,6 +278,24 @@ namespace Initial_UI_Design
             }
         }
 
+        private void DisplayHand()
+        {
+            if (Player.ItemInHand != null)
+            {
+                labelHold.Text = Player.Name + " is holding: " + Player.ItemInHand.Name;
+                buttonDrop.Enabled = true;
+                buttonUse.Enabled = true;
+            }
+            else
+            {
+                labelHold.Text = Player.Name + " is holding: nothing";
+                buttonDrop.Enabled = false;
+                buttonUse.Enabled = false;
+            }
+        }
+
+  
+
         private void DisplayCompass()
         {
             DisableButton(buttonUp);
@@ -232,19 +307,15 @@ namespace Initial_UI_Design
             if (SouthExit != "") { EnableButton(buttonDown); }
             if (WestExit != "") { EnableButton(buttonLeft); }
         }
-        private void DisableButton(Button button)
-        {
-            button.Enabled = false;
-            button.ForeColor = Color.Gainsboro;
-        }
 
-        private void EnableButton(Button button)
+        private void CheckMusic(string name)
         {
-            button.Enabled = true;
-            button.ForeColor = Color.Yellow;
+            switch (name)
+            {
+                case "OutpostRoom": MXP.Ctlcontrols.stop(); break;
+                case "AutomatonOutpost": PlayMusic("Long Night of Solace.wav"); break;
+            }
         }
-
-  
 
         private void PlayMusic(string filepath)
         {
@@ -254,6 +325,16 @@ namespace Initial_UI_Design
             MXP.Visible = false;
         }
 
+        private void DisableButton(Button button)
+        {
+            button.Enabled = false;
+        }
+
+        private void EnableButton(Button button)
+        {
+            button.Enabled = true;
+        }
+        
         private void btn_maximize_Click(object sender, EventArgs e)
         {
             if(WindowState == FormWindowState.Normal)
@@ -285,12 +366,6 @@ namespace Initial_UI_Design
         {
 
         }
-
-        private void pickup_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -300,12 +375,6 @@ namespace Initial_UI_Design
         {
 
         }
-
-        private void display_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -321,19 +390,11 @@ namespace Initial_UI_Design
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void DropClick(object sender, EventArgs e)
         {
 
         }
 
-        private void hold_btn_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

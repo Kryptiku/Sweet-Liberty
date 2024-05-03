@@ -40,13 +40,14 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.Drop = new System.Windows.Forms.Button();
+            this.buttonUse = new System.Windows.Forms.Button();
+            this.buttonDrop = new System.Windows.Forms.Button();
             this.listInventory = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pickup_lbl = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.pickup_btn = new System.Windows.Forms.Button();
+            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
+            this.nameHold = new System.Windows.Forms.Label();
+            this.namePickup = new System.Windows.Forms.Label();
+            this.buttonHold = new System.Windows.Forms.Button();
+            this.buttonPickUp = new System.Windows.Forms.Button();
             this.inventory_btn = new System.Windows.Forms.Button();
             this.buttonRight = new System.Windows.Forms.Button();
             this.buttonLeft = new System.Windows.Forms.Button();
@@ -54,7 +55,7 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
+            this.labelHold = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -64,8 +65,8 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MXP)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -188,14 +189,15 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Desktop;
-            this.splitContainer1.Panel2.Controls.Add(this.button3);
-            this.splitContainer1.Panel2.Controls.Add(this.Drop);
+            this.splitContainer1.Panel2.Controls.Add(this.labelHold);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonUse);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonDrop);
             this.splitContainer1.Panel2.Controls.Add(this.listInventory);
             this.splitContainer1.Panel2.Controls.Add(this.MXP);
-            this.splitContainer1.Panel2.Controls.Add(this.label1);
-            this.splitContainer1.Panel2.Controls.Add(this.pickup_lbl);
-            this.splitContainer1.Panel2.Controls.Add(this.button4);
-            this.splitContainer1.Panel2.Controls.Add(this.pickup_btn);
+            this.splitContainer1.Panel2.Controls.Add(this.nameHold);
+            this.splitContainer1.Panel2.Controls.Add(this.namePickup);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonHold);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonPickUp);
             this.splitContainer1.Panel2.Controls.Add(this.inventory_btn);
             this.splitContainer1.Panel2.Controls.Add(this.buttonRight);
             this.splitContainer1.Panel2.Controls.Add(this.buttonLeft);
@@ -223,91 +225,101 @@
             this.display.AutoSize = true;
             this.display.Location = new System.Drawing.Point(16, 23);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(0, 26);
+            this.display.Size = new System.Drawing.Size(0, 32);
             this.display.TabIndex = 0;
             // 
-            // button3
+            // buttonUse
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button3.Location = new System.Drawing.Point(191, 95);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 31);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Use";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonUse.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonUse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUse.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUse.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.buttonUse.Location = new System.Drawing.Point(191, 95);
+            this.buttonUse.Name = "buttonUse";
+            this.buttonUse.Size = new System.Drawing.Size(110, 31);
+            this.buttonUse.TabIndex = 13;
+            this.buttonUse.Text = "Use";
+            this.buttonUse.UseVisualStyleBackColor = false;
             // 
-            // Drop
+            // buttonDrop
             // 
-            this.Drop.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Drop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Drop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Drop.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.Drop.Location = new System.Drawing.Point(58, 95);
-            this.Drop.Name = "Drop";
-            this.Drop.Size = new System.Drawing.Size(110, 31);
-            this.Drop.TabIndex = 12;
-            this.Drop.Text = "Drop";
-            this.Drop.UseVisualStyleBackColor = false;
-            this.Drop.Click += new System.EventHandler(this.DropClick);
+            this.buttonDrop.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonDrop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDrop.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrop.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.buttonDrop.Location = new System.Drawing.Point(58, 95);
+            this.buttonDrop.Name = "buttonDrop";
+            this.buttonDrop.Size = new System.Drawing.Size(110, 31);
+            this.buttonDrop.TabIndex = 12;
+            this.buttonDrop.Text = "Drop";
+            this.buttonDrop.UseVisualStyleBackColor = false;
+            this.buttonDrop.Click += new System.EventHandler(this.DropClick);
             // 
             // listInventory
             // 
             this.listInventory.FormattingEnabled = true;
             this.listInventory.Location = new System.Drawing.Point(58, 65);
             this.listInventory.Name = "listInventory";
-            this.listInventory.Size = new System.Drawing.Size(243, 21);
+            this.listInventory.Size = new System.Drawing.Size(243, 24);
             this.listInventory.TabIndex = 11;
             // 
-            // label1
+            // MXP
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1163, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Hold";
-            this.label1.Click += new System.EventHandler(this.pickup_lbl_Click);
+            this.MXP.Enabled = true;
+            this.MXP.Location = new System.Drawing.Point(879, 119);
+            this.MXP.Name = "MXP";
+            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
+            this.MXP.Size = new System.Drawing.Size(411, 56);
+            this.MXP.TabIndex = 10;
+            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
-            // pickup_lbl
+            // nameHold
             // 
-            this.pickup_lbl.AutoSize = true;
-            this.pickup_lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pickup_lbl.Location = new System.Drawing.Point(1249, 68);
-            this.pickup_lbl.Name = "pickup_lbl";
-            this.pickup_lbl.Size = new System.Drawing.Size(46, 13);
-            this.pickup_lbl.TabIndex = 9;
-            this.pickup_lbl.Text = "Pickup";
-            this.pickup_lbl.Click += new System.EventHandler(this.pickup_lbl_Click);
+            this.nameHold.AutoSize = true;
+            this.nameHold.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameHold.Location = new System.Drawing.Point(1163, 68);
+            this.nameHold.Name = "nameHold";
+            this.nameHold.Size = new System.Drawing.Size(35, 16);
+            this.nameHold.TabIndex = 9;
+            this.nameHold.Text = "Hold";
+            this.nameHold.Click += new System.EventHandler(this.pickup_lbl_Click);
             // 
-            // button4
+            // namePickup
             // 
-            this.button4.BackgroundImage = global::Initial_UI_Design.Properties.Resources.hold_btn;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(1159, 24);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(48, 40);
-            this.button4.TabIndex = 6;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.hold_btn_Click);
+            this.namePickup.AutoSize = true;
+            this.namePickup.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePickup.Location = new System.Drawing.Point(1249, 68);
+            this.namePickup.Name = "namePickup";
+            this.namePickup.Size = new System.Drawing.Size(49, 16);
+            this.namePickup.TabIndex = 9;
+            this.namePickup.Text = "Pickup";
+            this.namePickup.Click += new System.EventHandler(this.pickup_lbl_Click);
             // 
-            // pickup_btn
+            // buttonHold
             // 
-            this.pickup_btn.BackgroundImage = global::Initial_UI_Design.Properties.Resources.pickup_btn;
-            this.pickup_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pickup_btn.FlatAppearance.BorderSize = 0;
-            this.pickup_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pickup_btn.Location = new System.Drawing.Point(1258, 18);
-            this.pickup_btn.Name = "pickup_btn";
-            this.pickup_btn.Size = new System.Drawing.Size(32, 47);
-            this.pickup_btn.TabIndex = 6;
-            this.pickup_btn.UseVisualStyleBackColor = true;
-            this.pickup_btn.Click += new System.EventHandler(this.pickup_btn_Click);
+            this.buttonHold.BackgroundImage = global::Initial_UI_Design.Properties.Resources.hold_btn;
+            this.buttonHold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonHold.FlatAppearance.BorderSize = 0;
+            this.buttonHold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHold.Location = new System.Drawing.Point(1159, 24);
+            this.buttonHold.Name = "buttonHold";
+            this.buttonHold.Size = new System.Drawing.Size(48, 40);
+            this.buttonHold.TabIndex = 6;
+            this.buttonHold.UseVisualStyleBackColor = true;
+            this.buttonHold.Click += new System.EventHandler(this.ButtonHoldClick);
+            // 
+            // buttonPickUp
+            // 
+            this.buttonPickUp.BackgroundImage = global::Initial_UI_Design.Properties.Resources.pickup_btn;
+            this.buttonPickUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonPickUp.FlatAppearance.BorderSize = 0;
+            this.buttonPickUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPickUp.Location = new System.Drawing.Point(1258, 18);
+            this.buttonPickUp.Name = "buttonPickUp";
+            this.buttonPickUp.Size = new System.Drawing.Size(32, 47);
+            this.buttonPickUp.TabIndex = 6;
+            this.buttonPickUp.UseVisualStyleBackColor = true;
+            this.buttonPickUp.Click += new System.EventHandler(this.ButtonPickUpClick);
             // 
             // inventory_btn
             // 
@@ -399,15 +411,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
-            // MXP
+            // labelHold
             // 
-            this.MXP.Enabled = true;
-            this.MXP.Location = new System.Drawing.Point(879, 119);
-            this.MXP.Name = "MXP";
-            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
-            this.MXP.Size = new System.Drawing.Size(411, 56);
-            this.MXP.TabIndex = 10;
-            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
+            this.labelHold.AutoSize = true;
+            this.labelHold.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHold.Location = new System.Drawing.Point(1157, 95);
+            this.labelHold.Name = "labelHold";
+            this.labelHold.Size = new System.Drawing.Size(0, 16);
+            this.labelHold.TabIndex = 15;
             // 
             // Form1
             // 
@@ -435,8 +446,8 @@
             this.splitContainer1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MXP)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -453,8 +464,8 @@
         private System.Windows.Forms.Control control1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Label pickup_lbl;
-        private System.Windows.Forms.Button pickup_btn;
+        private System.Windows.Forms.Label namePickup;
+        private System.Windows.Forms.Button buttonPickUp;
         private System.Windows.Forms.Button inventory_btn;
         private System.Windows.Forms.Button buttonRight;
         private System.Windows.Forms.Button buttonLeft;
@@ -462,13 +473,14 @@
         private System.Windows.Forms.Button buttonUp;
         private System.Windows.Forms.Panel panel2;
         private AxWMPLib.AxWindowsMediaPlayer MXP;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button Drop;
+        private System.Windows.Forms.Button buttonUse;
+        private System.Windows.Forms.Button buttonDrop;
         private System.Windows.Forms.ComboBox listInventory;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label display;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label nameHold;
+        private System.Windows.Forms.Button buttonHold;
+        private System.Windows.Forms.Label labelHold;
     }
 }
 
