@@ -106,10 +106,14 @@ namespace SweetLiberty
             }
             else
             {
+                EnableButton(buttonUp);
+                EnableButton(buttonDown);
+                EnableButton(buttonLeft);
+                EnableButton(buttonRight);
                 EnableButton(buttonHold);
                 EnableButton(buttonPickUp);
                 DisplayCompass();
-                timer.Stop(); 
+                timer.Stop();
             }
         }
 
@@ -574,42 +578,42 @@ namespace SweetLiberty
 
         private void buttonUp_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonUp.Image = Properties.Resources.buttonUpPress;
+            buttonUp.BackgroundImage = Properties.Resources.buttonUpPress;
         }
 
         private void buttonUp_MouseUp(object sender, MouseEventArgs e)
         {
-            buttonUp.Image = Properties.Resources.buttonUpDefault;
+            buttonUp.BackgroundImage = Properties.Resources.buttonUpDefault;
         }
 
         private void buttonDown_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonDown.Image = Properties.Resources.buttonDownPress;
+            buttonDown.BackgroundImage = Properties.Resources.buttonDownPress;
         }
 
         private void buttonDown_MouseUp(object sender, MouseEventArgs e)
         {
-            buttonDown.Image = Properties.Resources.buttonDownDefault;
+            buttonDown.BackgroundImage = Properties.Resources.buttonDownDefault;
         }
 
         private void buttonLeft_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonLeft.Image = Properties.Resources.buttonLeftPress;
+            buttonLeft.BackgroundImage = Properties.Resources.buttonLeftPress;
         }
 
         private void buttonLeft_MouseUp(object sender, MouseEventArgs e)
         {
-            buttonLeft.Image = Properties.Resources.buttonLeftDefault;
+            buttonLeft.BackgroundImage = Properties.Resources.buttonLeftDefault;
         }
 
         private void buttonRight_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonRight.Image = Properties.Resources.buttonRightPress;
+            buttonRight.BackgroundImage = Properties.Resources.buttonRightPress;
         }
 
         private void buttonRight_MouseUp(object sender, MouseEventArgs e)
         {
-            buttonRight.Image = Properties.Resources.buttonRightDefault;
+            buttonRight.BackgroundImage = Properties.Resources.buttonRightDefault;
         }
     }
 }
