@@ -115,36 +115,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\hold_btn.png" />
-    <Content Include="Automaton Fight.mp3">
+    <Content Include="Music\Automaton Fight.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Sweet Liberty.ico" />
-    <Content Include="Long Night of Solace.mp3">
+    <Content Include="Music\Long Night of Solace.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="downSound.wav">
+    <Content Include="Sound Effects\downSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Terminid Fight.mp3">
+    <Content Include="Music\Terminid Fight.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="The Jail.mp3">
+    <Content Include="Music\The Jail.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Server Queue.mp3">
+    <Content Include="Music\Server Queue.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="leftSound.wav">
+    <Content Include="Sound Effects\leftSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="rightSound.wav">
+    <Content Include="Sound Effects\rightSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="upSound.wav">
+    <Content Include="Sound Effects\upSound.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\69-696289_filter-sticker-vhs-nany-transparent-glitch-texture-png.png" />
-    <Content Include="terminal.wav">
+    <Content Include="Sound Effects\terminal.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="assets\bottom_navigation_button.png" />

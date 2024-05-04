@@ -50,16 +50,6 @@ C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Swe
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.CoreCompileInputs.cache
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.exe
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.pdb
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Automaton Fight.mp3
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Long Night of Solace.mp3
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\downSound.wav
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Terminid Fight.mp3
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\The Jail.mp3
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Server Queue.mp3
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\leftSound.wav
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\rightSound.wav
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\upSound.wav
-C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\terminal.wav
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Resources\FSSinclairTrial-Bold.otf
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sweet Liberty.exe.config
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sweet Liberty.exe
@@ -76,3 +66,13 @@ C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Libert
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.CoreCompileInputs.cache
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.exe
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.pdb
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Music\Automaton Fight.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Music\Long Night of Solace.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\downSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Music\Terminid Fight.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Music\The Jail.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Music\Server Queue.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\leftSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\rightSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\upSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\terminal.wav

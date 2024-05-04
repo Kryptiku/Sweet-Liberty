@@ -152,8 +152,8 @@ namespace SweetLiberty
         {
             display.Font = FsSinclair;
 
-            PlayMusic("Long Night of Solace.mp3");
-            Sound.PlaySoundEffect("terminal.wav");
+            PlayMusic("Music/Long Night of Solace.mp3");
+            Sound.PlaySoundEffect("Sound Effects/terminal.wav");
 
             // Items
             dictItems.Add("Breaker", new Item("Breaker", "An automatic shotgun. Good for killing bugs and robots."));
@@ -426,7 +426,7 @@ namespace SweetLiberty
                 case "AutomatonTerminal":
                     // Die if not holding IFF
                     if (Player.ItemInHand != null && Player.ItemInHand.Name == "Automaton IFF") { Play(); break; }
-                    else { PlayMusic("Automaton Fight.mp3"); DisplayStory(location.BadEnding, true); break;}
+                    else { PlayMusic("Music/Automaton Fight.mp3"); DisplayStory(location.BadEnding, true); break;}
                 case "LabRoom":
                     // Die if Stim is not in inventory
                     if (CheckInventory("Stim") == true) {Play(); break;}
@@ -438,7 +438,7 @@ namespace SweetLiberty
                 case "Nest": 
                     // Die if Breaker is in inventory
                     if (CheckInventory("Breaker") == false) { Play(); break; }
-                    else { PlayMusic("Terminid Fight.mp3"); DisplayStory(location.BadEnding, true); break; }
+                    else { PlayMusic("Music/Terminid Fight.mp3"); DisplayStory(location.BadEnding, true); break; }
                 case "EscapePod": 
                     // Die if Breaker is not in inventory
                     if (CheckInventory("Breaker") == true) { Play(); break; }
@@ -450,8 +450,8 @@ namespace SweetLiberty
         {
             switch (locationName)
             {
-                case "OutpostRoom": PlayMusic("The Jail.mp3"); break;
-                case "Stronghold": PlayMusic("Server Queue.mp3"); break;
+                case "OutpostRoom": PlayMusic("Music/The Jail.mp3"); break;
+                case "Stronghold": PlayMusic("Music/Server Queue.mp3"); break;
                 
             }
         }
