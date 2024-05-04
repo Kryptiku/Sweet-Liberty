@@ -115,12 +115,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\hold_btn.png" />
+    <Content Include="assets\arrowDownPress.png" />
+    <Content Include="assets\arrowLeftPress.png" />
+    <Content Include="assets\arrowRightPress.png" />
+    <Content Include="assets\arrowUpPress.png" />
     <Content Include="Music\Automaton Fight.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Music\Extraction.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\arrowDownPress.png" />
+    <None Include="Resources\arrowLeftPress.png" />
+    <None Include="Resources\arrowRightPress.png" />
+    <None Include="Resources\arrowUpPress.png" />
     <Content Include="Sound Effects\Explosion.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
