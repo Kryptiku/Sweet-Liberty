@@ -20,32 +20,32 @@ public class Ideas
                 "and my other squadmate got caught in an Eagle Napalm Strike during extraction... He didn't make it.\n" +
                 "It's really cold. Blizzards everywhere. Pitch dark. Can't see shit.\n" +
                 "Automatons everywhere. Gotta hide. They must be searching for me.\n" +
-                "Saw a Stim. Probably a good idea to pick it up.";
+                "Saw a Stim. Probably a good idea to pick it up."; //done
 
         string log2 = "Log 2. Found an abandoned outpost. Looks like it was thrashed around.\n" +
                 "Frozen bodies everywhere. Nothing useful. Chunks of metal are rooted deep into the snow.\n" +
-                "Could get inside. Might find something. Can't tell if there's anything hiding inside.";
+                "Could get inside. Might find something. Can't tell if there's anything hiding inside."; //done
 
         string log3 = "Log 3. Went inside an abandoned outpost room. Seems it was scavenged about.\n" +
                 "Whole place is empty. Can't see anything. Save for a terminal emitting light on the far side of the room.\n" +
                 "Probably something useful there-- shit!" +
-                "Ah, it's just a rat. Fuck.";
+                "Ah, it's just a rat. Fuck."; //done
 
         string log4 = "Log 4. Went to the terminal. It might be on, but any touch on it doesn't make it respond.\n" +
-                "Found a Breaker underneath the terminal. A fully loaded automatic shotgun. Might be useful to pick up.\n";
+                "Found a Breaker underneath the terminal. A fully loaded automatic shotgun. Might be useful to pick up.\n"; //done
 
         string log5 = "Log 5. Found an escape pod. It crashed deep into the snow.\n" +
                 "An automaton's guarding it. Looks like a suicide bomber.\n" +
-                "Might be advisable to hold a weapon before going in.\n";
+                "Might be advisable to hold a weapon before going in.\n"; //done
 
         string log6A = "Log 6. I've decided to face the--\n" +
                 "Close-range explosion detected.\n" +
-                "Unexpected log termination.";
+                "Unexpected log termination."; //done
 
         string log6B = "Log 6. Killed the automaton easily. Tried to open the pod. Doesn't budge.\n" +
                 "Dug out some snow. Found what seems to be an Automaton IFF.\n" +
                 "Could help me get through some Automaton patrols. They'll see me and they'll think I'm a friendly." +
-                "Would be helpful to pick it up.";
+                "Would be helpful to pick it up."; //done
 
         string log7 = "Log 7. I found this small opening... Looks like it was burrowed through.\n" +
                 "I'm not entirely sure what's inside... Should I check it out?";
@@ -68,7 +68,7 @@ public class Ideas
         string log12 = "Log 12: Found what appears to be an Automaton Stronghold. Multiple of them in visual. Need to scope the area out.\n" +
                 "Scaled up to get a bit closer. Needed a better view of the stronghold.\n" +
                 "The base is so massive. There may be something useful there, but how am I gonna get in?\n" +
-                "No point in thinking of trivial things. Need to find a way in.\n";
+                "No point in thinking of trivial things. Need to find a way in.\n"; //done
 
 
 

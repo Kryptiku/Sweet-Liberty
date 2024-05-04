@@ -46,7 +46,7 @@ namespace Initial_UI_Design
         {
             InitializeComponent();
             SetCustomFont();
-            timer.Interval = 20; // Interval in milliseconds
+            timer.Interval = 1; // Interval in milliseconds
             timer.Tick += TimerTick;
         }
 
@@ -212,7 +212,7 @@ namespace Initial_UI_Design
                        "Ah shit, there's an automaton squadron nearby. I need to lay low.\n" +
                        "Shit! Enemy tango might have spotted me. Eyes glowed bright red. Should be fine. I ducked behind a rock for cover.\n" +  
                        "This place is extremely dangerous. Need to consider if I should enter now.",
-                       "AutomatonTerminal", "", "", ""));
+                       "AutomatonTerminal", "Outpost", "", "CrashSite"));
 
             dictLocations.Add("AutomatonTerminal", new Location("AutomatonTerminal",
                        "Automaton Terminal",
@@ -238,7 +238,7 @@ namespace Initial_UI_Design
                        "Seems right now I'm just assigned to paperwork as a promotion.\n" +
                        "Might not be so bad after all...\n" +
                        "Sweet Liberty...",
-                       "", "", "", "", 
+                       "", "", "", "", //N E S W
                        null, null, // items and itemRequired
                        "...I am deemed as a traitor.\n" +
                        "They still asked me for the Terminid sample. The reason why they sent us there in the first place.\n" +
@@ -247,6 +247,40 @@ namespace Initial_UI_Design
                        "LAUNCHING 120MM HE BARRAGE IN 3... 2... 1...\n" +
                        "UNEXPECTED LOG TERMINATION.\n" +
                        "FINISHING TERMINATION IN 3... 2... 1..."));
+
+            dictLocations.Add("CrashSite", new Location("CrashSite",
+                       "Crash Site",
+                       "-- Log 5 --\n" +
+                       "Found an escape pod.It crashed deep into the snow.\n" +
+                       "An automaton's guarding it. Looks like a suicide bomber.\n" +
+                       "Might be advisable to hold a weapon before going in.\n",
+                       "EscapePod", "", "", ""));
+
+            dictLocations.Add("EscapePod", new Location("EscapePod",
+                       "Escape Pod",
+                       "-- Log 6 --\n" +
+                       "Killed the automaton easily. Tried to open the pod. Doesn't budge.\n" +
+                       "Dug out some snow. Found what seems to be an Automaton IFF.\n" +
+                       "Could help me get through some Automaton patrols. They'll see me and they'll think I'm a friendly." +
+                       "Would be helpful to pick it up.",
+                       "", "", "CrashSite", "",
+                       new List<Item> { dictItems["Automaton IFF"] },
+                       null,
+                       "-- Log 6 --\n" +
+                       "I've decided to face the--\n" +
+                       "Close-range explosion detected.\n" +
+                       "UNEXPECTED LOG TERMINATION.\n" +
+                       "FINISHING TERMINATION IN 3... 2... 1..."));
+
+            dictLocations.Add("Burrow", new Location("Burrow",
+                       "Terminid Burrow",
+                       "-- Log 7 --\n" +
+                       "I found this small opening... Looks like it was burrowed through.\n" +
+                       "I'm not entirely sure what's inside... Should I check it out?",
+                       "", "", "", ""));
+
+       
+
 
             Player.Name = "Alpha-Three";
             Player.Health = 100;
@@ -372,7 +406,7 @@ namespace Initial_UI_Design
                     else { DisplayStory(location.BadEnding, true); break;}
                 case "LabRoom":
                     // Die if Stim is not in inventory
-                    if (CheckInventory("Stim") == true) { location.Entered = true; Play(); break;}
+                    if (CheckInventory("Stim") == true) {Play(); break;}
                     else {DisplayStory(location.BadEnding, true); break;}
                 case "Ship":
                     // Die if Sample is not in inventory
@@ -380,9 +414,9 @@ namespace Initial_UI_Design
                     else { DisplayStory(location.BadEnding, true); break; }
                 case "Nest": 
                     // Die if Breaker is in inventory
-                    if (CheckInventory("Breaker") == false) { location.Entered = true; Play(); break; }
+                    if (CheckInventory("Breaker") == false) { Play(); break; }
                     else { DisplayStory(location.BadEnding, true); break; }
-                case "CrashSite": 
+                case "EscapePod": 
                     // Die if Breaker is not in inventory
                     if (CheckInventory("Breaker") == true) { Play(); break; }
                     else { DisplayStory(location.BadEnding, true); break; }
