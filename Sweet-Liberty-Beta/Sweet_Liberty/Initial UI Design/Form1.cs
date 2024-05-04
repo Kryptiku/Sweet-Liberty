@@ -12,6 +12,8 @@ using static System.Net.Mime.MediaTypeNames;
 using System.Threading;
 using System.Timers;
 using System.Drawing.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using System.Runtime.ConstrainedExecution;
 
 namespace Initial_UI_Design
 {
@@ -62,8 +64,9 @@ namespace Initial_UI_Design
             }
             if (checkLocation != currentLocation)
             {
+                CheckArea(currentLocation);
                 CheckMusic(currentLocation.Name);
-                Play();
+                
             }
         }
 
@@ -164,7 +167,8 @@ namespace Initial_UI_Design
             // Locations 
             dictLocations.Add("StartingArea", new Location("StartingArea",
                         "The Cold Wasteland",
-                        "-- Log 1 --\nThis is Squadron Alpha of the Executor of Family Values\n" +
+                        "-- Log 1 --\n" +
+                        "This is Squadron Alpha of the Executor of Family Values\n" +
                         ".\n.\n.\nOr what's left of it.\n" +
                         "Two of my squadmates abandoned me on the Lacaille Sector, in Lesath...\n" +
                         "And my other squadmate got caught in an Eagle Napalm Strike during extraction... He didn't make it.\n" +
@@ -176,14 +180,16 @@ namespace Initial_UI_Design
 
             dictLocations.Add("Outpost", new Location("Outpost",
                        "Abandoned Outpost",
-                       "-- Log 2 --\nFound an abandoned outpost. Looks like it was thrashed around.\n" +
+                       "-- Log 2 --\n" +
+                       "Found an abandoned outpost. Looks like it was thrashed around.\n" +
                        "Frozen bodies everywhere. Nothing useful. Chunks of metal are rooted deep into the snow.\n" +
                        "Could get inside. Might find something. Can't tell if there's anything hiding inside.",
                        "OutpostRoom", "", "StartingArea", "Stronghold"));
 
             dictLocations.Add("OutpostRoom", new Location("OutpostRoom",
                        "Outpost Room",
-                       "-- Log 3 --\nWent inside an abandoned outpost room. Seems it was scavenged about.\n" +
+                       "-- Log 3 --\n" +
+                       "Went inside an abandoned outpost room. Seems it was scavenged about.\n" +
                        "Whole place is empty. Can't see anything. Save for a terminal emitting light on the far side of the room.\n" +
                        "Probably something useful there-- shit!\n" +
                        "Ah, it's just a rat. Fuck.", 
@@ -191,13 +197,49 @@ namespace Initial_UI_Design
 
             dictLocations.Add("OutpostTerminal", new Location("OutpostTerminal",
                        "Outpost Terminal",
-                       "-- Log 4 -- \nWent to the terminal. It might be on, but any touch on it doesn't make it respond.\n" +
+                       "-- Log 4 -- \n" +
+                       "Went to the terminal. It might be on, but any touch on it doesn't make it respond.\n" +
                        "Found a Breaker underneath the terminal. A fully loaded automatic shotgun. Might be useful to pick up.",
                        "", "", "OutpostRoom", "",
                        new List<Item> { dictItems["Breaker"] }));
 
+            dictLocations.Add("Stronghold", new Location("Stronghold",
+                       "Automaton Stronghold",
+                       "-- Log 8 --\n" +
+                       "Found what appears to be an Automaton Stronghold. Multiple of them in visual. Need to scope the area out.\n" +
+                       "Scaled up to get a bit closer. Needed a better view of the stronghold.\n" +
+                       "The base is so massive. There may be something useful there, but how am I gonna get in?\n" +
+                       "Ah shit, there's an automaton squadron nearby. I need to lay low.\n" +
+                       "Shit! Enemy tango might have spotted me. Eyes glowed bright red. Should be fine. I ducked behind a rock for cover.\n" +  
+                       "This place is extremely dangerous. Need to consider if I should enter now.",
+                       "AutomatonTerminal", "", "", ""));
 
+            dictLocations.Add("AutomatonTerminal", new Location("AutomatonTerminal",
+                       "Automaton Terminal",
+                       "-- Log 9 -- \n" +
+                       "There's a lot of them here... Lined up like soldiers. Good thing I'm not seen as a foe.\n" +
+                       "Nearing the end of this hallway... Huh...\n" +
+                       "Looks like an Automaton control center for the ship deployements. There's a terminal in the center.\n" +
+                       "I just need to do this little button combination... and...\n" +
+                       "There. I'm leaving. I'm finally going home.", 
+                       "", "", "", ""));
 
+            dictLocations.Add("Ship", new Location("Ship",
+                       "Destroyer Ship",
+                       "-- Log 10 --\n" +
+                       "Delivered the sample to the higher ups. They seemed really happy about my performance.\n" +
+                       "I also heard the two squadmates that left us were executed for being traitors.\n" +
+                       "Seems right now I'm just assigned to paperwork as a promotion.\n" +
+                       "Might not be so bad after all...\n" +
+                       "Sweet Liberty...",
+                       "", "", "", "",
+                       null, null, // items and itemRequired
+                       "...I am deemed as a traitor.\n" +
+                       "They still asked me for the Terminid sample. The reason why they sent us there in the first place.\n" +
+                       "I wasn't able to retrieve it.\n" +
+                       "YOU HAVE BEEN MARKED AS A TRAITOR. PLEASE STAND STILL IN THE DESIGNATED AREA.\n" +
+                       "LAUNCHING 120MM HE BARRAGE IN 3... 2... 1...\n" +
+                       "YOU DIED"));
 
 
 
@@ -244,14 +286,11 @@ namespace Initial_UI_Design
                 DisplayInventory();
                 DisplayHand();
             }
-
             else
             {
                 DisplayStory("\nYou have no item selected.");
-            }
-            
+            }  
         }
-
 
         private void Play()
         {
@@ -294,8 +333,6 @@ namespace Initial_UI_Design
             }
         }
 
-  
-
         private void DisplayCompass()
         {
             DisableButton(buttonUp);
@@ -307,13 +344,52 @@ namespace Initial_UI_Design
             if (SouthExit != "") { EnableButton(buttonDown); }
             if (WestExit != "") { EnableButton(buttonLeft); }
         }
-
-        private void CheckMusic(string name)
+        
+        private bool CheckInventory(string itemRequired)
         {
-            switch (name)
+            for (int i = 0; i < Player.Inventory.Count; i++)
+            {
+                if (Player.Inventory.ContainsKey(itemRequired))
+                {
+                    return true;
+                }    
+            }
+            return false;
+        }
+
+        private void CheckArea(Location location)
+        {
+            switch(location.Name)
+            {
+                case "AutomatonTerminal": 
+                    // Die if not holding IFF
+                    if (Player.ItemInHand.Name == "Automaton IFF") { Play(); break; }
+                    else { DisplayStory(location.BadEnding); break;}
+                case "LabRoom":
+                    // Die if Stim is not in inventory
+                    if (CheckInventory("Stim") == true) {Play(); break;}
+                    else {DisplayStory(location.BadEnding); break;}
+                case "Ship":
+                    // Die if Sample is not in inventory
+                    if (CheckInventory("Terminid Sample") == true) { Play(); break; }
+                    else { DisplayStory(location.BadEnding); break; }
+                case "Nest": 
+                    // Die if Breaker is in inventory
+                    if (CheckInventory("Breaker") == false) { Play(); break; }
+                    else { DisplayStory(location.BadEnding); break; }
+                case "CrashSite": 
+                    // Die if Breaker is not in inventory
+                    if (CheckInventory("Breaker") == true) { Play(); break; }
+                    else { DisplayStory(location.BadEnding); break; }
+                default: Play(); break;
+            }
+        }
+        private void CheckMusic(string locationName)
+        {
+            switch (locationName)
             {
                 case "OutpostRoom": MXP.Ctlcontrols.stop(); break;
-                case "AutomatonOutpost": PlayMusic("Long Night of Solace.wav"); break;
+                case "Stronghold": PlayMusic("Long Night of Solace.wav"); break;
             }
         }
 
@@ -395,6 +471,9 @@ namespace Initial_UI_Design
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

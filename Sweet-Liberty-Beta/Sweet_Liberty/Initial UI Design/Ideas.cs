@@ -65,9 +65,15 @@ public class Ideas
                 "They also reproduced so fast that they've taken over the underground area of this planet...\n" +
                 "Maybe living like this... Isn't so bad after all...";
 
+        string log12 = "Log 12: Found what appears to be an Automaton Stronghold. Multiple of them in visual. Need to scope the area out.\n" +
+                "Scaled up to get a bit closer. Needed a better view of the stronghold.\n" +
+                "The base is so massive. There may be something useful there, but how am I gonna get in?\n" +
+                "No point in thinking of trivial things. Need to find a way in.\n";
 
 
-     
+
+
+
         Console.ReadLine();
     }
 }

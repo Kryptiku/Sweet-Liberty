@@ -40,6 +40,7 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Label();
+            this.labelHold = new System.Windows.Forms.Label();
             this.buttonUse = new System.Windows.Forms.Button();
             this.buttonDrop = new System.Windows.Forms.Button();
             this.listInventory = new System.Windows.Forms.ComboBox();
@@ -55,7 +56,8 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.labelHold = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -71,7 +73,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.flowLayoutPanel2);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
@@ -83,7 +85,7 @@
             // 
             // flowLayoutPanel2
             // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.flowLayoutPanel2.Controls.Add(this.btn_close);
             this.flowLayoutPanel2.Controls.Add(this.btn_minimize);
             this.flowLayoutPanel2.Controls.Add(this.btn_maximize);
@@ -97,7 +99,7 @@
             // 
             // btn_close
             // 
-            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btn_close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_close.BackgroundImage")));
             this.btn_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_close.FlatAppearance.BorderSize = 0;
@@ -112,7 +114,7 @@
             // 
             // btn_minimize
             // 
-            this.btn_minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.btn_minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btn_minimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_minimize.BackgroundImage")));
             this.btn_minimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_minimize.FlatAppearance.BorderSize = 0;
@@ -127,7 +129,7 @@
             // 
             // btn_maximize
             // 
-            this.btn_maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.btn_maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.btn_maximize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_maximize.BackgroundImage")));
             this.btn_maximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btn_maximize.FlatAppearance.BorderSize = 0;
@@ -142,7 +144,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -152,6 +154,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pictureBox1.Image = global::Initial_UI_Design.Properties.Resources.Screenshot_2024_04_29_003510;
@@ -178,7 +181,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Black;
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.splitContainer1.Panel1.Controls.Add(this.panel3);
             this.splitContainer1.Panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -188,7 +191,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Desktop;
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.splitContainer1.Panel2.Controls.Add(this.button3);
+            this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.labelHold);
             this.splitContainer1.Panel2.Controls.Add(this.buttonUse);
             this.splitContainer1.Panel2.Controls.Add(this.buttonDrop);
@@ -216,7 +221,7 @@
             this.panel3.Location = new System.Drawing.Point(26, 17);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(16, 20, 6, 6);
-            this.panel3.Size = new System.Drawing.Size(1338, 390);
+            this.panel3.Size = new System.Drawing.Size(1319, 390);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -228,30 +233,39 @@
             this.display.Size = new System.Drawing.Size(0, 32);
             this.display.TabIndex = 0;
             // 
+            // labelHold
+            // 
+            this.labelHold.AutoSize = true;
+            this.labelHold.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHold.Location = new System.Drawing.Point(1157, 95);
+            this.labelHold.Name = "labelHold";
+            this.labelHold.Size = new System.Drawing.Size(0, 16);
+            this.labelHold.TabIndex = 15;
+            // 
             // buttonUse
             // 
-            this.buttonUse.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonUse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.buttonUse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUse.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUse.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.buttonUse.Location = new System.Drawing.Point(191, 95);
+            this.buttonUse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+            this.buttonUse.Location = new System.Drawing.Point(174, 95);
             this.buttonUse.Name = "buttonUse";
             this.buttonUse.Size = new System.Drawing.Size(110, 31);
             this.buttonUse.TabIndex = 13;
-            this.buttonUse.Text = "Use";
+            this.buttonUse.Text = "USE";
             this.buttonUse.UseVisualStyleBackColor = false;
             // 
             // buttonDrop
             // 
-            this.buttonDrop.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonDrop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.buttonDrop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDrop.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDrop.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.buttonDrop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
             this.buttonDrop.Location = new System.Drawing.Point(58, 95);
             this.buttonDrop.Name = "buttonDrop";
             this.buttonDrop.Size = new System.Drawing.Size(110, 31);
             this.buttonDrop.TabIndex = 12;
-            this.buttonDrop.Text = "Drop";
+            this.buttonDrop.Text = "DROP";
             this.buttonDrop.UseVisualStyleBackColor = false;
             this.buttonDrop.Click += new System.EventHandler(this.DropClick);
             // 
@@ -260,7 +274,7 @@
             this.listInventory.FormattingEnabled = true;
             this.listInventory.Location = new System.Drawing.Point(58, 65);
             this.listInventory.Name = "listInventory";
-            this.listInventory.Size = new System.Drawing.Size(243, 24);
+            this.listInventory.Size = new System.Drawing.Size(226, 24);
             this.listInventory.TabIndex = 11;
             // 
             // MXP
@@ -378,7 +392,7 @@
             this.buttonUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonUp.FlatAppearance.BorderSize = 0;
             this.buttonUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUp.ForeColor = System.Drawing.Color.Gold;
+            this.buttonUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(127)))));
             this.buttonUp.Location = new System.Drawing.Point(532, 42);
             this.buttonUp.Name = "buttonUp";
             this.buttonUp.Size = new System.Drawing.Size(64, 84);
@@ -411,14 +425,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
-            // labelHold
+            // button2
             // 
-            this.labelHold.AutoSize = true;
-            this.labelHold.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHold.Location = new System.Drawing.Point(1157, 95);
-            this.labelHold.Name = "labelHold";
-            this.labelHold.Size = new System.Drawing.Size(0, 16);
-            this.labelHold.TabIndex = 15;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+            this.button2.Location = new System.Drawing.Point(58, 132);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 31);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "EXAMINE";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+            this.button3.Location = new System.Drawing.Point(174, 132);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(110, 31);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "HOLD";
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -481,6 +513,8 @@
         private System.Windows.Forms.Label nameHold;
         private System.Windows.Forms.Button buttonHold;
         private System.Windows.Forms.Label labelHold;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

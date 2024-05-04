@@ -16,6 +16,8 @@ public class Location
     public Dictionary<string, Item> Items { get; set; } = new Dictionary<string, Item>();
     public Item ItemRequired { get; set; }
 
+    public string BadEnding { get; set; }
+
     public Location(string name,
             string displayName,
             string description,
@@ -24,7 +26,8 @@ public class Location
             string locationToSouth = "",
             string locationToWest = "",
             List<Item> listItem = null,
-            Item itemRequired = null)
+            Item itemRequired = null,
+            string badEnding = "")
     {
         Name = name;
         DisplayName = displayName;
@@ -36,6 +39,7 @@ public class Location
         if (listItem != null)
             CreateDictionary(listItem);
         ItemRequired = itemRequired;
+        BadEnding = badEnding;
     }
 
     private void CreateDictionary(List<Item> itemList)
