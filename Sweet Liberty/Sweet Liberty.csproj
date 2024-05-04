@@ -118,6 +118,15 @@
     <Content Include="Music\Automaton Fight.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Music\Extraction.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound Effects\Explosion.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound Effects\Priming.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Sweet Liberty.ico" />
     <Content Include="Music\Long Night of Solace.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

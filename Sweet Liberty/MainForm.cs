@@ -127,10 +127,10 @@ namespace SweetLiberty
         }
 
         private void MainFormLoad(object sender, EventArgs e){CreateGame();}
-        private void ButtonUpClick(object sender, EventArgs e) { Sound.PlaySoundEffect("upSound.wav"); Go("north"); }
-        private void ButtonRightClick(object sender, EventArgs e) { Sound.PlaySoundEffect("rightSound.wav"); Go("east"); }
-        private void ButtonDownClick(object sender, EventArgs e) { Sound.PlaySoundEffect("downSound.wav"); Go("south"); }
-        private void ButtonLeftClick(object sender, EventArgs e) { Sound.PlaySoundEffect("leftSound.wav"); Go("west"); }
+        private void ButtonUpClick(object sender, EventArgs e) { Sound.PlaySoundEffect("Sound Effects/upSound.wav"); Go("north"); }
+        private void ButtonRightClick(object sender, EventArgs e) { Sound.PlaySoundEffect("Sound Effects/rightSound.wav"); Go("east"); }
+        private void ButtonDownClick(object sender, EventArgs e) { Sound.PlaySoundEffect("Sound Effects/downSound.wav"); Go("south"); }
+        private void ButtonLeftClick(object sender, EventArgs e) { Sound.PlaySoundEffect("Sound Effects/leftSound.wav"); Go("west"); }
         private void ButtonPickUpClick(object sender, EventArgs e) { TakeItem(); }
         private void ButtonHoldClick(object sender, EventArgs e) { HoldItem(); }
 
@@ -152,7 +152,7 @@ namespace SweetLiberty
         {
             display.Font = FsSinclair;
 
-            PlayMusic("Music/Long Night of Solace.mp3");
+            PlayMusic("Music/Extraction.mp3");
             Sound.PlaySoundEffect("Sound Effects/terminal.wav");
 
             // Items
@@ -165,6 +165,35 @@ namespace SweetLiberty
             dictItems.Add("Log 3AD", new Log("Log 3AD", "A log left behind by some scientists.",  "Log 3AD. The Terminid population is decreasing, but we don't know why this is happening. We need to run more tests. This cannot happen."));
 
             // Locations 
+            dictLocations.Add("Prologue", new Location("Prologue",
+                        "Sector 1-PL",
+                        "\"Let's move it! We have no time left!\"\n" +
+                        "I told you it's a bad idea to aggravate them!\n" +
+                        "\"Out of my way, Three! You're just pulling us down!\"\n" +
+                        "\"How about you two just focus on the mission instead of goofing around like LiberTeas!?\"\n" +
+                        "\"You know what, One? You're right. I'm calling in the Extraction Pelican!\"\n" +
+                        "What about the samples!?\n" +
+                        "\"Forget the samples! We need to survive!\"\n" +
+                        "Alright, just keep moving forward!",
+                        "Prologue2", "", "", ""));  // N E S W
+
+            dictLocations.Add("Prologue2", new Location("Prologue2",
+                        "Sector 2-AV",
+                        "\"I'm calling in a Napalm Strike!\"\n" +
+                        "Why did you throw it here!? Are you crazy!?\n" +
+                        "\"They're rushing us real hard! We can't take the pressure!\"\n" +
+                        "\"We heard you, Alpha. Extraction inbound in 10 seconds.\"\n" +
+                        "\"You idiot, Four! You're going to kill us all!\"\n" +
+                        "\"Eagle-One coming in hot to deliver the bomb.\"\n" +
+                        "\"Get out of the way!\"\n",
+                        "Prologue3", "Prologue3", "Prologue3", "Prologue3"));  // N E S W
+
+            dictLocations.Add("Prologue3", new Location("Prologue3",
+                        "Sector 2-AW",
+                        ".\n.\n.\n.\n",
+                        "Prologue4", "", "", ""));  // N E S W
+
+
             dictLocations.Add("StartingArea", new Location("StartingArea",
                         "The Cold Wasteland",
                         "-- Log 1 --\n" +
@@ -308,7 +337,7 @@ namespace SweetLiberty
             Player.Name = "Alpha-Three";
             Player.Health = 100;
             Player.Strength = 50;
-            currentLocation = dictLocations["StartingArea"];
+            currentLocation = dictLocations["Prologue"];
 
             Play();
             
@@ -450,9 +479,12 @@ namespace SweetLiberty
         {
             switch (locationName)
             {
+                case "Prologue2": Sound.PlaySoundEffect("Sound Effects/Priming.wav"); break;
+                case "Prologue3": MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/Explosion.wav"); break;
                 case "OutpostRoom": PlayMusic("Music/The Jail.mp3"); break;
                 case "Stronghold": PlayMusic("Music/Server Queue.mp3"); break;
-                
+                case "Ship": PlayMusic("Music/Extraction.mp3"); break;
+                default:break;
             }
         }
 
