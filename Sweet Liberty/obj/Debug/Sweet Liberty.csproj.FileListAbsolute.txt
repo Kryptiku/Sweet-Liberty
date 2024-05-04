@@ -50,3 +50,29 @@ C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Swe
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.CoreCompileInputs.cache
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.exe
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet-Liberty-Beta\Sweet_Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.pdb
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Automaton Fight.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Long Night of Solace.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\downSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Terminid Fight.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\The Jail.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Server Queue.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\leftSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\rightSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\upSound.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\terminal.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Resources\FSSinclairTrial-Bold.otf
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sweet Liberty.exe.config
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sweet Liberty.exe
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sweet Liberty.pdb
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Interop.WMPLib.dll
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.AssemblyReference.cache
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Interop.WMPLib.dll
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.ResolveComReference.cache
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\SweetLiberty.MainForm.resources
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\SweetLiberty.Properties.Resources.resources
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.GenerateResource.cache
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.CoreCompileInputs.cache
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.exe
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\obj\Debug\Sweet Liberty.pdb
