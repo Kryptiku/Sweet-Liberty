@@ -40,6 +40,8 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.labelHold = new System.Windows.Forms.Label();
             this.buttonUse = new System.Windows.Forms.Button();
             this.buttonDrop = new System.Windows.Forms.Button();
@@ -56,8 +58,6 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -230,23 +230,50 @@
             this.display.AutoSize = true;
             this.display.Location = new System.Drawing.Point(16, 23);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(0, 32);
+            this.display.Size = new System.Drawing.Size(0, 26);
             this.display.TabIndex = 0;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+            this.button3.Location = new System.Drawing.Point(174, 132);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(110, 31);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "HOLD";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+            this.button2.Location = new System.Drawing.Point(58, 132);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 31);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "EXAMINE";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // labelHold
             // 
             this.labelHold.AutoSize = true;
-            this.labelHold.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHold.Location = new System.Drawing.Point(1157, 95);
             this.labelHold.Name = "labelHold";
-            this.labelHold.Size = new System.Drawing.Size(0, 16);
+            this.labelHold.Size = new System.Drawing.Size(0, 13);
             this.labelHold.TabIndex = 15;
             // 
             // buttonUse
             // 
             this.buttonUse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.buttonUse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUse.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
             this.buttonUse.Location = new System.Drawing.Point(174, 95);
             this.buttonUse.Name = "buttonUse";
@@ -259,7 +286,7 @@
             // 
             this.buttonDrop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.buttonDrop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDrop.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDrop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
             this.buttonDrop.Location = new System.Drawing.Point(58, 95);
             this.buttonDrop.Name = "buttonDrop";
@@ -274,7 +301,7 @@
             this.listInventory.FormattingEnabled = true;
             this.listInventory.Location = new System.Drawing.Point(58, 65);
             this.listInventory.Name = "listInventory";
-            this.listInventory.Size = new System.Drawing.Size(226, 24);
+            this.listInventory.Size = new System.Drawing.Size(226, 21);
             this.listInventory.TabIndex = 11;
             // 
             // MXP
@@ -290,10 +317,10 @@
             // nameHold
             // 
             this.nameHold.AutoSize = true;
-            this.nameHold.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameHold.Location = new System.Drawing.Point(1163, 68);
             this.nameHold.Name = "nameHold";
-            this.nameHold.Size = new System.Drawing.Size(35, 16);
+            this.nameHold.Size = new System.Drawing.Size(33, 13);
             this.nameHold.TabIndex = 9;
             this.nameHold.Text = "Hold";
             this.nameHold.Click += new System.EventHandler(this.pickup_lbl_Click);
@@ -301,10 +328,10 @@
             // namePickup
             // 
             this.namePickup.AutoSize = true;
-            this.namePickup.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namePickup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePickup.Location = new System.Drawing.Point(1249, 68);
             this.namePickup.Name = "namePickup";
-            this.namePickup.Size = new System.Drawing.Size(49, 16);
+            this.namePickup.Size = new System.Drawing.Size(46, 13);
             this.namePickup.TabIndex = 9;
             this.namePickup.Text = "Pickup";
             this.namePickup.Click += new System.EventHandler(this.pickup_lbl_Click);
@@ -353,7 +380,7 @@
             this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonRight.FlatAppearance.BorderSize = 0;
             this.buttonRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRight.Location = new System.Drawing.Point(760, 51);
+            this.buttonRight.Location = new System.Drawing.Point(645, 95);
             this.buttonRight.Name = "buttonRight";
             this.buttonRight.Size = new System.Drawing.Size(78, 67);
             this.buttonRight.TabIndex = 3;
@@ -366,7 +393,7 @@
             this.buttonLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonLeft.FlatAppearance.BorderSize = 0;
             this.buttonLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLeft.Location = new System.Drawing.Point(673, 51);
+            this.buttonLeft.Location = new System.Drawing.Point(515, 95);
             this.buttonLeft.Name = "buttonLeft";
             this.buttonLeft.Size = new System.Drawing.Size(81, 64);
             this.buttonLeft.TabIndex = 2;
@@ -379,7 +406,7 @@
             this.buttonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonDown.FlatAppearance.BorderSize = 0;
             this.buttonDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDown.Location = new System.Drawing.Point(602, 51);
+            this.buttonDown.Location = new System.Drawing.Point(587, 95);
             this.buttonDown.Name = "buttonDown";
             this.buttonDown.Size = new System.Drawing.Size(65, 69);
             this.buttonDown.TabIndex = 1;
@@ -393,7 +420,7 @@
             this.buttonUp.FlatAppearance.BorderSize = 0;
             this.buttonUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(127)))));
-            this.buttonUp.Location = new System.Drawing.Point(532, 42);
+            this.buttonUp.Location = new System.Drawing.Point(588, 24);
             this.buttonUp.Name = "buttonUp";
             this.buttonUp.Size = new System.Drawing.Size(64, 84);
             this.buttonUp.TabIndex = 0;
@@ -424,33 +451,6 @@
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
-            this.button2.Location = new System.Drawing.Point(58, 132);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 31);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "EXAMINE";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("FS Sinclair Trial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
-            this.button3.Location = new System.Drawing.Point(174, 132);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 31);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "HOLD";
-            this.button3.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
