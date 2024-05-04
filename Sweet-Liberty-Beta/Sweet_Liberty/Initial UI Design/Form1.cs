@@ -388,7 +388,7 @@ namespace Initial_UI_Design
         {
             for (int i = 0; i < Player.Inventory.Count; i++)
             {
-                if (Player.Inventory.ContainsKey(itemRequired))
+                if (Player.Inventory.ContainsKey(itemRequired) || (Player.ItemInHand != null || Player.ItemInHand.Name == itemRequired))
                 {
                     return true;
                 }    
