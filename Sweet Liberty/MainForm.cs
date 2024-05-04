@@ -46,7 +46,7 @@ namespace SweetLiberty
         {
             InitializeComponent();
             SetCustomFont();
-            timer.Interval = 1; // Interval in milliseconds
+            timer.Interval = 40; // Interval in milliseconds
             timer.Tick += TimerTick;
         }
 
@@ -180,19 +180,18 @@ namespace SweetLiberty
             dictLocations.Add("Prologue2", new Location("Prologue2",
                         "Sector 2-AV",
                         "\"I'm calling in a Napalm Strike!\"\n" +
-                        "Why did you throw it here!? Are you crazy!?\n" +
+                        "Why did you throw it here, Four!? Are you crazy!?\n" +
                         "\"They're rushing us real hard! We can't take the pressure!\"\n" +
                         "\"We heard you, Alpha. Extraction inbound in 10 seconds.\"\n" +
                         "\"You idiot, Four! You're going to kill us all!\"\n" +
                         "\"Eagle-One coming in hot to deliver the bomb.\"\n" +
-                        "\"Get out of the way!\"\n",
+                        "\"Get out of the way! Two! No!\"\n",
                         "Prologue3", "Prologue3", "Prologue3", "Prologue3"));  // N E S W
 
             dictLocations.Add("Prologue3", new Location("Prologue3",
                         "Sector 2-AW",
-                        ".\n.\n.\n.\n",
-                        "Prologue4", "", "", ""));  // N E S W
-
+                        "...\n....\n.....\n......\n",
+                        "StartingArea", "", "", ""));  // N E S W
 
             dictLocations.Add("StartingArea", new Location("StartingArea",
                         "The Cold Wasteland",
@@ -201,7 +200,7 @@ namespace SweetLiberty
                         ".\n.\n.\nOr what's left of it.\n" +
                         "Two of my squadmates abandoned me on the Lacaille Sector, in Lesath...\n" +
                         "And my other squadmate got caught in an Eagle Napalm Strike during extraction... He didn't make it.\n" +
-                        "It's really cold. Blizzards everywhere. Pitch dark. Can't see shit.\n" +
+                        "I just woke up. It's really cold. Blizzards everywhere. Pitch dark. Can't see shit.\n" +
                         "Automatons everywhere. Gotta hide. They must be searching for me.\n" +
                         "Saw a Stim. Probably a good idea to pick it up.",
                         "Outpost", "", "", "",  // N E S W
@@ -481,6 +480,7 @@ namespace SweetLiberty
             {
                 case "Prologue2": Sound.PlaySoundEffect("Sound Effects/Priming.wav"); break;
                 case "Prologue3": MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/Explosion.wav"); break;
+                case "StartingArea": PlayMusic("Music/Long Night of Solace.mp3"); break;
                 case "OutpostRoom": PlayMusic("Music/The Jail.mp3"); break;
                 case "Stronghold": PlayMusic("Music/Server Queue.mp3"); break;
                 case "Ship": PlayMusic("Music/Extraction.mp3"); break;
@@ -492,6 +492,7 @@ namespace SweetLiberty
         {
             MXP.URL = filepath;
             MXP.settings.playCount = 9999;
+            MXP.settings.volume = 35;
             MXP.Ctlcontrols.play();
             MXP.Visible = false;
         }
