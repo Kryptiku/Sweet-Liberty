@@ -221,8 +221,14 @@ namespace Initial_UI_Design
                        "Nearing the end of this hallway... Huh...\n" +
                        "Looks like an Automaton control center for the ship deployements. There's a terminal in the center.\n" +
                        "I just need to do this little button combination... and...\n" +
-                       "There. I'm leaving. I'm finally going home.", 
-                       "", "", "", ""));
+                       "There. I'm leaving. I'm finally going home.",
+                       "", "", "", "",
+                       null, null,
+                       "Decided to approach the terminal. It's a big risk, but I'll have to take it.\n" +
+                       "They spotted me! I'm taking fire! I might not be able to hold on!\n" +
+                       "Sweet Liberty! A grenade!\n" +
+                       "UNEXPECTED LOG TERMINATION.\n" +
+                       "FINISHING TERMINATION IN 3... 2... 1..."));
 
             dictLocations.Add("Ship", new Location("Ship",
                        "Destroyer Ship",
@@ -239,9 +245,8 @@ namespace Initial_UI_Design
                        "I wasn't able to retrieve it.\n" +
                        "YOU HAVE BEEN MARKED AS A TRAITOR. PLEASE STAND STILL IN THE DESIGNATED AREA.\n" +
                        "LAUNCHING 120MM HE BARRAGE IN 3... 2... 1...\n" +
-                       "YOU DIED"));
-
-
+                       "UNEXPECTED LOG TERMINATION.\n" +
+                       "FINISHING TERMINATION IN 3... 2... 1..."));
 
             Player.Name = "Alpha-Three";
             Player.Health = 100;
@@ -361,26 +366,26 @@ namespace Initial_UI_Design
         {
             switch(location.Name)
             {
-                case "AutomatonTerminal": 
+                case "AutomatonTerminal":
                     // Die if not holding IFF
-                    if (Player.ItemInHand.Name == "Automaton IFF") { Play(); break; }
-                    else { DisplayStory(location.BadEnding); break;}
+                    if (Player.ItemInHand != null && Player.ItemInHand.Name == "Automaton IFF") { Play(); break; }
+                    else { DisplayStory(location.BadEnding, true); break;}
                 case "LabRoom":
                     // Die if Stim is not in inventory
                     if (CheckInventory("Stim") == true) {Play(); break;}
-                    else {DisplayStory(location.BadEnding); break;}
+                    else {DisplayStory(location.BadEnding, true); break;}
                 case "Ship":
                     // Die if Sample is not in inventory
                     if (CheckInventory("Terminid Sample") == true) { Play(); break; }
-                    else { DisplayStory(location.BadEnding); break; }
+                    else { DisplayStory(location.BadEnding, true); break; }
                 case "Nest": 
                     // Die if Breaker is in inventory
                     if (CheckInventory("Breaker") == false) { Play(); break; }
-                    else { DisplayStory(location.BadEnding); break; }
+                    else { DisplayStory(location.BadEnding, true); break; }
                 case "CrashSite": 
                     // Die if Breaker is not in inventory
                     if (CheckInventory("Breaker") == true) { Play(); break; }
-                    else { DisplayStory(location.BadEnding); break; }
+                    else { DisplayStory(location.BadEnding, true); break; }
                 default: Play(); break;
             }
         }
