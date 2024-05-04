@@ -15,7 +15,7 @@ public class Location
     public string LocationToWest { get; set; }
     public Dictionary<string, Item> Items { get; set; } = new Dictionary<string, Item>();
     public Item ItemRequired { get; set; }
-
+    public bool Entered { get; set; }
     public string BadEnding { get; set; }
 
     public Location(string name,

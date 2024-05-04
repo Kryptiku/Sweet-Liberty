@@ -238,7 +238,7 @@ namespace Initial_UI_Design
                        "Seems right now I'm just assigned to paperwork as a promotion.\n" +
                        "Might not be so bad after all...\n" +
                        "Sweet Liberty...",
-                       "", "", "", "",
+                       "", "", "", "", 
                        null, null, // items and itemRequired
                        "...I am deemed as a traitor.\n" +
                        "They still asked me for the Terminid sample. The reason why they sent us there in the first place.\n" +
@@ -372,7 +372,7 @@ namespace Initial_UI_Design
                     else { DisplayStory(location.BadEnding, true); break;}
                 case "LabRoom":
                     // Die if Stim is not in inventory
-                    if (CheckInventory("Stim") == true) {Play(); break;}
+                    if (CheckInventory("Stim") == true) { location.Entered = true; Play(); break;}
                     else {DisplayStory(location.BadEnding, true); break;}
                 case "Ship":
                     // Die if Sample is not in inventory
@@ -380,7 +380,7 @@ namespace Initial_UI_Design
                     else { DisplayStory(location.BadEnding, true); break; }
                 case "Nest": 
                     // Die if Breaker is in inventory
-                    if (CheckInventory("Breaker") == false) { Play(); break; }
+                    if (CheckInventory("Breaker") == false) { location.Entered = true; Play(); break; }
                     else { DisplayStory(location.BadEnding, true); break; }
                 case "CrashSite": 
                     // Die if Breaker is not in inventory
