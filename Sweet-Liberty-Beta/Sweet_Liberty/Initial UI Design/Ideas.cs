@@ -48,22 +48,22 @@ public class Ideas
                 "Would be helpful to pick it up."; //done
 
         string log7 = "Log 7. I found this small opening... Looks like it was burrowed through.\n" +
-                "I'm not entirely sure what's inside... Should I check it out?";
+                "I'm not entirely sure what's inside... Should I check it out?"; //done
 
         string log8A = "Log 8. I crawled through this opening... And I hear a lot of slitehring sounds...\n" +
                 "Wait... is that a...\n" +
                 "It's a Bile Spewer! Agghhh!\n" +
-                "Unexpected log termination.";
+                "Unexpected log termination."; //done
 
         string log8B = "Log 8. I crawled through this opening... Looks like it was burrowed through.\n" +
                 "Wait... is that a...\n" +
                 "It's a Bile Spewer... But it doesn't seem to be attacking.\n" +
-                "Maybe it doesn't mean any harm?";
+                "Maybe it doesn't mean any harm?"; //done
 
         string log9 = "Log 29. It's almost been a month, but I got used to life here in Lesath.\n" +
                 "These Terminids that I found seem to see me as their leader...\n" +
                 "They also reproduced so fast that they've taken over the underground area of this planet...\n" +
-                "Maybe living like this... Isn't so bad after all...";
+                "Maybe living like this... Isn't so bad after all..."; //done
 
         string log12 = "Log 12: Found what appears to be an Automaton Stronghold. Multiple of them in visual. Need to scope the area out.\n" +
                 "Scaled up to get a bit closer. Needed a better view of the stronghold.\n" +

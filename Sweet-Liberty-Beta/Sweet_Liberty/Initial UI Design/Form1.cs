@@ -263,7 +263,7 @@ namespace Initial_UI_Design
                        "Dug out some snow. Found what seems to be an Automaton IFF.\n" +
                        "Could help me get through some Automaton patrols. They'll see me and they'll think I'm a friendly." +
                        "Would be helpful to pick it up.",
-                       "", "", "CrashSite", "",
+                       "", "", "CrashSite", "Burrow",
                        new List<Item> { dictItems["Automaton IFF"] },
                        null,
                        "-- Log 6 --\n" +
@@ -277,7 +277,30 @@ namespace Initial_UI_Design
                        "-- Log 7 --\n" +
                        "I found this small opening... Looks like it was burrowed through.\n" +
                        "I'm not entirely sure what's inside... Should I check it out?",
-                       "", "", "", ""));
+                       "Nest", "", "", ""));
+
+            dictLocations.Add("Nest", new Location("Nest",
+                       "Nest",
+                       "-- Log 8 --\n" +
+                       "Log 8. I crawled through this opening... Looks like it was burrowed through.\n" +
+                       "Wait... is that a...\n" +
+                       "It's a Bile Spewer... But it doesn't seem to be attacking.\n" +
+                       "Maybe it doesn't mean any harm?",
+                       "TimeSkip", "", "", "",
+                       null, null,
+                       "-- Log 8 --\n" +
+                       "I crawled through this opening... And I hear a lot of slitehring sounds...\n" +
+                       "Wait... is that a...\n" +
+                       "It's a Bile Spewer! Agghhh!\n" +
+                       "Unexpected log termination."));
+
+            dictLocations.Add("TimeSkip", new Location("TimeSkip",
+                       "TimeSkip",
+                       "-- Log 29 --\n" +
+                       "It's almost been a month, but I got used to life here in Lesath.\n" +
+                       "These Terminids that I found seem to see me as their leader...\n" +
+                       "They also reproduced so fast that they've taken over the underground area of this planet...\n" +
+                       "Maybe living like this... Isn't so bad after all..."));
 
        
 
