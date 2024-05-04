@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Initial_UI_Design.Properties {
+namespace SweetLiberty.Properties {
     using System;
     
     
