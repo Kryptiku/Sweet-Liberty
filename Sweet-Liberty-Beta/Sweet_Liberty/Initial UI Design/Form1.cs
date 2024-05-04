@@ -254,7 +254,7 @@ namespace Initial_UI_Design
                        "Found an escape pod.It crashed deep into the snow.\n" +
                        "An automaton's guarding it. Looks like a suicide bomber.\n" +
                        "Might be advisable to hold a weapon before going in.\n",
-                       "EscapePod", "", "", ""));
+                       "EscapePod", "StrongHold", "", ""));
 
             dictLocations.Add("EscapePod", new Location("EscapePod",
                        "Escape Pod",
@@ -277,7 +277,7 @@ namespace Initial_UI_Design
                        "-- Log 7 --\n" +
                        "I found this small opening... Looks like it was burrowed through.\n" +
                        "I'm not entirely sure what's inside... Should I check it out?",
-                       "Nest", "", "", ""));
+                       "Nest", "EscapePod", "", ""));
 
             dictLocations.Add("Nest", new Location("Nest",
                        "Nest",
@@ -286,7 +286,7 @@ namespace Initial_UI_Design
                        "Wait... is that a...\n" +
                        "It's a Bile Spewer... But it doesn't seem to be attacking.\n" +
                        "Maybe it doesn't mean any harm?",
-                       "TimeSkip", "", "", "",
+                       "TimeSkip", "", "Burrow", "",
                        null, null,
                        "-- Log 8 --\n" +
                        "I crawled through this opening... And I hear a lot of slitehring sounds...\n" +
