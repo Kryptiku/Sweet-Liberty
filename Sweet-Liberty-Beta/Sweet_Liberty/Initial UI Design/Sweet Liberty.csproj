@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{05771659-3DF3-4F37-97E3-77CF6342ADFD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Initial_UI_Design</RootNamespace>
-    <AssemblyName>Initial UI Design</AssemblyName>
+    <RootNamespace>SweetLiberty</RootNamespace>
+    <AssemblyName>Sweet Liberty</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sweet Liberty.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -115,6 +118,7 @@
     <Content Include="Automaton Fight.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Sweet Liberty.ico" />
     <Content Include="Long Night of Solace.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

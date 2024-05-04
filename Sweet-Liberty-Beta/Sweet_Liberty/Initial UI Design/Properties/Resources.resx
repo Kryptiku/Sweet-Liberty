@@ -190,4 +190,7 @@
   <data name="FSSinclairTrial_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FSSinclairTrial-Bold.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Sweet_Liberty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sweet Liberty.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
