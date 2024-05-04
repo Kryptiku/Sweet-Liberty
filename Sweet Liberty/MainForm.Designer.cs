@@ -46,6 +46,7 @@
             this.buttonUse = new System.Windows.Forms.Button();
             this.buttonDrop = new System.Windows.Forms.Button();
             this.listInventory = new System.Windows.Forms.ComboBox();
+            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
             this.nameHold = new System.Windows.Forms.Label();
             this.namePickup = new System.Windows.Forms.Label();
             this.buttonHold = new System.Windows.Forms.Button();
@@ -57,7 +58,6 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -67,8 +67,8 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MXP)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -304,6 +304,16 @@
             this.listInventory.Size = new System.Drawing.Size(226, 21);
             this.listInventory.TabIndex = 11;
             // 
+            // MXP
+            // 
+            this.MXP.Enabled = true;
+            this.MXP.Location = new System.Drawing.Point(879, 119);
+            this.MXP.Name = "MXP";
+            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
+            this.MXP.Size = new System.Drawing.Size(411, 56);
+            this.MXP.TabIndex = 10;
+            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
+            // 
             // nameHold
             // 
             this.nameHold.AutoSize = true;
@@ -367,8 +377,8 @@
             // buttonRight
             // 
             this.buttonRight.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonRight.BackgroundImage = global::SweetLiberty.Properties.Resources.arrowRight;
-            this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonRight.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonRightDefault;
+            this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonRight.FlatAppearance.BorderSize = 0;
             this.buttonRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRight.Location = new System.Drawing.Point(652, 88);
@@ -377,11 +387,13 @@
             this.buttonRight.TabIndex = 3;
             this.buttonRight.UseVisualStyleBackColor = true;
             this.buttonRight.Click += new System.EventHandler(this.ButtonRightClick);
+            this.buttonRight.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonRight_MouseDown);
+            this.buttonRight.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonRight_MouseUp);
             // 
             // buttonLeft
             // 
-            this.buttonLeft.BackgroundImage = global::SweetLiberty.Properties.Resources.arrowLeft;
-            this.buttonLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonLeft.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonLeftDefault;
+            this.buttonLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonLeft.FlatAppearance.BorderSize = 0;
             this.buttonLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLeft.Location = new System.Drawing.Point(502, 88);
@@ -390,11 +402,13 @@
             this.buttonLeft.TabIndex = 2;
             this.buttonLeft.UseVisualStyleBackColor = true;
             this.buttonLeft.Click += new System.EventHandler(this.ButtonLeftClick);
+            this.buttonLeft.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonLeft_MouseDown);
+            this.buttonLeft.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonLeft_MouseUp);
             // 
             // buttonDown
             // 
-            this.buttonDown.BackgroundImage = global::SweetLiberty.Properties.Resources.arrowDown;
-            this.buttonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonDown.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonDownDefault;
+            this.buttonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonDown.FlatAppearance.BorderSize = 0;
             this.buttonDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDown.Location = new System.Drawing.Point(577, 88);
@@ -403,11 +417,13 @@
             this.buttonDown.TabIndex = 1;
             this.buttonDown.UseVisualStyleBackColor = true;
             this.buttonDown.Click += new System.EventHandler(this.ButtonDownClick);
+            this.buttonDown.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonDown_MouseDown);
+            this.buttonDown.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonDown_MouseUp);
             // 
             // buttonUp
             // 
-            this.buttonUp.BackgroundImage = global::SweetLiberty.Properties.Resources.arrowUp;
-            this.buttonUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonUp.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonUpDefault;
+            this.buttonUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonUp.FlatAppearance.BorderSize = 0;
             this.buttonUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(127)))));
@@ -418,6 +434,7 @@
             this.buttonUp.UseVisualStyleBackColor = true;
             this.buttonUp.Click += new System.EventHandler(this.ButtonUpClick);
             this.buttonUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonUp_MouseDown);
+            this.buttonUp.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonUp_MouseUp);
             // 
             // panel2
             // 
@@ -443,16 +460,6 @@
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
-            // 
-            // MXP
-            // 
-            this.MXP.Enabled = true;
-            this.MXP.Location = new System.Drawing.Point(879, 119);
-            this.MXP.Name = "MXP";
-            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
-            this.MXP.Size = new System.Drawing.Size(411, 56);
-            this.MXP.TabIndex = 10;
-            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
             // MainForm
             // 
@@ -481,8 +488,8 @@
             this.splitContainer1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MXP)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

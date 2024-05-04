@@ -118,38 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="arrowUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\arrowUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maximize_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\maximize_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="arrow_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\arrow_up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pickup_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\pickup_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FSSinclairTrial_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FSSinclairTrial-Bold.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="arrowDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\arrowDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cmd_maximize_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\cmd_maximize_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Screenshot 2024-04-29 003510" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Screenshot 2024-04-29 003510.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bottom_navigation_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\bottom_navigation_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="right_navigation_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\right_navigation_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sweet_Liberty" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Sweet Liberty.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="left_navigation_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\left_navigation_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arrowLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\arrowLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cmd_maximize_btn1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\cmd_maximize_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,14 +136,38 @@
   <data name="top_navigation_button2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\top_navigation_button2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimize_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\minimize_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pickup_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\pickup_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hold_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\hold_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrowRightPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrowRightPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrowLeftPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrowLeftPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cmd_maximize_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\cmd_maximize_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrowDownPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrowDownPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sweet_Liberty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sweet Liberty.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maximize_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\maximize_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cmd_close_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\cmd_close_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="69-696289_filter-sticker-vhs-nany-transparent-glitch-texture-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\69-696289_filter-sticker-vhs-nany-transparent-glitch-texture-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FSSinclairTrial_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FSSinclairTrial-Bold.otf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cmd_minimize_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\cmd_minimize_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrowRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\arrowRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,37 +175,58 @@
   <data name="home_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\home_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="inventory_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\inventory_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrowDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\arrowDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="close_buttonb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\close_buttonb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrowUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\arrowUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left_navigation_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\left_navigation_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bottom_navigation_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\bottom_navigation_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hold_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\hold_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screenshot 2024-04-29 003510" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot 2024-04-29 003510.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrowLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\arrowLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimize_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\minimize_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bottom_navigation_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\bottom_navigation_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cmd_minimize_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\cmd_minimize_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="inventory_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\inventory_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrowDownPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrowDownPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrowLeftPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrowLeftPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrowRightPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrowRightPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="69-696289_filter-sticker-vhs-nany-transparent-glitch-texture-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\69-696289_filter-sticker-vhs-nany-transparent-glitch-texture-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrowUpPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrowUpPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonDownDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonDownDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonDownPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonDownPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonLeftDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonLeftDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonLeftPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonLeftPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonRightDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonRightDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonRightPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonRightPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonUpDefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonUpDefault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonUpPress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonUpPress.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

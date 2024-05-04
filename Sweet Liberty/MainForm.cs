@@ -574,12 +574,42 @@ namespace SweetLiberty
 
         private void buttonUp_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonUp.Image = Properties.Resources.arrowUpPress;
+            buttonUp.Image = Properties.Resources.buttonUpPress;
         }
 
         private void buttonUp_MouseUp(object sender, MouseEventArgs e)
         {
-            buttonUp.Image = Properties.Resources.arrowUp;
+            buttonUp.Image = Properties.Resources.buttonUpDefault;
+        }
+
+        private void buttonDown_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonDown.Image = Properties.Resources.buttonDownPress;
+        }
+
+        private void buttonDown_MouseUp(object sender, MouseEventArgs e)
+        {
+            buttonDown.Image = Properties.Resources.buttonDownDefault;
+        }
+
+        private void buttonLeft_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonLeft.Image = Properties.Resources.buttonLeftPress;
+        }
+
+        private void buttonLeft_MouseUp(object sender, MouseEventArgs e)
+        {
+            buttonLeft.Image = Properties.Resources.buttonLeftDefault;
+        }
+
+        private void buttonRight_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonRight.Image = Properties.Resources.buttonRightPress;
+        }
+
+        private void buttonRight_MouseUp(object sender, MouseEventArgs e)
+        {
+            buttonRight.Image = Properties.Resources.buttonRightDefault;
         }
     }
 }

@@ -129,6 +129,14 @@
     <None Include="Resources\arrowLeftPress.png" />
     <None Include="Resources\arrowRightPress.png" />
     <None Include="Resources\arrowUpPress.png" />
+    <None Include="Resources\buttonDownDefault.png" />
+    <None Include="Resources\buttonDownPress.png" />
+    <None Include="Resources\buttonLeftDefault.png" />
+    <None Include="Resources\buttonLeftPress.png" />
+    <None Include="Resources\buttonRightDefault.png" />
+    <None Include="Resources\buttonRightPress.png" />
+    <None Include="Resources\buttonUpDefault.png" />
+    <None Include="Resources\buttonUpPress.png" />
     <Content Include="Sound Effects\Explosion.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
