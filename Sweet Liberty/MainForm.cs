@@ -707,5 +707,75 @@ namespace SweetLiberty
         {
             buttonRight.BackgroundImage = Properties.Resources.buttonRightDefault;
         }
+
+        private void buttonUse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDrop_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonDrop.BackgroundImage = Properties.Resources.buttonDropPress;
+        }
+
+        private void buttonDrop_MouseUp(object sender, MouseEventArgs e)
+        {
+            buttonDrop.BackgroundImage = Properties.Resources.buttonDropDefault;    
+        }
+
+        private void buttonDropClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDrop_MouseDown_1(object sender, MouseEventArgs e)
+        {
+            buttonDrop.BackgroundImage = Properties.Resources.buttonDropPress;
+        }
+
+        private void buttonDrop_MouseUp_1(object sender, MouseEventArgs e)
+        {
+            buttonDrop.BackgroundImage = Properties.Resources.buttonDropDefault;
+        }
+
+        private void buttonExamine_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonExamine.BackgroundImage = Properties.Resources.buttonExaminePress;
+        }
+
+        private void buttonExamine_MouseUp(object sender, MouseEventArgs e)
+        {
+            buttonExamine.BackgroundImage = Properties.Resources.buttonExamineDefault;
+        }
+
+        private void buttonUse_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonUse.BackgroundImage = Properties.Resources.buttonUsePress;
+        }
+
+        private void buttonUse_MouseUp(object sender, MouseEventArgs e)
+        {
+            buttonUse.BackgroundImage = Properties.Resources.buttonUseDefault;
+        }
+
+        private void buttonHold_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonHold.BackgroundImage = Properties.Resources.buttonHoldPress;
+        }
+
+        private void buttonHold_MouseUp(object sender, MouseEventArgs e)
+        {
+            buttonHold.BackgroundImage = Properties.Resources.buttonHoldDefault;
+        }
+
+        private void buttonPickUp_MouseDown(object sender, MouseEventArgs e)
+        {
+            buttonPickUp.BackgroundImage = Properties.Resources.buttonPickupPress;
+        }
+
+        private void buttonPickUp_MouseUp(object sender, MouseEventArgs e)
+        {
+            buttonPickUp.BackgroundImage = Properties.Resources.buttonPickupDefault;
+        }
     }
 }

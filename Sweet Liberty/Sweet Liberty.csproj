@@ -137,6 +137,16 @@
     <None Include="Resources\buttonRightPress.png" />
     <None Include="Resources\buttonUpDefault.png" />
     <None Include="Resources\buttonUpPress.png" />
+    <None Include="Resources\buttonDropDefault.png" />
+    <None Include="Resources\buttonDropPress.png" />
+    <None Include="Resources\buttonExamineDefault.png" />
+    <None Include="Resources\buttonExaminePress.png" />
+    <None Include="Resources\buttonHoldDefault.png" />
+    <None Include="Resources\buttonHoldPress.png" />
+    <None Include="Resources\buttonPickupDefault.png" />
+    <None Include="Resources\buttonPickupPress.png" />
+    <None Include="Resources\buttonUseDefault.png" />
+    <None Include="Resources\buttonUsePress.png" />
     <Content Include="Sound Effects\Explosion.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

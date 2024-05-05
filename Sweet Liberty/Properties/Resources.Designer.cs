@@ -203,6 +203,66 @@ namespace SweetLiberty.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buttonDropDefault {
+            get {
+                object obj = ResourceManager.GetObject("buttonDropDefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonDropPress {
+            get {
+                object obj = ResourceManager.GetObject("buttonDropPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonExamineDefault {
+            get {
+                object obj = ResourceManager.GetObject("buttonExamineDefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonExaminePress {
+            get {
+                object obj = ResourceManager.GetObject("buttonExaminePress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonHoldDefault {
+            get {
+                object obj = ResourceManager.GetObject("buttonHoldDefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonHoldPress {
+            get {
+                object obj = ResourceManager.GetObject("buttonHoldPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap buttonLeftDefault {
             get {
                 object obj = ResourceManager.GetObject("buttonLeftDefault", resourceCulture);
@@ -216,6 +276,26 @@ namespace SweetLiberty.Properties {
         internal static System.Drawing.Bitmap buttonLeftPress {
             get {
                 object obj = ResourceManager.GetObject("buttonLeftPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonPickupDefault {
+            get {
+                object obj = ResourceManager.GetObject("buttonPickupDefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonPickupPress {
+            get {
+                object obj = ResourceManager.GetObject("buttonPickupPress", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +336,26 @@ namespace SweetLiberty.Properties {
         internal static System.Drawing.Bitmap buttonUpPress {
             get {
                 object obj = ResourceManager.GetObject("buttonUpPress", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonUseDefault {
+            get {
+                object obj = ResourceManager.GetObject("buttonUseDefault", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap buttonUsePress {
+            get {
+                object obj = ResourceManager.GetObject("buttonUsePress", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

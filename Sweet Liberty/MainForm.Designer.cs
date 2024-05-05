@@ -40,15 +40,11 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel3 = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonExamine = new System.Windows.Forms.Button();
             this.labelHold = new System.Windows.Forms.Label();
             this.buttonUse = new System.Windows.Forms.Button();
             this.buttonDrop = new System.Windows.Forms.Button();
             this.listInventory = new System.Windows.Forms.ComboBox();
-            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
-            this.nameHold = new System.Windows.Forms.Label();
-            this.namePickup = new System.Windows.Forms.Label();
             this.buttonHold = new System.Windows.Forms.Button();
             this.buttonPickUp = new System.Windows.Forms.Button();
             this.inventory_btn = new System.Windows.Forms.Button();
@@ -58,6 +54,7 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -67,8 +64,8 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MXP)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MXP)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -192,15 +189,12 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.splitContainer1.Panel2.Controls.Add(this.button3);
-            this.splitContainer1.Panel2.Controls.Add(this.button2);
+            this.splitContainer1.Panel2.Controls.Add(this.buttonExamine);
             this.splitContainer1.Panel2.Controls.Add(this.labelHold);
             this.splitContainer1.Panel2.Controls.Add(this.buttonUse);
             this.splitContainer1.Panel2.Controls.Add(this.buttonDrop);
             this.splitContainer1.Panel2.Controls.Add(this.listInventory);
             this.splitContainer1.Panel2.Controls.Add(this.MXP);
-            this.splitContainer1.Panel2.Controls.Add(this.nameHold);
-            this.splitContainer1.Panel2.Controls.Add(this.namePickup);
             this.splitContainer1.Panel2.Controls.Add(this.buttonHold);
             this.splitContainer1.Panel2.Controls.Add(this.buttonPickUp);
             this.splitContainer1.Panel2.Controls.Add(this.inventory_btn);
@@ -230,35 +224,26 @@
             this.display.AutoSize = true;
             this.display.Location = new System.Drawing.Point(16, 23);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(0, 32);
+            this.display.Size = new System.Drawing.Size(0, 26);
             this.display.TabIndex = 0;
             // 
-            // button3
+            // buttonExamine
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
-            this.button3.Location = new System.Drawing.Point(174, 132);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 31);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "HOLD";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
-            this.button2.Location = new System.Drawing.Point(58, 132);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 31);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "EXAMINE";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonExamine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.buttonExamine.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonExamineDefault;
+            this.buttonExamine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonExamine.FlatAppearance.BorderSize = 0;
+            this.buttonExamine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExamine.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExamine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
+            this.buttonExamine.Location = new System.Drawing.Point(641, 95);
+            this.buttonExamine.Name = "buttonExamine";
+            this.buttonExamine.Size = new System.Drawing.Size(75, 75);
+            this.buttonExamine.TabIndex = 16;
+            this.buttonExamine.UseVisualStyleBackColor = false;
+            this.buttonExamine.Click += new System.EventHandler(this.button2_Click);
+            this.buttonExamine.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonExamine_MouseDown);
+            this.buttonExamine.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonExamine_MouseUp);
             // 
             // labelHold
             // 
@@ -266,101 +251,82 @@
             this.labelHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHold.Location = new System.Drawing.Point(1157, 95);
             this.labelHold.Name = "labelHold";
-            this.labelHold.Size = new System.Drawing.Size(0, 16);
+            this.labelHold.Size = new System.Drawing.Size(0, 13);
             this.labelHold.TabIndex = 15;
             // 
             // buttonUse
             // 
             this.buttonUse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.buttonUse.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonUseDefault;
+            this.buttonUse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonUse.FlatAppearance.BorderSize = 0;
             this.buttonUse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUse.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
-            this.buttonUse.Location = new System.Drawing.Point(174, 95);
+            this.buttonUse.Location = new System.Drawing.Point(678, 20);
             this.buttonUse.Name = "buttonUse";
-            this.buttonUse.Size = new System.Drawing.Size(110, 31);
+            this.buttonUse.Size = new System.Drawing.Size(75, 75);
             this.buttonUse.TabIndex = 13;
-            this.buttonUse.Text = "USE";
             this.buttonUse.UseVisualStyleBackColor = false;
+            this.buttonUse.Click += new System.EventHandler(this.buttonUse_Click);
+            this.buttonUse.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonUse_MouseDown);
+            this.buttonUse.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonUse_MouseUp);
             // 
             // buttonDrop
             // 
             this.buttonDrop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.buttonDrop.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonDropDefault;
+            this.buttonDrop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonDrop.FlatAppearance.BorderSize = 0;
             this.buttonDrop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDrop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(172)))), ((int)(((byte)(172)))));
-            this.buttonDrop.Location = new System.Drawing.Point(58, 95);
+            this.buttonDrop.Location = new System.Drawing.Point(604, 20);
             this.buttonDrop.Name = "buttonDrop";
-            this.buttonDrop.Size = new System.Drawing.Size(110, 31);
+            this.buttonDrop.Size = new System.Drawing.Size(75, 75);
             this.buttonDrop.TabIndex = 12;
-            this.buttonDrop.Text = "DROP";
             this.buttonDrop.UseVisualStyleBackColor = false;
-            this.buttonDrop.Click += new System.EventHandler(this.DropClick);
+            this.buttonDrop.Click += new System.EventHandler(this.buttonDropClick);
+            this.buttonDrop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonDrop_MouseDown_1);
+            this.buttonDrop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonDrop_MouseUp_1);
             // 
             // listInventory
             // 
             this.listInventory.FormattingEnabled = true;
-            this.listInventory.Location = new System.Drawing.Point(58, 65);
+            this.listInventory.Location = new System.Drawing.Point(132, 28);
             this.listInventory.Name = "listInventory";
-            this.listInventory.Size = new System.Drawing.Size(226, 24);
+            this.listInventory.Size = new System.Drawing.Size(226, 21);
             this.listInventory.TabIndex = 11;
-            // 
-            // MXP
-            // 
-            this.MXP.Enabled = true;
-            this.MXP.Location = new System.Drawing.Point(879, 119);
-            this.MXP.Name = "MXP";
-            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
-            this.MXP.Size = new System.Drawing.Size(411, 56);
-            this.MXP.TabIndex = 10;
-            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
-            // 
-            // nameHold
-            // 
-            this.nameHold.AutoSize = true;
-            this.nameHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameHold.Location = new System.Drawing.Point(1163, 68);
-            this.nameHold.Name = "nameHold";
-            this.nameHold.Size = new System.Drawing.Size(40, 16);
-            this.nameHold.TabIndex = 9;
-            this.nameHold.Text = "Hold";
-            this.nameHold.Click += new System.EventHandler(this.pickup_lbl_Click);
-            // 
-            // namePickup
-            // 
-            this.namePickup.AutoSize = true;
-            this.namePickup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namePickup.Location = new System.Drawing.Point(1249, 68);
-            this.namePickup.Name = "namePickup";
-            this.namePickup.Size = new System.Drawing.Size(54, 16);
-            this.namePickup.TabIndex = 9;
-            this.namePickup.Text = "Pickup";
-            this.namePickup.Click += new System.EventHandler(this.pickup_lbl_Click);
             // 
             // buttonHold
             // 
-            this.buttonHold.BackgroundImage = global::SweetLiberty.Properties.Resources.hold_btn;
-            this.buttonHold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonHold.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonHoldDefault;
+            this.buttonHold.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonHold.FlatAppearance.BorderSize = 0;
             this.buttonHold.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHold.Location = new System.Drawing.Point(1159, 24);
+            this.buttonHold.Location = new System.Drawing.Point(753, 20);
             this.buttonHold.Name = "buttonHold";
-            this.buttonHold.Size = new System.Drawing.Size(48, 40);
+            this.buttonHold.Size = new System.Drawing.Size(75, 75);
             this.buttonHold.TabIndex = 6;
             this.buttonHold.UseVisualStyleBackColor = true;
             this.buttonHold.Click += new System.EventHandler(this.ButtonHoldClick);
+            this.buttonHold.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonHold_MouseDown);
+            this.buttonHold.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonHold_MouseUp);
             // 
             // buttonPickUp
             // 
-            this.buttonPickUp.BackgroundImage = global::SweetLiberty.Properties.Resources.pickup_btn;
-            this.buttonPickUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonPickUp.BackgroundImage = global::SweetLiberty.Properties.Resources.buttonPickupDefault;
+            this.buttonPickUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonPickUp.FlatAppearance.BorderSize = 0;
             this.buttonPickUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPickUp.Location = new System.Drawing.Point(1258, 18);
+            this.buttonPickUp.Location = new System.Drawing.Point(715, 95);
             this.buttonPickUp.Name = "buttonPickUp";
-            this.buttonPickUp.Size = new System.Drawing.Size(32, 47);
+            this.buttonPickUp.Size = new System.Drawing.Size(75, 75);
             this.buttonPickUp.TabIndex = 6;
             this.buttonPickUp.UseVisualStyleBackColor = true;
             this.buttonPickUp.Click += new System.EventHandler(this.ButtonPickUpClick);
+            this.buttonPickUp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonPickUp_MouseDown);
+            this.buttonPickUp.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonPickUp_MouseUp);
             // 
             // inventory_btn
             // 
@@ -368,7 +334,7 @@
             this.inventory_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.inventory_btn.FlatAppearance.BorderSize = 0;
             this.inventory_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.inventory_btn.Location = new System.Drawing.Point(160, 27);
+            this.inventory_btn.Location = new System.Drawing.Point(80, 20);
             this.inventory_btn.Name = "inventory_btn";
             this.inventory_btn.Size = new System.Drawing.Size(38, 35);
             this.inventory_btn.TabIndex = 4;
@@ -381,7 +347,7 @@
             this.buttonRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonRight.FlatAppearance.BorderSize = 0;
             this.buttonRight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRight.Location = new System.Drawing.Point(652, 88);
+            this.buttonRight.Location = new System.Drawing.Point(1182, 95);
             this.buttonRight.Name = "buttonRight";
             this.buttonRight.Size = new System.Drawing.Size(75, 75);
             this.buttonRight.TabIndex = 3;
@@ -396,7 +362,7 @@
             this.buttonLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonLeft.FlatAppearance.BorderSize = 0;
             this.buttonLeft.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLeft.Location = new System.Drawing.Point(502, 88);
+            this.buttonLeft.Location = new System.Drawing.Point(1032, 95);
             this.buttonLeft.Name = "buttonLeft";
             this.buttonLeft.Size = new System.Drawing.Size(75, 75);
             this.buttonLeft.TabIndex = 2;
@@ -411,7 +377,7 @@
             this.buttonDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonDown.FlatAppearance.BorderSize = 0;
             this.buttonDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDown.Location = new System.Drawing.Point(577, 88);
+            this.buttonDown.Location = new System.Drawing.Point(1107, 95);
             this.buttonDown.Name = "buttonDown";
             this.buttonDown.Size = new System.Drawing.Size(75, 75);
             this.buttonDown.TabIndex = 1;
@@ -427,7 +393,7 @@
             this.buttonUp.FlatAppearance.BorderSize = 0;
             this.buttonUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(127)))));
-            this.buttonUp.Location = new System.Drawing.Point(577, 13);
+            this.buttonUp.Location = new System.Drawing.Point(1107, 20);
             this.buttonUp.Name = "buttonUp";
             this.buttonUp.Size = new System.Drawing.Size(75, 75);
             this.buttonUp.TabIndex = 0;
@@ -461,6 +427,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
             // 
+            // MXP
+            // 
+            this.MXP.Enabled = true;
+            this.MXP.Location = new System.Drawing.Point(733, 114);
+            this.MXP.Name = "MXP";
+            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
+            this.MXP.Size = new System.Drawing.Size(411, 56);
+            this.MXP.TabIndex = 10;
+            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -488,8 +464,8 @@
             this.splitContainer1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MXP)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MXP)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -506,7 +482,6 @@
         private System.Windows.Forms.Control control1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Label namePickup;
         private System.Windows.Forms.Button buttonPickUp;
         private System.Windows.Forms.Button inventory_btn;
         private System.Windows.Forms.Button buttonRight;
@@ -520,11 +495,9 @@
         private System.Windows.Forms.ComboBox listInventory;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label display;
-        private System.Windows.Forms.Label nameHold;
         private System.Windows.Forms.Button buttonHold;
         private System.Windows.Forms.Label labelHold;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonExamine;
     }
 }
 
