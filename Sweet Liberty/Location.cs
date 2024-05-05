@@ -15,9 +15,9 @@ public class Location
     public string LocationToWest { get; set; }
     public Dictionary<string, Item> Items { get; set; } = new Dictionary<string, Item>();
     public Item ItemRequired { get; set; }
-    public bool Entered { get; set; }
     public string BadEnding { get; set; }
-
+    public string Backtrack {  get; set; }
+    public bool Entered { get; set; }
     public Location(string name,
             string displayName,
             string description,
@@ -27,7 +27,9 @@ public class Location
             string locationToWest = "",
             List<Item> listItem = null,
             Item itemRequired = null,
-            string badEnding = "")
+            string badEnding = "",
+            string backtrack = "",
+            bool entered = false)
     {
         Name = name;
         DisplayName = displayName;
@@ -40,6 +42,8 @@ public class Location
             CreateDictionary(listItem);
         ItemRequired = itemRequired;
         BadEnding = badEnding;
+        Backtrack = backtrack;
+        Entered = entered;
     }
 
     private void CreateDictionary(List<Item> itemList)

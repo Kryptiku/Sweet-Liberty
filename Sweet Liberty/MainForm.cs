@@ -84,7 +84,7 @@ namespace SweetLiberty
                 }
                 else
                 {
-                    DisplayStory($"\nYou need the {exitLocation.ItemRequired.Name} in your hand to enter {exitLocation.DisplayName}.");
+                    DisplayStory($"\nI need the {exitLocation.ItemRequired.Name} to get inside the {exitLocation.DisplayName}.");
                 }
             }
         }
@@ -194,7 +194,12 @@ namespace SweetLiberty
 
             dictLocations.Add("Prologue3", new Location("Prologue3",
                         "Sector 2-AW",
-                        "...\n....\n.....\n......\n",
+                        "...\n....\n.....\n......\n.......\n........",
+                        "Prologue4", "", "", ""));  // N E S W
+
+            dictLocations.Add("Prologue4", new Location("Prologue4",
+                        "Sector 2-AX",
+                        "...\nKeep...\n.....\n\"Moving...!\"\n.......\n........",
                         "StartingArea", "", "", ""));  // N E S W
 
             dictLocations.Add("StartingArea", new Location("StartingArea",
@@ -208,7 +213,10 @@ namespace SweetLiberty
                         "Automatons everywhere. Gotta hide. They must be searching for me.\n" +
                         "Saw a Stim. Probably a good idea to pick it up.",
                         "Outpost", "", "", "",  // N E S W
-                         new List<Item> { dictItems["Stim"] }));
+                        new List<Item> { dictItems["Stim"] }, null,
+                        "",
+                        "It's cold outside. Did I grab the Stim here?"));
+                        
 
             dictLocations.Add("Outpost", new Location("Outpost",
                        "Abandoned Outpost",
@@ -216,7 +224,10 @@ namespace SweetLiberty
                        "Found an abandoned outpost. Looks like it was thrashed around.\n" +
                        "Frozen bodies everywhere. Nothing useful. Chunks of metal are rooted deep into the snow.\n" +
                        "Could get inside. Might find something. Can't tell if there's anything hiding inside.",
-                       "OutpostRoom", "", "StartingArea", "Stronghold"));
+                       "OutpostRoom", "", "StartingArea", "Stronghold",
+                       null, null,
+                       "",
+                       "The outpost. The frozen bodies give me a weird feeling..."));
 
             dictLocations.Add("OutpostRoom", new Location("OutpostRoom",
                        "Outpost Room",
@@ -225,7 +236,10 @@ namespace SweetLiberty
                        "Whole place is empty. Can't see anything. Save for a terminal emitting light on the far side of the room.\n" +
                        "Probably something useful there-- shit!\n" +
                        "Ah, it's just a rat. Fuck.", 
-                       "OutpostTerminal", "", "Outpost", ""));
+                       "OutpostTerminal", "", "Outpost", "",
+                       null, null,
+                       "",
+                       "Can't believe I got shocked by some democratic rat..."));
 
             dictLocations.Add("OutpostTerminal", new Location("OutpostTerminal",
                        "Outpost Terminal",
@@ -233,18 +247,23 @@ namespace SweetLiberty
                        "Went to the terminal. It might be on, but any touch on it doesn't make it respond.\n" +
                        "Found a Breaker underneath the terminal. A fully loaded automatic shotgun. Might be useful to pick up.",
                        "", "", "OutpostRoom", "",
-                       new List<Item> { dictItems["Breaker"] }));
+                       new List<Item> { dictItems["Breaker"] }, null,
+                       "",
+                       "The terminal... that doesn't even work. Did I grab the Breaker here?"));
 
             dictLocations.Add("Stronghold", new Location("Stronghold",
                        "Automaton Stronghold",
-                       "-- Log 8 --\n" +
+                       "-- Log 5 --\n" +
                        "Found what appears to be an Automaton Stronghold. Multiple of them in visual. Need to scope the area out.\n" +
                        "Scaled up to get a bit closer. Needed a better view of the stronghold.\n" +
                        "The base is so massive. There may be something useful there, but how am I gonna get in?\n" +
                        "Ah shit, there's an automaton squadron nearby. I need to lay low.\n" +
                        "Shit! Enemy tango might have spotted me. Eyes glowed bright red. Should be fine. I ducked behind a rock for cover.\n" +  
                        "This place is extremely dangerous. Need to consider if I should enter now.",
-                       "AutomatonTerminal", "Outpost", "", "CrashSite"));
+                       "AutomatonTerminal", "Outpost", "", "CrashSite",
+                       null, null,
+                       "",
+                       "The Automaton Stronghold. There's a lot of them..."));
 
             dictLocations.Add("AutomatonTerminal", new Location("AutomatonTerminal",
                        "Automaton Terminal",
@@ -264,12 +283,13 @@ namespace SweetLiberty
 
             dictLocations.Add("Ship", new Location("Ship",
                        "Destroyer Ship",
-                       "-- Log 10 --\n" +
+                       "-- Log 13 --\n" +
                        "Delivered the sample to the higher ups. They seemed really happy about my performance.\n" +
                        "I also heard the two squadmates that left us were executed for being traitors.\n" +
                        "Seems right now I'm just assigned to paperwork as a promotion.\n" +
                        "Might not be so bad after all...\n" +
-                       "Sweet Liberty...",
+                       "Sweet Liberty...\n" +
+                       "GOOD ENDING ACHIEVED. YOU'VE GIVEN HUMANITY A CHANCE. GLORY TO SUPER EARTH.",
                        "", "", "", "", //N E S W
                        null, null, // items and itemRequired
                        "...I am deemed as a traitor.\n" +
@@ -282,18 +302,22 @@ namespace SweetLiberty
 
             dictLocations.Add("CrashSite", new Location("CrashSite",
                        "Crash Site",
-                       "-- Log 5 --\n" +
-                       "Found an escape pod.It crashed deep into the snow.\n" +
+                       "-- Log 6 --\n" +
+                       "Found an escape pod. It crashed deep into the snow.\n" +
                        "An automaton's guarding it. Looks like a suicide bomber.\n" +
                        "Might be advisable to hold a weapon before going in.\n",
-                       "EscapePod", "StrongHold", "", ""));
+                       "EscapePod", "StrongHold", "", "",
+                       null, null,
+                       "",
+                       "The escape pod's crash site. Thing really took a big hit."));
 
             dictLocations.Add("EscapePod", new Location("EscapePod",
                        "Escape Pod",
-                       "-- Log 6 --\n" +
+                       "-- Log 7 --\n" +
                        "Killed the automaton easily. Tried to open the pod. Doesn't budge.\n" +
                        "Dug out some snow. Found what seems to be an Automaton IFF.\n" +
-                       "Could help me get through some Automaton patrols. They'll see me and they'll think I'm a friendly." +
+                       "Could help me get through some Automaton patrols.\n" +
+                       "They'll see me and they'll think I'm a friendly.\n" +
                        "Would be helpful to pick it up.",
                        "", "", "CrashSite", "Burrow",
                        new List<Item> { dictItems["Automaton IFF"] },
@@ -302,29 +326,34 @@ namespace SweetLiberty
                        "I've decided to face the--\n" +
                        "Close-range explosion detected.\n" +
                        "UNEXPECTED LOG TERMINATION.\n" +
-                       "FINISHING TERMINATION IN 3... 2... 1..."));
+                       "FINISHING TERMINATION IN 3... 2... 1...",
+                       "The escape pod. That suicide bomber automaton was a pain in the ass..."));
 
             dictLocations.Add("Burrow", new Location("Burrow",
                        "Terminid Burrow",
-                       "-- Log 7 --\n" +
+                       "-- Log 10 --\n" +
                        "I found this small opening... Looks like it was burrowed through.\n" +
                        "I'm not entirely sure what's inside... Should I check it out?",
-                       "Nest", "EscapePod", "", ""));
+                       "Nest", "EscapePod", "", "LabOutpost",
+                       null, null,
+                       "",
+                       "A small burrow... Might be some Terminids in there..."));
 
             dictLocations.Add("Nest", new Location("Nest",
                        "Terminid Nest",
-                       "-- Log 8 --\n" +
+                       "-- Log 11 --\n" +
                        "Log 8. I crawled through this opening... Looks like it was burrowed through.\n" +
                        "Wait... is that a...\n" +
                        "It's a Bile Spewer... But it doesn't seem to be attacking.\n" +
                        "Maybe it doesn't mean any harm?",
-                       "TimeSkip", "", "Burrow", "",
+                       "TimeSkip", "", "", "",
                        null, null,
                        "-- Log 8 --\n" +
                        "I crawled through this opening... And I hear a lot of slitehring sounds...\n" +
                        "Wait... is that a...\n" +
                        "It's a Bile Spewer! Agghhh!\n" +
-                       "Unexpected log termination."));
+                       "UNEXPECTED LOG TERMINATION.\n" +
+                       "FINISHING TERMINATION IN 3... 2... 1..."));
 
             dictLocations.Add("TimeSkip", new Location("TimeSkip",
                        "Time Skip",
@@ -332,9 +361,47 @@ namespace SweetLiberty
                        "It's almost been a month, but I got used to life here in Lesath.\n" +
                        "These Terminids that I found seem to see me as their leader...\n" +
                        "They also reproduced so fast that they've taken over the underground area of this planet...\n" +
-                       "Maybe living like this... Isn't so bad after all..."));
+                       "Maybe living like this... Isn't so bad after all...\n" +
+                       "\n\n\nGOOD ENDING ACHIEVED. GLORY TO SUPER EARTH. THOUGH YOU MAY BE BRANDED A TRAITOR."));
 
-       
+            dictLocations.Add("LabOutpost", new Location("LabOutpost",
+                       "Laboratory Outpost",
+                       "-- Log 12 --\n" +
+                       "Noticed an outpost in the distance.\n" +
+                       "Looks like a lab of sorts... Looks like it was sealed from the inside.\n" +
+                       "I hear something inside. There's something there.\n" +
+                       "Can't get in there without using a gun on it.\n",
+                       "LabRoom", "Burrow", "", "",
+                       null, dictItems["Breaker"],
+                       "",
+                       "The lab outpost. Seemed to be a laboratory for studying Terminids."));
+
+            dictLocations.Add("LabRoom", new Location("LabRoom",
+                       "Laboratory Room",
+                       "-- Log 13 --\n" +
+                       "The door seems to have be smashed down...\n" +
+                       "Movement's getting louder... Where is it coming from?\n" +
+                       "GAH! Terminid!\n" +
+                       "I killed it... But...\n" +
+                       "I'm bleeding out...\n" +
+                       "Good thing I have this stim. WOOH! Sweet Liberty...\n" +
+                       "This lab... Looks like they were experimenting on the Terminids.\n" +
+                       "That might be the sample we're looking for on that table... \n" +
+                       "Should pick it up.",
+                       "", "", "LabRoom", "",
+                       new List<Item> { dictItems["Terminid Sample"] }, null,
+                       "-- Log 13 --\n" +
+                       "The door seems to have be smashed down...\n" +
+                       "Movement's getting louder... Where is it coming from?\n" +
+                       "GAH! Terminid!\n" +
+                       "I killed it... But...\n" +
+                       "I'm bleeding out...\n" +
+                       "Sweet Liberty, I got nothing!\n" +
+                       "About... to... pass... out...\n" +
+                       "UNEXPECTED LOG TERMINATION.\n" +
+                       "FINISHING TERMINATION IN 3... 2... 1...",
+                       "The lab room. Found the sample here. Did I take it?"));
+
 
 
             Player.Name = "Alpha-Three";
@@ -356,7 +423,7 @@ namespace SweetLiberty
                 if (dictItems.ContainsKey(itemName))
                 {
                     Player.AddToInventory(dictItems[itemName]);
-                    DisplayStory($"\nYou take the {itemName}.");
+                    DisplayStory($"\nI took the {itemName}.");
                 }
                 else
                 {
@@ -370,26 +437,51 @@ namespace SweetLiberty
             // Update the display
             DisplayInventory();
         }
+        private void DropItem()
+        {
+            DisplayStory($"\nI drop the {Player.ItemInHand.Name}.\nI can pick it up again here if I ever need it.");
+            currentLocation.AddItem(Player.ItemInHand);
+            Player.ItemInHand = null;
+            DisplayHand();
+        }
+
+        private void ExamineItem(ListBox listBox)
+        {
+            if (listBox.SelectedItems.Count > 0)
+            {
+                Item item = dictItems[listBox.SelectedItem.ToString()]; // find the item by name
+                DisplayStory(item.Description);
+            }
+        }
         private void HoldItem()
         {
             if (listInventory.SelectedItem != null)
             {
                 // return the current item held to inventory and take new item
                 Player.GetItemFromInventory(listInventory.SelectedItem.ToString());
-                DisplayStory($"\nYou get the {Player.ItemInHand.Name} from your supply pack.");
+                DisplayStory($"\nI took the {Player.ItemInHand.Name} from my supply pack.");
                 DisplayInventory();
                 DisplayHand();
             }
             else
             {
-                DisplayStory("\nYou have no item selected.");
+                DisplayStory("\nGot nothing to hold.");
             }  
         }
 
         private void Play()
         {
             //fill description
-            DisplayStory(currentLocation.Description, true);
+            if (currentLocation.Entered == false)
+            {
+                currentLocation.Entered = true;
+                DisplayStory(currentLocation.Description, true);
+            }
+            else
+            {
+                DisplayStory(currentLocation.Backtrack, true);
+            }
+            
             NorthExit = currentLocation.LocationToNorth;
             EastExit = currentLocation.LocationToEast;
             SouthExit = currentLocation.LocationToSouth;

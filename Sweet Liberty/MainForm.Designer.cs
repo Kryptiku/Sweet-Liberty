@@ -144,7 +144,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -154,7 +154,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pictureBox1.Image = global::SweetLiberty.Properties.Resources.Screenshot_2024_04_29_003510;
@@ -230,7 +230,7 @@
             this.display.AutoSize = true;
             this.display.Location = new System.Drawing.Point(16, 23);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(0, 26);
+            this.display.Size = new System.Drawing.Size(0, 32);
             this.display.TabIndex = 0;
             // 
             // button3
@@ -266,7 +266,7 @@
             this.labelHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHold.Location = new System.Drawing.Point(1157, 95);
             this.labelHold.Name = "labelHold";
-            this.labelHold.Size = new System.Drawing.Size(0, 13);
+            this.labelHold.Size = new System.Drawing.Size(0, 16);
             this.labelHold.TabIndex = 15;
             // 
             // buttonUse
@@ -301,7 +301,7 @@
             this.listInventory.FormattingEnabled = true;
             this.listInventory.Location = new System.Drawing.Point(58, 65);
             this.listInventory.Name = "listInventory";
-            this.listInventory.Size = new System.Drawing.Size(226, 21);
+            this.listInventory.Size = new System.Drawing.Size(226, 24);
             this.listInventory.TabIndex = 11;
             // 
             // MXP
@@ -320,7 +320,7 @@
             this.nameHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameHold.Location = new System.Drawing.Point(1163, 68);
             this.nameHold.Name = "nameHold";
-            this.nameHold.Size = new System.Drawing.Size(33, 13);
+            this.nameHold.Size = new System.Drawing.Size(40, 16);
             this.nameHold.TabIndex = 9;
             this.nameHold.Text = "Hold";
             this.nameHold.Click += new System.EventHandler(this.pickup_lbl_Click);
@@ -331,7 +331,7 @@
             this.namePickup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namePickup.Location = new System.Drawing.Point(1249, 68);
             this.namePickup.Name = "namePickup";
-            this.namePickup.Size = new System.Drawing.Size(46, 13);
+            this.namePickup.Size = new System.Drawing.Size(54, 16);
             this.namePickup.TabIndex = 9;
             this.namePickup.Text = "Pickup";
             this.namePickup.Click += new System.EventHandler(this.pickup_lbl_Click);
