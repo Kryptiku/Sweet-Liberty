@@ -38,13 +38,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.control1 = new System.Windows.Forms.Control();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.displayPanel = new System.Windows.Forms.Panel();
             this.display = new System.Windows.Forms.Label();
             this.buttonExamine = new System.Windows.Forms.Button();
             this.labelHold = new System.Windows.Forms.Label();
             this.buttonUse = new System.Windows.Forms.Button();
             this.buttonDrop = new System.Windows.Forms.Button();
             this.listInventory = new System.Windows.Forms.ComboBox();
+            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
             this.buttonHold = new System.Windows.Forms.Button();
             this.buttonPickUp = new System.Windows.Forms.Button();
             this.inventory_btn = new System.Windows.Forms.Button();
@@ -54,7 +55,6 @@
             this.buttonUp = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.MXP = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -63,9 +63,9 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.displayPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MXP)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -180,11 +180,10 @@
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.splitContainer1.Panel1.Controls.Add(this.panel3);
+            this.splitContainer1.Panel1.Controls.Add(this.displayPanel);
             this.splitContainer1.Panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.splitContainer1.Panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(127)))));
             this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(20, 30, 0, 0);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
             // splitContainer1.Panel2
             // 
@@ -202,29 +201,27 @@
             this.splitContainer1.Panel2.Controls.Add(this.buttonLeft);
             this.splitContainer1.Panel2.Controls.Add(this.buttonDown);
             this.splitContainer1.Panel2.Controls.Add(this.buttonUp);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(1370, 620);
             this.splitContainer1.SplitterDistance = 429;
             this.splitContainer1.TabIndex = 2;
             // 
-            // panel3
+            // displayPanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(20)))), ((int)(((byte)(18)))));
-            this.panel3.Controls.Add(this.display);
-            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(26, 17);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(16, 20, 6, 6);
-            this.panel3.Size = new System.Drawing.Size(1319, 390);
-            this.panel3.TabIndex = 0;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.displayPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(20)))), ((int)(((byte)(18)))));
+            this.displayPanel.Controls.Add(this.display);
+            this.displayPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayPanel.Location = new System.Drawing.Point(26, 17);
+            this.displayPanel.Name = "displayPanel";
+            this.displayPanel.Padding = new System.Windows.Forms.Padding(16, 20, 6, 6);
+            this.displayPanel.Size = new System.Drawing.Size(1319, 390);
+            this.displayPanel.TabIndex = 0;
             // 
             // display
             // 
             this.display.AutoSize = true;
             this.display.Location = new System.Drawing.Point(16, 23);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(0, 26);
+            this.display.Size = new System.Drawing.Size(0, 32);
             this.display.TabIndex = 0;
             // 
             // buttonExamine
@@ -241,7 +238,7 @@
             this.buttonExamine.Size = new System.Drawing.Size(75, 75);
             this.buttonExamine.TabIndex = 16;
             this.buttonExamine.UseVisualStyleBackColor = false;
-            this.buttonExamine.Click += new System.EventHandler(this.button2_Click);
+            this.buttonExamine.Click += new System.EventHandler(this.ButtonExamineClick);
             this.buttonExamine.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonExamine_MouseDown);
             this.buttonExamine.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonExamine_MouseUp);
             // 
@@ -249,9 +246,9 @@
             // 
             this.labelHold.AutoSize = true;
             this.labelHold.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHold.Location = new System.Drawing.Point(1157, 95);
+            this.labelHold.Location = new System.Drawing.Point(129, 55);
             this.labelHold.Name = "labelHold";
-            this.labelHold.Size = new System.Drawing.Size(0, 13);
+            this.labelHold.Size = new System.Drawing.Size(0, 16);
             this.labelHold.TabIndex = 15;
             // 
             // buttonUse
@@ -268,7 +265,7 @@
             this.buttonUse.Size = new System.Drawing.Size(75, 75);
             this.buttonUse.TabIndex = 13;
             this.buttonUse.UseVisualStyleBackColor = false;
-            this.buttonUse.Click += new System.EventHandler(this.buttonUse_Click);
+            this.buttonUse.Click += new System.EventHandler(this.ButtonUseClick);
             this.buttonUse.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonUse_MouseDown);
             this.buttonUse.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonUse_MouseUp);
             // 
@@ -286,7 +283,7 @@
             this.buttonDrop.Size = new System.Drawing.Size(75, 75);
             this.buttonDrop.TabIndex = 12;
             this.buttonDrop.UseVisualStyleBackColor = false;
-            this.buttonDrop.Click += new System.EventHandler(this.buttonDropClick);
+            this.buttonDrop.Click += new System.EventHandler(this.ButtonDropClick);
             this.buttonDrop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonDrop_MouseDown_1);
             this.buttonDrop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonDrop_MouseUp_1);
             // 
@@ -295,8 +292,17 @@
             this.listInventory.FormattingEnabled = true;
             this.listInventory.Location = new System.Drawing.Point(132, 28);
             this.listInventory.Name = "listInventory";
-            this.listInventory.Size = new System.Drawing.Size(226, 21);
+            this.listInventory.Size = new System.Drawing.Size(226, 24);
             this.listInventory.TabIndex = 11;
+            // 
+            // MXP
+            // 
+            this.MXP.Enabled = true;
+            this.MXP.Location = new System.Drawing.Point(71, 114);
+            this.MXP.Name = "MXP";
+            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
+            this.MXP.Size = new System.Drawing.Size(411, 56);
+            this.MXP.TabIndex = 10;
             // 
             // buttonHold
             // 
@@ -412,7 +418,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1370, 620);
             this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
             // 
             // button1
             // 
@@ -425,17 +430,6 @@
             this.button1.Size = new System.Drawing.Size(59, 59);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
-            // 
-            // MXP
-            // 
-            this.MXP.Enabled = true;
-            this.MXP.Location = new System.Drawing.Point(733, 114);
-            this.MXP.Name = "MXP";
-            this.MXP.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MXP.OcxState")));
-            this.MXP.Size = new System.Drawing.Size(411, 56);
-            this.MXP.TabIndex = 10;
-            this.MXP.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
             // MainForm
             // 
@@ -462,10 +456,10 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            this.displayPanel.ResumeLayout(false);
+            this.displayPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MXP)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -493,7 +487,7 @@
         private System.Windows.Forms.Button buttonUse;
         private System.Windows.Forms.Button buttonDrop;
         private System.Windows.Forms.ComboBox listInventory;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel displayPanel;
         private System.Windows.Forms.Label display;
         private System.Windows.Forms.Button buttonHold;
         private System.Windows.Forms.Label labelHold;

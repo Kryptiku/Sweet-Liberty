@@ -14,13 +14,12 @@ using System.Timers;
 using System.Drawing.Text;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 using System.Runtime.ConstrainedExecution;
+using System.Reflection.Emit;
 
 namespace SweetLiberty
 {
     public partial class MainForm : Form
     {
-
-
         private Location currentLocation;
         private string NorthExit;
         private string EastExit;
@@ -40,12 +39,16 @@ namespace SweetLiberty
 
         private PrivateFontCollection fonts = new PrivateFontCollection();
 
-        Font FsSinclair;
+        Font FsSinclair16;
+        Font FsSinclair12;
+        Font FsSinclair10;
 
         public MainForm()
         {
+            
             InitializeComponent();
             SetCustomFont();
+            SetControlFont();
             timer.Interval = 40; // Interval in milliseconds
             timer.Tick += TimerTick;
         }
@@ -117,6 +120,13 @@ namespace SweetLiberty
             }
         }
 
+        private void SetControlFont()
+        {
+            display.Font = FsSinclair16;
+            listInventory.Font = FsSinclair12;
+            labelHold.Font = FsSinclair10;
+        }
+
         private void SetCustomFont()
         {
             byte[] fontData = Properties.Resources.FSSinclairTrial_Bold;
@@ -127,7 +137,10 @@ namespace SweetLiberty
             AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.FSSinclairTrial_Bold.Length, IntPtr.Zero, ref dummy);
             System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
 
-            FsSinclair = new Font(fonts.Families[0], 16.0F);
+            FsSinclair16 = new Font(fonts.Families[0], 16.0F);
+            FsSinclair12 = new Font(fonts.Families[0], 12.0F);
+            FsSinclair10 = new Font(fonts.Families[0], 10.0F);
+
         }
 
         private void MainFormLoad(object sender, EventArgs e){CreateGame();}
@@ -137,14 +150,27 @@ namespace SweetLiberty
         private void ButtonLeftClick(object sender, EventArgs e) { Sound.PlaySoundEffect("Sound Effects/leftSound.wav"); Go("west"); }
         private void ButtonPickUpClick(object sender, EventArgs e) { TakeItem(); }
         private void ButtonHoldClick(object sender, EventArgs e) { HoldItem(); }
+        private void ButtonDropClick(object sender, EventArgs e) { DropItem(); }
+        private void ButtonUseClick(object sender, EventArgs e) { }
+        private void ButtonExamineClick(object sender, EventArgs e){ ExamineItem(listInventory); }
 
 
         private void DisplayStory(string AddText, bool clear = false)
         {
-            if (clear)
+
+            string newText = clear ? AddText : display.Text + AddText;
+
+            SizeF textSize = TextRenderer.MeasureText(newText, display.Font, displayPanel.Size, TextFormatFlags.WordBreak);
+
+            if (textSize.Height > (displayPanel.Height - (displayPanel.Padding.Bottom * 2.7)))
             {
                 display.Text = string.Empty;
             }
+            else if (clear)
+            {
+                display.Text = string.Empty;
+            }
+
 
             textToAdd = AddText;
             timerIndex = 0;
@@ -154,16 +180,15 @@ namespace SweetLiberty
 
         private void CreateGame()
         {
-            display.Font = FsSinclair;
 
             PlayMusic("Music/Extraction.mp3");
             Sound.PlaySoundEffect("Sound Effects/terminal.wav");
 
             // Items
-            dictItems.Add("Breaker", new Item("Breaker", "An automatic shotgun. Good for killing bugs and robots."));
-            dictItems.Add("Automaton IFF", new Item("Automaton IFF", "An Identification Friend or Foe. Automatons would see me as another one of them"));
+            dictItems.Add("Breaker", new Weapon("Breaker", "A Breaker. An automatic shotgun. Good for killing bugs and robots.", 30));
+            dictItems.Add("Automaton IFF", new Item("Automaton IFF", "An Identification Friend or Foe. Automatons would see me as another one of them."));
             dictItems.Add("Terminid Sample", new Item("Terminid Sample", "A bug sample. Used to be what we came here for."));
-            dictItems.Add("Stim", new Item("Stim", "Great for healing wounds. Might be useful to keep this around."));
+            dictItems.Add("Stim", new FirstAid("Stim", "A Stim. Great for healing wounds. Might be useful to keep this around.", 30));
 
             // Logs
             dictItems.Add("Log 3AD", new Log("Log 3AD", "A log left behind by some scientists.",  "Log 3AD. The Terminid population is decreasing, but we don't know why this is happening. We need to run more tests. This cannot happen."));
@@ -199,7 +224,7 @@ namespace SweetLiberty
 
             dictLocations.Add("Prologue4", new Location("Prologue4",
                         "Sector 2-AX",
-                        "...\nKeep...\n.....\n\"Moving...!\"\n.......\n........",
+                        "...\n\"Keep...\"\n.....\n\"Moving...!\"\n.......\n........",
                         "StartingArea", "", "", ""));  // N E S W
 
             dictLocations.Add("StartingArea", new Location("StartingArea",
@@ -407,7 +432,7 @@ namespace SweetLiberty
             Player.Name = "Alpha-Three";
             Player.Health = 100;
             Player.Strength = 50;
-            currentLocation = dictLocations["Prologue"];
+            currentLocation = dictLocations["StartingArea"];
 
             Play();
             
@@ -417,7 +442,6 @@ namespace SweetLiberty
         {
             foreach (var itemEntry in currentLocation.Items)
             {
-
                 string itemName = itemEntry.Key;
 
                 if (dictItems.ContainsKey(itemName))
@@ -437,29 +461,42 @@ namespace SweetLiberty
             // Update the display
             DisplayInventory();
         }
+        private void ExamineItem(ComboBox comboBox)
+        {
+            if (comboBox.SelectedItem != null)
+            {
+                Item item = dictItems[comboBox.SelectedItem.ToString()]; // find the item by name
+                DisplayStory("\n" + item.Description);
+            }
+            else
+            {
+                DisplayStory("\nThere's nothing to examine.");
+            }
+            
+        }
+
         private void DropItem()
         {
-            DisplayStory($"\nI drop the {Player.ItemInHand.Name}.\nI can pick it up again here if I ever need it.");
+            DisplayStory($"\nI dropped the {Player.ItemInHand.Name}.\nI can pick it up again here if I ever need it.");
             currentLocation.AddItem(Player.ItemInHand);
             Player.ItemInHand = null;
             DisplayHand();
         }
-
-        private void ExamineItem(ListBox listBox)
-        {
-            if (listBox.SelectedItems.Count > 0)
-            {
-                Item item = dictItems[listBox.SelectedItem.ToString()]; // find the item by name
-                DisplayStory(item.Description);
-            }
-        }
+        
         private void HoldItem()
         {
-            if (listInventory.SelectedItem != null)
+            if (listInventory.SelectedItem != null && Player.ItemInHand == null)
             {
                 // return the current item held to inventory and take new item
                 Player.GetItemFromInventory(listInventory.SelectedItem.ToString());
                 DisplayStory($"\nI took the {Player.ItemInHand.Name} from my supply pack.");
+                DisplayInventory();
+                DisplayHand();
+            }
+            else if (listInventory.SelectedItem == null && Player.ItemInHand != null)
+            {
+                DisplayStory($"\nI returned the {Player.ItemInHand.Name} to my supply pack.");
+                Player.ReturnItemToInventory();
                 DisplayInventory();
                 DisplayHand();
             }
@@ -502,7 +539,6 @@ namespace SweetLiberty
                 }
             }
         }
-
         private void DisplayHand()
         {
             if (Player.ItemInHand != null)
@@ -625,49 +661,6 @@ namespace SweetLiberty
             System.Windows.Forms.Application.Exit();
         }
 
-        private void button1_MouseClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void splitContainer2_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-        {
-
-        }
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pickup_lbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void DropClick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonUp_MouseDown(object sender, MouseEventArgs e)
         {
             buttonUp.BackgroundImage = Properties.Resources.buttonUpPress;
@@ -708,11 +701,6 @@ namespace SweetLiberty
             buttonRight.BackgroundImage = Properties.Resources.buttonRightDefault;
         }
 
-        private void buttonUse_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonDrop_MouseDown(object sender, MouseEventArgs e)
         {
             buttonDrop.BackgroundImage = Properties.Resources.buttonDropPress;
@@ -721,11 +709,6 @@ namespace SweetLiberty
         private void buttonDrop_MouseUp(object sender, MouseEventArgs e)
         {
             buttonDrop.BackgroundImage = Properties.Resources.buttonDropDefault;    
-        }
-
-        private void buttonDropClick(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonDrop_MouseDown_1(object sender, MouseEventArgs e)
@@ -777,5 +760,6 @@ namespace SweetLiberty
         {
             buttonPickUp.BackgroundImage = Properties.Resources.buttonPickupDefault;
         }
+
     }
 }

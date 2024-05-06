@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Initial_UI_Design
-{
     internal class FirstAid : Item
     {
         public int Value { get; set; }
@@ -15,4 +12,3 @@ namespace Initial_UI_Design
         }
 
     }
-}
