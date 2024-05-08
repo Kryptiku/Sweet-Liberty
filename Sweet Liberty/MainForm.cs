@@ -25,6 +25,8 @@ namespace SweetLiberty
         private string EastExit;
         private string SouthExit;
         private string WestExit;
+
+        private bool gameOver = false;
         
         private Dictionary<string, Location> dictLocations = new Dictionary<string, Location>();
         private Dictionary <string, Item> dictItems = new Dictionary<string, Item>();
@@ -68,7 +70,7 @@ namespace SweetLiberty
             if (checkLocation != currentLocation)
             {
                 CheckArea(currentLocation);
-                CheckMusic(currentLocation.Name);
+                CheckMusic(currentLocation.Name, currentLocation);
                 
             }
         }
@@ -298,13 +300,14 @@ namespace SweetLiberty
                        "Looks like an Automaton control center for the ship deployements. There's a terminal in the center.\n" +
                        "I just need to do this little button combination... and...\n" +
                        "There. I'm leaving. I'm finally going home.",
-                       "", "", "", "",
+                       "Prologue", "", "", "",
                        null, null,
                        "Decided to approach the terminal. It's a big risk, but I'll have to take it.\n" +
                        "They spotted me! I'm taking fire! I might not be able to hold on!\n" +
                        "Sweet Liberty! A grenade!\n" +
                        "UNEXPECTED LOG TERMINATION.\n" +
-                       "FINISHING TERMINATION IN 3... 2... 1..."));
+                       "FINISHING TERMINATION IN 3... 2... 1...\n" +
+                       "DONE. PLEASE CLICK THE UP BUTTON TO CONTINUE."));
 
             dictLocations.Add("Ship", new Location("Ship",
                        "Destroyer Ship",
@@ -315,7 +318,7 @@ namespace SweetLiberty
                        "Might not be so bad after all...\n" +
                        "Sweet Liberty...\n" +
                        "GOOD ENDING ACHIEVED. YOU'VE GIVEN HUMANITY A CHANCE. GLORY TO SUPER EARTH.",
-                       "", "", "", "", //N E S W
+                       "Prologue", "", "", "", //N E S W
                        null, null, // items and itemRequired
                        "...I am deemed as a traitor.\n" +
                        "They still asked me for the Terminid sample. The reason why they sent us there in the first place.\n" +
@@ -323,7 +326,8 @@ namespace SweetLiberty
                        "YOU HAVE BEEN MARKED AS A TRAITOR. PLEASE STAND STILL IN THE DESIGNATED AREA.\n" +
                        "LAUNCHING 120MM HE BARRAGE IN 3... 2... 1...\n" +
                        "UNEXPECTED LOG TERMINATION.\n" +
-                       "FINISHING TERMINATION IN 3... 2... 1..."));
+                       "FINISHING TERMINATION IN 3... 2... 1...\n" +
+                       "DONE. PLEASE CLICK THE UP BUTTON TO CONTINUE."));
 
             dictLocations.Add("CrashSite", new Location("CrashSite",
                        "Crash Site",
@@ -371,14 +375,15 @@ namespace SweetLiberty
                        "Wait... is that a...\n" +
                        "It's a Bile Spewer... But it doesn't seem to be attacking.\n" +
                        "Maybe it doesn't mean any harm?",
-                       "TimeSkip", "", "", "",
+                       "TimeSkip", "", "Prologue", "",
                        null, null,
                        "-- Log 8 --\n" +
                        "I crawled through this opening... And I hear a lot of slitehring sounds...\n" +
                        "Wait... is that a...\n" +
                        "It's a Bile Spewer! Agghhh!\n" +
                        "UNEXPECTED LOG TERMINATION.\n" +
-                       "FINISHING TERMINATION IN 3... 2... 1..."));
+                       "FINISHING TERMINATION IN 3... 2... 1...\n" +
+                       "DONE. PLEASE CLICK THE DOWN BUTTON TO CONTINUE."));
 
             dictLocations.Add("TimeSkip", new Location("TimeSkip",
                        "Time Skip",
@@ -413,7 +418,7 @@ namespace SweetLiberty
                        "This lab... Looks like they were experimenting on the Terminids.\n" +
                        "That might be the sample we're looking for on that table... \n" +
                        "Should pick it up.",
-                       "", "", "LabRoom", "",
+                       "Prologue", "", "LabRoom", "",
                        new List<Item> { dictItems["Terminid Sample"] }, null,
                        "-- Log 13 --\n" +
                        "The door seems to have be smashed down...\n" +
@@ -424,7 +429,8 @@ namespace SweetLiberty
                        "Sweet Liberty, I got nothing!\n" +
                        "About... to... pass... out...\n" +
                        "UNEXPECTED LOG TERMINATION.\n" +
-                       "FINISHING TERMINATION IN 3... 2... 1...",
+                       "FINISHING TERMINATION IN 3... 2... 1...\n" +
+                       "DONE. PLEASE CLICK THE UP BUTTON TO CONTINUE.",
                        "The lab room. Found the sample here. Did I take it?"));
 
 
@@ -432,7 +438,7 @@ namespace SweetLiberty
             Player.Name = "Alpha-Three";
             Player.Health = 100;
             Player.Strength = 50;
-            currentLocation = dictLocations["StartingArea"];
+            currentLocation = dictLocations["Prologue"];
 
             Play();
             
@@ -446,6 +452,7 @@ namespace SweetLiberty
 
                 if (dictItems.ContainsKey(itemName))
                 {
+                    Sound.PlaySoundEffect("Sound Effects/pick up.wav");
                     Player.AddToInventory(dictItems[itemName]);
                     DisplayStory($"\nI took the {itemName}.");
                 }
@@ -509,7 +516,13 @@ namespace SweetLiberty
         private void Play()
         {
             //fill description
-            if (currentLocation.Entered == false)
+
+            if (gameOver == true)
+            {
+                DisplayStory(currentLocation.BadEnding, true);
+            }
+
+            else if (currentLocation.Entered == false)
             {
                 currentLocation.Entered = true;
                 DisplayStory(currentLocation.Description, true);
@@ -561,9 +574,9 @@ namespace SweetLiberty
             DisableButton(buttonDown);
             DisableButton(buttonLeft);
             DisableButton(buttonRight);
-            if (NorthExit != "") { EnableButton(buttonUp); }
+            if (((NorthExit != "") && (gameOver == false)) || ((NorthExit == "Prologue") && (gameOver == true))){ EnableButton(buttonUp); }
             if (EastExit != "") { EnableButton(buttonRight); }
-            if (SouthExit != "") { EnableButton(buttonDown); }
+            if (((SouthExit != "") && (gameOver == false)) || ((SouthExit == "Prologue") && (gameOver == true))) { EnableButton(buttonDown); }
             if (WestExit != "") { EnableButton(buttonLeft); }
         }
         
@@ -583,38 +596,51 @@ namespace SweetLiberty
         {
             switch(location.Name)
             {
+                case "Prologue":
+                    if (gameOver == true) 
+                    { 
+                        Player.Inventory.Clear(); 
+                        Player.ItemInHand = null; 
+                        foreach(Location place in dictLocations.Values)
+                        {
+                            place.Entered = true;
+                        }
+                        Play();
+                    }
+                    break;
                 case "AutomatonTerminal":
                     // Die if not holding IFF
                     if (Player.ItemInHand != null && Player.ItemInHand.Name == "Automaton IFF") { Play(); break; }
-                    else { PlayMusic("Music/Automaton Fight.mp3"); DisplayStory(location.BadEnding, true); break;}
+                    else { PlayMusic("Music/Automaton Fight.mp3"); Sound.PlaySoundEffect("Sound Effects/outpost death.wav"); gameOver = true; Play(); break;}
                 case "LabRoom":
                     // Die if Stim is not in inventory
                     if (CheckInventory("Stim") == true) {Play(); break;}
-                    else {DisplayStory(location.BadEnding, true); break;}
+                    else {gameOver = true; Play(); break;}
                 case "Ship":
                     // Die if Sample is not in inventory
                     if (CheckInventory("Terminid Sample") == true) { Play(); break; }
-                    else { DisplayStory(location.BadEnding, true); break; }
+                    else { gameOver = true; Play(); break; }
                 case "Nest": 
                     // Die if Breaker is in inventory
                     if (CheckInventory("Breaker") == false) { Play(); break; }
-                    else { PlayMusic("Music/Terminid Fight.mp3"); DisplayStory(location.BadEnding, true); break; }
+                    else { PlayMusic("Music/Terminid Fight.mp3");  gameOver = true; Play(); break; }
                 case "EscapePod": 
                     // Die if Breaker is not in inventory
                     if (CheckInventory("Breaker") == true) { Play(); break; }
-                    else {  DisplayStory(location.BadEnding, true); break; }
+                    else { gameOver = true; Play(); break; }
                 default: Play(); break;
             }
         }
-        private void CheckMusic(string locationName)
+        private void CheckMusic(string locationName, Location location)
         {
             switch (locationName)
             {
                 case "Prologue2": Sound.PlaySoundEffect("Sound Effects/Priming.wav"); break;
                 case "Prologue3": MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/Explosion.wav"); break;
+                case "Prologue4": Sound.PlaySoundEffect("Sound Effects/haze.wav"); break;
                 case "StartingArea": PlayMusic("Music/Long Night of Solace.mp3"); break;
-                case "OutpostRoom": PlayMusic("Music/The Jail.mp3"); break;
-                case "Stronghold": PlayMusic("Music/Server Queue.mp3"); break;
+                case "OutpostRoom": if (currentLocation.Entered == false) { PlayMusic("Music/The Jail.mp3"); Sound.PlaySoundEffect("Sound Effects/a rat.wav"); } break;
+                case "Stronghold": PlayMusic("Music/Server Queue.mp3"); Sound.PlaySoundEffect("Sound Effects/spotted.wav"); break;
                 case "Ship": PlayMusic("Music/Extraction.mp3"); break;
                 default:break;
             }

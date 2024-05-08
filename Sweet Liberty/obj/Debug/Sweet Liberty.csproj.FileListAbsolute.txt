@@ -108,3 +108,8 @@ C:\Users\paulv\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sweet Liberty.
 C:\Users\paulv\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sweet Liberty.pdb
 C:\Users\paulv\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Interop.WMPLib.dll
 C:\Users\paulv\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\a rat.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\haze.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\outpost death.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\pick up.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\spotted.wav
