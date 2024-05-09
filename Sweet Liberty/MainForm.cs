@@ -375,7 +375,7 @@ namespace SweetLiberty
                        "Log 8. I crawled through this opening... Looks like it was burrowed through.\n" +
                        "Wait... is that a...\n" +
                        "It's a Bile Spewer... But it doesn't seem to be attacking.\n" +
-                       "Maybe it doesn't mean any harm?", backtrack
+                       "Maybe it doesn't mean any harm?",
                        "TimeSkip", "", "Prologue", "",
                        null, null,
                        "-- Log 8 --\n" +
