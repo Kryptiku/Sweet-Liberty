@@ -604,7 +604,7 @@ namespace SweetLiberty
                         Player.ItemInHand = null; 
                         foreach(Location place in dictLocations.Values)
                         {
-                            place.Entered = true;
+                            place.Entered = false;
                         }
                         gameOver = false;
                         Play();
