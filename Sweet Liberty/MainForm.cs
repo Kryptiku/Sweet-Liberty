@@ -196,6 +196,23 @@ namespace SweetLiberty
             dictItems.Add("Log 3AD", new Log("Log 3AD", "A log left behind by some scientists.",  "Log 3AD. The Terminid population is decreasing, but we don't know why this is happening. We need to run more tests. This cannot happen."));
 
             // Locations 
+            AddLocations();
+
+
+
+            Player.Name = "Alpha-Three";
+            Player.Health = 100;
+            Player.Strength = 50;
+            currentLocation = dictLocations["Prologue"];
+
+            CheckMusic(currentLocation);
+
+            Play();
+            
+        }
+
+        private void AddLocations()
+        {
             dictLocations.Add("Prologue", new Location("Prologue",
                         "Sector 1-PL",
                         "\"Let's move it! We have no time left!\"\n" +
@@ -243,7 +260,7 @@ namespace SweetLiberty
                         new List<Item> { dictItems["Stim"] }, null,
                         "",
                         "It's cold outside. Did I grab the Stim here?"));
-                        
+
 
             dictLocations.Add("Outpost", new Location("Outpost",
                        "Abandoned Outpost",
@@ -262,7 +279,7 @@ namespace SweetLiberty
                        "Went inside an abandoned outpost room. Seems it was scavenged about.\n" +
                        "Whole place is empty. Can't see anything. Save for a terminal emitting light on the far side of the room.\n" +
                        "Probably something useful there-- shit!\n" +
-                       "Ah, it's just a rat. Fuck.", 
+                       "Ah, it's just a rat. Fuck.",
                        "OutpostTerminal", "", "Outpost", "",
                        null, null,
                        "",
@@ -285,7 +302,7 @@ namespace SweetLiberty
                        "Scaled up to get a bit closer. Needed a better view of the stronghold.\n" +
                        "The base is so massive. There may be something useful there, but how am I gonna get in?\n" +
                        "Ah shit, there's an automaton squadron nearby. I need to lay low.\n" +
-                       "Shit! Enemy tango might have spotted me. Eyes glowed bright red. Should be fine. I ducked behind a rock for cover.\n" +  
+                       "Shit! Enemy tango might have spotted me. Eyes glowed bright red. Should be fine. I ducked behind a rock for cover.\n" +
                        "This place is extremely dangerous. Need to consider if I should enter now.",
                        "AutomatonTerminal", "Outpost", "", "CrashSite",
                        null, null,
@@ -432,18 +449,16 @@ namespace SweetLiberty
                        "FINISHING TERMINATION IN 3... 2... 1...\n" +
                        "DONE. PLEASE CLICK THE UP BUTTON TO CONTINUE.",
                        "The lab room. Found the sample here. Did I take it?"));
+        }
 
-
-
-            Player.Name = "Alpha-Three";
-            Player.Health = 100;
-            Player.Strength = 50;
+        private void ResetGame()
+        {
+            Player.Inventory.Clear();
+            Player.ItemInHand = null;
+            dictLocations.Clear();
+            AddLocations();
+            gameOver = false;
             currentLocation = dictLocations["Prologue"];
-
-            CheckMusic(currentLocation);
-
-            Play();
-            
         }
 
         private void TakeItem()
@@ -600,14 +615,8 @@ namespace SweetLiberty
             {
                 case "Prologue":
                     if (gameOver == true) 
-                    { 
-                        Player.Inventory.Clear(); 
-                        Player.ItemInHand = null; 
-                        foreach(Location place in dictLocations.Values)
-                        {
-                            place.Entered = false;
-                        }
-                        gameOver = false;
+                    {
+                        ResetGame();
                         Play();
                     }
                     break;
