@@ -184,8 +184,7 @@ namespace SweetLiberty
         private void CreateGame()
         {
 
-            PlayMusic("Music/Extraction.mp3");
-            Sound.PlaySoundEffect("Sound Effects/terminal.wav");
+            
 
             // Items
             dictItems.Add("Breaker", new Weapon("Breaker", "A Breaker. An automatic shotgun. Good for killing bugs and robots.", 30));
@@ -637,6 +636,7 @@ namespace SweetLiberty
         {
             switch (location.Name)
             {
+                case "Prologue": PlayMusic("Music/Extraction.mp3"); break;
                 case "Prologue2": Sound.PlaySoundEffect("Sound Effects/Priming.wav"); break;
                 case "Prologue3": MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/Explosion.wav"); break;
                 case "Prologue4": Sound.PlaySoundEffect("Sound Effects/haze.wav"); break;
