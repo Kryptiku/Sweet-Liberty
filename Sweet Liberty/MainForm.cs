@@ -69,8 +69,9 @@ namespace SweetLiberty
             }
             if (checkLocation != currentLocation)
             {
+                CheckMusic(currentLocation);
                 CheckArea(currentLocation);
-                CheckMusic(currentLocation.Name, currentLocation);
+                
                 
             }
         }
@@ -374,7 +375,7 @@ namespace SweetLiberty
                        "Log 8. I crawled through this opening... Looks like it was burrowed through.\n" +
                        "Wait... is that a...\n" +
                        "It's a Bile Spewer... But it doesn't seem to be attacking.\n" +
-                       "Maybe it doesn't mean any harm?",
+                       "Maybe it doesn't mean any harm?", backtrack
                        "TimeSkip", "", "Prologue", "",
                        null, null,
                        "-- Log 8 --\n" +
@@ -605,6 +606,7 @@ namespace SweetLiberty
                         {
                             place.Entered = true;
                         }
+                        gameOver = false;
                         Play();
                     }
                     break;
@@ -631,9 +633,9 @@ namespace SweetLiberty
                 default: Play(); break;
             }
         }
-        private void CheckMusic(string locationName, Location location)
+        private void CheckMusic(Location location)
         {
-            switch (locationName)
+            switch (location.Name)
             {
                 case "Prologue2": Sound.PlaySoundEffect("Sound Effects/Priming.wav"); break;
                 case "Prologue3": MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/Explosion.wav"); break;
