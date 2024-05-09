@@ -440,6 +440,8 @@ namespace SweetLiberty
             Player.Strength = 50;
             currentLocation = dictLocations["Prologue"];
 
+            CheckMusic(currentLocation);
+
             Play();
             
         }
