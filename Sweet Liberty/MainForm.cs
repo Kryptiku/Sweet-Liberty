@@ -253,7 +253,7 @@ namespace SweetLiberty
                         ".\n.\n.\nOr what's left of it.\n" +
                         "Two of my squadmates abandoned me on the Lacaille Sector, in Lesath...\n" +
                         "And my other squadmate got caught in an Eagle Napalm Strike during extraction... He didn't make it.\n" +
-                        "I just woke up. It's really cold. Blizzards everywhere. Pitch dark. Can't see shit.\n" +
+                        "I just woke up. It's really cold. Blizzards everywhere. Pitch dark. Can't see anything.\n" +
                         "Automatons everywhere. Gotta hide. They must be searching for me.\n" +
                         "Saw a Stim. Probably a good idea to pick it up.",
                         "Outpost", "", "", "",  // N E S W
@@ -278,8 +278,8 @@ namespace SweetLiberty
                        "-- Log 3 --\n" +
                        "Went inside an abandoned outpost room. Seems it was scavenged about.\n" +
                        "Whole place is empty. Can't see anything. Save for a terminal emitting light on the far side of the room.\n" +
-                       "Probably something useful there-- shit!\n" +
-                       "Ah, it's just a rat. Fuck.",
+                       "Probably something useful there-- Sweet Liberty!\n" +
+                       "Ah, it's just a rat. Freedom's end...",
                        "OutpostTerminal", "", "Outpost", "",
                        null, null,
                        "",
@@ -301,8 +301,8 @@ namespace SweetLiberty
                        "Found what appears to be an Automaton Stronghold. Multiple of them in visual. Need to scope the area out.\n" +
                        "Scaled up to get a bit closer. Needed a better view of the stronghold.\n" +
                        "The base is so massive. There may be something useful there, but how am I gonna get in?\n" +
-                       "Ah shit, there's an automaton squadron nearby. I need to lay low.\n" +
-                       "Shit! Enemy tango might have spotted me. Eyes glowed bright red. Should be fine. I ducked behind a rock for cover.\n" +
+                       "Ah crap, there's an automaton squadron nearby. I need to lay low.\n" +
+                       "Crap! Enemy tango might have spotted me. Eyes glowed bright red. Should be fine. I ducked behind a rock for cover.\n" +
                        "This place is extremely dangerous. Need to consider if I should enter now.",
                        "AutomatonTerminal", "Outpost", "", "CrashSite",
                        null, null,
