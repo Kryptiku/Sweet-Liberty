@@ -462,7 +462,7 @@ namespace SweetLiberty
 
             if (currentLocation.Items.Count == 0)
             {
-                DisplayStory("\nThere are no items to pick up.");
+                DisplayStory("\nThere's nothing to pick up.");
             }
 
             else
