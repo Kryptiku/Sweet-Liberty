@@ -148,3 +148,8 @@ C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.c
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.exe
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.pdb
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\blizzard.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\blizzard.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\automaton killed.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\button combination.wav
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Music\Cars.mp3
+C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\explosion2.wav

@@ -27,6 +27,7 @@ namespace SweetLiberty
         private string WestExit;
 
         private bool gameOver = false;
+        private bool gameDone = false;
         
         private Dictionary<string, Location> dictLocations = new Dictionary<string, Location>();
         private Dictionary <string, Item> dictItems = new Dictionary<string, Item>();
@@ -214,7 +215,7 @@ namespace SweetLiberty
                         "\"Let's move it! We have no time left!\"\n" +
                         "I told you it's a bad idea to aggravate them!\n" +
                         "\"Out of my way, Three! You're just pulling us down!\"\n" +
-                        "\"How about you two just focus on the mission instead of goofing around like LiberTeas!?\"\n" +
+                        "\"How about you two just focus on the mission instead of goofing around like idiots!?\"\n" +
                         "\"You know what, One? You're right. I'm calling in the Extraction Pelican!\"\n" +
                         "What about the samples!?\n" +
                         "\"Forget the samples! We need to survive!\"\n" +
@@ -275,7 +276,7 @@ namespace SweetLiberty
                        "Went inside an abandoned outpost room. Seems it was scavenged about.\n" +
                        "Whole place is empty. Can't see anything. Save for a terminal emitting light on the far side of the room.\n" +
                        "Probably something useful there-- Sweet Liberty!\n" +
-                       "Ah, it's just a rat. Freedom's end...",
+                       "Ah, it's just a rat. I could use a LiberTea right now...",
                        "OutpostTerminal", "", "Outpost", "",
                        null, null,
                        "",
@@ -313,7 +314,7 @@ namespace SweetLiberty
                        "Looks like an Automaton control center for the ship deployments. There's a terminal in the center.\n" +
                        "I just need to do this little button combination... and...\n" +
                        "There. I'm leaving. I'm finally going home.",
-                       "Ship", "", "", "Prologue",
+                       "Ship", "", "Prologue", "",
                        null, null,
                        "Decided to approach the terminal. It's a big risk, but I'll have to take it.\n" +
                        "They spotted me! I'm taking fire! I might not be able to hold on!\n" +
@@ -330,8 +331,9 @@ namespace SweetLiberty
                        "Seems right now I'm just assigned to paperwork as a promotion.\n" +
                        "Might not be so bad after all...\n" +
                        "Sweet Liberty...\n" +
-                       "GOOD ENDING ACHIEVED. YOU'VE GIVEN HUMANITY A CHANCE. GLORY TO SUPER EARTH.",
-                       "Prologue", "", "", "", //N E S W
+                       "GOOD ENDING ACHIEVED. YOU'VE GIVEN HUMANITY A CHANCE. GLORY TO SUPER EARTH.\n" +
+                       "PRESS THE DOWN BUTTON TO TRY AGAIN.",
+                       "Prologue", "", "Prologue", "", //N E S W
                        null, null, // items and itemRequired
                        "...I am deemed as a traitor.\n" +
                        "They still asked me for the Terminid sample. The reason why they sent us there in the first place.\n" +
@@ -360,7 +362,7 @@ namespace SweetLiberty
                        "Dug out some snow. Found what seems to be an Automaton IFF.\n" +
                        "Could help me get through some Automaton patrols.\n" +
                        "They'll see me and they'll think I'm a friendly.\n" +
-                       "Would be helpful to pick it up.",
+                       "Would be helpful to pick it up and hold it on the way.",
                        "", "", "CrashSite", "Burrow",
                        new List<Item> { dictItems["Automaton IFF"] },
                        null,
@@ -415,7 +417,7 @@ namespace SweetLiberty
                        "I hear something inside. There's something there.\n" +
                        "Can't get in there without using a gun on it.\n",
                        "LabRoom", "Burrow", "", "",
-                       null, dictItems["Breaker"],
+                       null, null,
                        "",
                        "The lab outpost. Seemed to be a laboratory for studying Terminids."));
 
@@ -431,8 +433,8 @@ namespace SweetLiberty
                        "This lab... Looks like they were experimenting on the Terminids.\n" +
                        "That might be the sample we're looking for on that table... \n" +
                        "Should pick it up. A log's next to it.",
-                       "Prologue", "", "LabRoom", "",
-                       new List<Item> { dictItems["Terminid Sample"] , dictItems["Log 3AD"] }, null,
+                       "Prologue", "", "LabOutpost", "",
+                       new List<Item> { dictItems["Log 3AD"], dictItems["Terminid Sample"] }, dictItems["Breaker"],
                        "-- Log 13 --\n" +
                        "The door seems to have be smashed down...\n" +
                        "Movement's getting louder... Where is it coming from?\n" +
@@ -601,9 +603,9 @@ namespace SweetLiberty
             DisableButton(buttonDown);
             DisableButton(buttonLeft);
             DisableButton(buttonRight);
-            if ((NorthExit != "Prologue" && NorthExit != ""  && gameOver == false) || (NorthExit == "Prologue" && gameOver == true)) { EnableButton(buttonUp); }
+            if ((NorthExit != "Prologue" && NorthExit != ""  && gameOver == false) || (NorthExit == "Prologue" && gameOver == true) || (NorthExit == "Prologue" && gameDone == true)) { EnableButton(buttonUp); }
             if (EastExit != "") { EnableButton(buttonRight); }
-            if ((SouthExit != "Prologue" && SouthExit != "" && gameOver == false) || (SouthExit == "Prologue" && gameOver == true)) { EnableButton(buttonDown); }
+            if ((SouthExit != "Prologue" && SouthExit != "" && gameOver == false) || (SouthExit == "Prologue" && gameOver == true) || (SouthExit == "Prologue" && gameDone == true)) { EnableButton(buttonDown); }
             if (WestExit != "") { EnableButton(buttonLeft); }
         }
         
@@ -611,7 +613,7 @@ namespace SweetLiberty
         {
             for (int i = 0; i < Player.Inventory.Count; i++)
             {
-                if (Player.Inventory.ContainsKey(itemRequired) || (Player.ItemInHand != null || Player.ItemInHand.Name == itemRequired))
+                if (Player.Inventory.ContainsKey(itemRequired) || (Player.ItemInHand != null && Player.ItemInHand.Name == itemRequired))
                 {
                     return true;
                 }    
@@ -624,7 +626,7 @@ namespace SweetLiberty
             switch(location.Name)
             {
                 case "Prologue":
-                    if (gameOver == true) 
+                    if (gameOver == true || gameDone == true) 
                     {
                         ResetGame();
                         Play();
@@ -649,7 +651,7 @@ namespace SweetLiberty
                 case "EscapePod": 
                     // Die if Breaker is not in inventory
                     if (CheckInventory("Breaker") == true) { Play(); break; }
-                    else { gameOver = true; Play(); break; }
+                    else { MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/explosion2.wav"); gameOver = true; Play(); break; }
                 default: Play(); break;
             }
         }
@@ -665,7 +667,10 @@ namespace SweetLiberty
                 case "Outpost": Sound.PlaySoundEffect("Sound Effects/blizzard.wav"); break;
                 case "OutpostRoom": if (currentLocation.Entered == false) { PlayMusic("Music/The Jail.mp3"); Sound.PlaySoundEffect("Sound Effects/a rat.wav"); } break;
                 case "Stronghold": if (currentLocation.Entered == false) { PlayMusic("Music/Server Queue.mp3"); Sound.PlaySoundEffect("Sound Effects/spotted.wav"); } break;
-                case "Ship": PlayMusic("Music/Extraction.mp3"); break;
+                case "EscapePod": if (currentLocation.Entered == false) { Sound.PlaySoundEffect("Sound Effects/automaton killed.wav"); } break; 
+                case "AutomatonTerminal": PlayMusic("Music/Extraction.mp3"); Sound.PlaySoundEffect("Sound Effects/button combination.wav"); break;
+                case "Nest": gameDone = true; PlayMusic("Music/Cars.mp3"); break;
+                case "Ship": gameDone = true; PlayMusic("Music/Cars.mp3"); break;
                 default:break;
             }
         }
