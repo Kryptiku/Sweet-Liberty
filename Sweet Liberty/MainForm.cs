@@ -314,17 +314,17 @@ namespace SweetLiberty
                        "-- Log 9 -- \n" +
                        "There's a lot of them here... Lined up like soldiers. Good thing I'm not seen as a foe.\n" +
                        "Nearing the end of this hallway... Huh...\n" +
-                       "Looks like an Automaton control center for the ship deployements. There's a terminal in the center.\n" +
+                       "Looks like an Automaton control center for the ship deployments. There's a terminal in the center.\n" +
                        "I just need to do this little button combination... and...\n" +
                        "There. I'm leaving. I'm finally going home.",
-                       "Prologue", "", "", "",
+                       "Ship", "", "", "Prologue",
                        null, null,
                        "Decided to approach the terminal. It's a big risk, but I'll have to take it.\n" +
                        "They spotted me! I'm taking fire! I might not be able to hold on!\n" +
                        "Sweet Liberty! A grenade!\n" +
                        "UNEXPECTED LOG TERMINATION.\n" +
                        "FINISHING TERMINATION IN 3... 2... 1...\n" +
-                       "DONE. PLEASE CLICK THE UP BUTTON TO CONTINUE."));
+                       "DONE. PLEASE CLICK THE DOWN BUTTON TO CONTINUE."));
 
             dictLocations.Add("Ship", new Location("Ship",
                        "Destroyer Ship",
@@ -352,7 +352,7 @@ namespace SweetLiberty
                        "Found an escape pod. It crashed deep into the snow.\n" +
                        "An automaton's guarding it. Looks like a suicide bomber.\n" +
                        "Might be advisable to hold a weapon before going in.\n",
-                       "EscapePod", "StrongHold", "", "",
+                       "EscapePod", "Stronghold", "", "",
                        null, null,
                        "",
                        "The escape pod's crash site. Thing really took a big hit."));
@@ -463,24 +463,29 @@ namespace SweetLiberty
 
         private void TakeItem()
         {
-            foreach (var itemEntry in currentLocation.Items)
-            {
-                string itemName = itemEntry.Key;
 
-                if (dictItems.ContainsKey(itemName))
-                {
-                    Sound.PlaySoundEffect("Sound Effects/pick up.wav");
-                    Player.AddToInventory(dictItems[itemName]);
-                    DisplayStory($"\nI took the {itemName}.");
-                }
-                else
-                {
-                    DisplayStory("There's no item to pick up.");
-                }
+            if (currentLocation.Items.Count == 0)
+            {
+                DisplayStory("\nThere are no items to pick up.");
             }
 
-            // Clear the items from the current location
-            currentLocation.Items.Clear();
+            else
+            {
+                foreach (var itemEntry in currentLocation.Items)
+                {
+                    string itemName = itemEntry.Key;
+
+                    if (dictItems.ContainsKey(itemName))
+                    {
+                        Sound.PlaySoundEffect("Sound Effects/pick up.wav");
+                        Player.AddToInventory(dictItems[itemName]);
+                        DisplayStory($"\nI took the {itemName}.");
+                    }
+                }
+
+                // Clear the items from the current location
+                currentLocation.Items.Clear();
+            }
 
             // Update the display
             DisplayInventory();
@@ -521,6 +526,15 @@ namespace SweetLiberty
             {
                 DisplayStory($"\nI returned the {Player.ItemInHand.Name} to my supply pack.");
                 Player.ReturnItemToInventory();
+                DisplayInventory();
+                DisplayHand();
+            }
+            else if (listInventory.SelectedItem != null && Player.ItemInHand != null)
+            {
+                DisplayStory($"\nI returned the {Player.ItemInHand.Name} to my supply pack.");
+                Player.ReturnItemToInventory();
+                Player.GetItemFromInventory(listInventory.SelectedItem.ToString());
+                DisplayStory($"\nI took the {Player.ItemInHand.Name} from my supply pack.");
                 DisplayInventory();
                 DisplayHand();
             }
@@ -591,9 +605,9 @@ namespace SweetLiberty
             DisableButton(buttonDown);
             DisableButton(buttonLeft);
             DisableButton(buttonRight);
-            if (((NorthExit != "") && (gameOver == false)) || ((NorthExit == "Prologue") && (gameOver == true))){ EnableButton(buttonUp); }
+            if ((NorthExit != "Prologue" && NorthExit != ""  && gameOver == false) || (NorthExit == "Prologue" && gameOver == true)) { EnableButton(buttonUp); }
             if (EastExit != "") { EnableButton(buttonRight); }
-            if (((SouthExit != "") && (gameOver == false)) || ((SouthExit == "Prologue") && (gameOver == true))) { EnableButton(buttonDown); }
+            if ((SouthExit != "Prologue" && SouthExit != "" && gameOver == false) || (SouthExit == "Prologue" && gameOver == true)) { EnableButton(buttonDown); }
             if (WestExit != "") { EnableButton(buttonLeft); }
         }
         
@@ -653,7 +667,7 @@ namespace SweetLiberty
                 case "Prologue4": Sound.PlaySoundEffect("Sound Effects/haze.wav"); break;
                 case "StartingArea": PlayMusic("Music/Long Night of Solace.mp3"); break;
                 case "OutpostRoom": if (currentLocation.Entered == false) { PlayMusic("Music/The Jail.mp3"); Sound.PlaySoundEffect("Sound Effects/a rat.wav"); } break;
-                case "Stronghold": PlayMusic("Music/Server Queue.mp3"); Sound.PlaySoundEffect("Sound Effects/spotted.wav"); break;
+                case "Stronghold": if (currentLocation.Entered == false) { PlayMusic("Music/Server Queue.mp3"); Sound.PlaySoundEffect("Sound Effects/spotted.wav"); } break;
                 case "Ship": PlayMusic("Music/Extraction.mp3"); break;
                 default:break;
             }
