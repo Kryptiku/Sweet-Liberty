@@ -113,3 +113,38 @@ C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effect
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\outpost death.wav
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\pick up.wav
 C:\Users\acer\source\repos\Sweet Liberty Co\Sweet Liberty\bin\Debug\Sound Effects\spotted.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Automaton Fight.mp3
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Extraction.mp3
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\a rat.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\Explosion.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\haze.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\outpost death.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\pick up.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\Priming.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\spotted.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Long Night of Solace.mp3
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\downSound.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Terminid Fight.mp3
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\The Jail.mp3
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Server Queue.mp3
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\leftSound.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\rightSound.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\upSound.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\terminal.wav
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Resources\FSSinclairTrial-Bold.otf
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sweet Liberty.exe.config
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sweet Liberty.exe
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sweet Liberty.pdb
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Interop.WMPLib.dll
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.AssemblyReference.cache
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Interop.WMPLib.dll
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.ResolveComReference.cache
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\SweetLiberty.MainForm.resources
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\SweetLiberty.Properties.Resources.resources
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.GenerateResource.cache
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.CoreCompileInputs.cache
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.exe
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.pdb
+C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\blizzard.wav

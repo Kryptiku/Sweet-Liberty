@@ -661,7 +661,8 @@ namespace SweetLiberty
                 case "Prologue2": Sound.PlaySoundEffect("Sound Effects/Priming.wav"); break;
                 case "Prologue3": MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/Explosion.wav"); break;
                 case "Prologue4": Sound.PlaySoundEffect("Sound Effects/haze.wav"); break;
-                case "StartingArea": PlayMusic("Music/Long Night of Solace.mp3"); break;
+                case "StartingArea": PlayMusic("Music/Long Night of Solace.mp3"); Sound.PlaySoundEffect("Sound Effects/blizzard.wav"); break;
+                case "Outpost": Sound.PlaySoundEffect("Sound Effects/blizzard.wav"); break;
                 case "OutpostRoom": if (currentLocation.Entered == false) { PlayMusic("Music/The Jail.mp3"); Sound.PlaySoundEffect("Sound Effects/a rat.wav"); } break;
                 case "Stronghold": if (currentLocation.Entered == false) { PlayMusic("Music/Server Queue.mp3"); Sound.PlaySoundEffect("Sound Effects/spotted.wav"); } break;
                 case "Ship": PlayMusic("Music/Extraction.mp3"); break;
