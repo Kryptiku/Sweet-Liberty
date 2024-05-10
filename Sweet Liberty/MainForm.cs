@@ -47,7 +47,6 @@ namespace SweetLiberty
 
         public MainForm()
         {
-            
             InitializeComponent();
             SetCustomFont();
             SetControlFont();
@@ -183,9 +182,6 @@ namespace SweetLiberty
 
         private void CreateGame()
         {
-
-            
-
             // Items
             dictItems.Add("Breaker", new Weapon("Breaker", "A Breaker. An automatic shotgun. Good for killing bugs and robots.", 30));
             dictItems.Add("Automaton IFF", new Item("Automaton IFF", "An Identification Friend or Foe. Automatons would see me as another one of them."));
@@ -434,9 +430,9 @@ namespace SweetLiberty
                        "Good thing I have this stim. WOOH! Sweet Liberty...\n" +
                        "This lab... Looks like they were experimenting on the Terminids.\n" +
                        "That might be the sample we're looking for on that table... \n" +
-                       "Should pick it up.",
+                       "Should pick it up. A log's next to it.",
                        "Prologue", "", "LabRoom", "",
-                       new List<Item> { dictItems["Terminid Sample"] }, null,
+                       new List<Item> { dictItems["Terminid Sample"] , dictItems["Log 3AD"] }, null,
                        "-- Log 13 --\n" +
                        "The door seems to have be smashed down...\n" +
                        "Movement's getting louder... Where is it coming from?\n" +
