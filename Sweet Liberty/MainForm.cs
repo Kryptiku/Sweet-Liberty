@@ -196,11 +196,11 @@ namespace SweetLiberty
             AddLocations();
 
 
-
+            Player.AddToInventory(dictItems["Breaker"]);
             Player.Name = "Alpha-Three";
             Player.Health = 100;
             Player.Strength = 50;
-            currentLocation = dictLocations["Prologue4"];
+            currentLocation = dictLocations["Burrow"];
 
             CheckMusic(currentLocation);
 
@@ -647,7 +647,7 @@ namespace SweetLiberty
                 case "Nest": 
                     // Die if Breaker is in inventory
                     if (CheckInventory("Breaker") == false) { Play(); break; }
-                    else { PlayMusic("Music/Terminid Fight.mp3");  gameOver = true; Play(); break; }
+                    else { PlayMusic("Music/Terminid Fight.mp3"); Sound.PlaySoundEffect("Sound Effects/bilespewer.wav");  gameOver = true; Play(); break; }
                 case "EscapePod": 
                     // Die if Breaker is not in inventory
                     if (CheckInventory("Breaker") == true) { Play(); break; }
