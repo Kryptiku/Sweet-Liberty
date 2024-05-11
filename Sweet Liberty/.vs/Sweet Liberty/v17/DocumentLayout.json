@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -56,14 +56,14 @@
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AQIAAIACAAAAAAAAAAAswJgCAABbAAAA",
+              "ViewState": "AQIAALoAAAAAAAAAAAAYwMoAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T13:49:11.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Properties\\Resources.resx",
@@ -87,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Log.cs",
               "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Log.cs",
               "RelativeDocumentMoniker": "Log.cs",

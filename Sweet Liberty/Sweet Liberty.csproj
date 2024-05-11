@@ -171,6 +171,13 @@
     <Content Include="Sound Effects\haze.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Sound Effects\labroom-terminid.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound Effects\labroom-terminid2.wav" />
+    <Content Include="Sound Effects\labroom.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Sound Effects\outpost death.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

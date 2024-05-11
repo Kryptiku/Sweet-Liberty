@@ -200,7 +200,7 @@ namespace SweetLiberty
             Player.Name = "Alpha-Three";
             Player.Health = 100;
             Player.Strength = 50;
-            currentLocation = dictLocations["Prologue"];
+            currentLocation = dictLocations["Prologue4"];
 
             CheckMusic(currentLocation);
 
@@ -639,7 +639,7 @@ namespace SweetLiberty
                 case "LabRoom":
                     // Die if Stim is not in inventory
                     if (CheckInventory("Stim") == true) {Play(); break;}
-                    else {gameOver = true; Play(); break;}
+                    else { Sound.PlaySoundEffect("Music Effects/ labroom-terminid2.wav"); gameOver = true; Play(); break;}
                 case "Ship":
                     // Die if Sample is not in inventory
                     if (CheckInventory("Terminid Sample") == true) { Play(); break; }
@@ -665,6 +665,7 @@ namespace SweetLiberty
                 case "Prologue4": Sound.PlaySoundEffect("Sound Effects/haze.wav"); break;
                 case "StartingArea": PlayMusic("Music/Long Night of Solace.mp3"); Sound.PlaySoundEffect("Sound Effects/blizzard.wav"); break;
                 case "Outpost": Sound.PlaySoundEffect("Sound Effects/blizzard.wav"); break;
+                case "LabRoom": if (currentLocation.Entered == false) { MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/labroom-terminid.wav"); } else { MXP.Ctlcontrols.stop(); Sound.PlaySoundEffect("Sound Effects/labroom.wav"); }  break;
                 case "OutpostRoom": if (currentLocation.Entered == false) { PlayMusic("Music/The Jail.mp3"); Sound.PlaySoundEffect("Sound Effects/a rat.wav"); } break;
                 case "Stronghold": if (currentLocation.Entered == false) { PlayMusic("Music/Server Queue.mp3"); Sound.PlaySoundEffect("Sound Effects/spotted.wav"); } break;
                 case "EscapePod": if (currentLocation.Entered == false) { Sound.PlaySoundEffect("Sound Effects/automaton killed.wav"); } break; 
