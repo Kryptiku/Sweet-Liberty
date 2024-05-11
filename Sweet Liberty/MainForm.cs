@@ -196,11 +196,11 @@ namespace SweetLiberty
             AddLocations();
 
 
-            Player.AddToInventory(dictItems["Breaker"]);
+            //Player.AddToInventory(dictItems["Breaker"]);
             Player.Name = "Alpha-Three";
             Player.Health = 100;
             Player.Strength = 50;
-            currentLocation = dictLocations["Burrow"];
+            currentLocation = dictLocations["Prologue"];
 
             CheckMusic(currentLocation);
 
