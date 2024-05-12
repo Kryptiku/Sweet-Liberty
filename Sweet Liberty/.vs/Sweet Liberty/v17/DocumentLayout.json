@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\ryce\\source\\repos\\sweet-liberty\\sweet liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\ryce\\source\\repos\\sweet-liberty\\sweet liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\ryce\\source\\repos\\sweet-liberty\\sweet liberty\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,67 +37,81 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Location.cs",
+              "RelativeDocumentMoniker": "Location.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Location.cs",
+              "RelativeToolTip": "Location.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T06:51:55.915Z",
+              "IsPinned": true
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs [Design]",
               "RelativeToolTip": "MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T13:31:01.696Z",
+              "WhenOpened": "2024-05-12T12:07:26.468Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AQIAAKwAAAAAAAAAAAAQwMoAAAA4AAAA",
+              "ViewState": "AQIAALgAAAAAAAAAAAAQwMcAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T13:49:11.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Properties\\Resources.resx",
-              "RelativeToolTip": "Properties\\Resources.resx",
-              "ViewState": "AQIAACUAAAAAAAAAAAAIwIAAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-04T13:42:46.008Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "MainForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.Designer.cs",
-              "RelativeToolTip": "MainForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPEBAAAAAAAA",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T13:39:51.089Z"
+              "WhenOpened": "2024-05-11T06:55:47.105Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Item.cs",
+              "RelativeDocumentMoniker": "Item.cs",
+              "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Item.cs",
+              "RelativeToolTip": "Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T06:51:12.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Log.cs",
               "DocumentMoniker": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Log.cs",
               "RelativeDocumentMoniker": "Log.cs",
               "ToolTip": "C:\\Users\\Ryce\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Log.cs",
               "RelativeToolTip": "Log.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-04T13:31:01.637Z"
             }

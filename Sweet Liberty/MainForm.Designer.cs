@@ -33,9 +33,7 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_close = new System.Windows.Forms.Button();
             this.btn_minimize = new System.Windows.Forms.Button();
-            this.btn_maximize = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.control1 = new System.Windows.Forms.Control();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.displayPanel = new System.Windows.Forms.Panel();
@@ -57,8 +55,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -85,13 +81,12 @@
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.flowLayoutPanel2.Controls.Add(this.btn_close);
             this.flowLayoutPanel2.Controls.Add(this.btn_minimize);
-            this.flowLayoutPanel2.Controls.Add(this.btn_maximize);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel2.Font = new System.Drawing.Font("Nirmala UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1245, 0);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(-1, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(123, 36);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1369, 36);
             this.flowLayoutPanel2.TabIndex = 7;
             // 
             // btn_close
@@ -102,7 +97,7 @@
             this.btn_close.FlatAppearance.BorderSize = 0;
             this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_close.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_close.Location = new System.Drawing.Point(95, 3);
+            this.btn_close.Location = new System.Drawing.Point(1341, 3);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(25, 33);
             this.btn_close.TabIndex = 6;
@@ -117,49 +112,21 @@
             this.btn_minimize.FlatAppearance.BorderSize = 0;
             this.btn_minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_minimize.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_minimize.Location = new System.Drawing.Point(64, 3);
+            this.btn_minimize.Location = new System.Drawing.Point(1310, 3);
             this.btn_minimize.Name = "btn_minimize";
             this.btn_minimize.Size = new System.Drawing.Size(25, 33);
             this.btn_minimize.TabIndex = 4;
             this.btn_minimize.UseVisualStyleBackColor = false;
             this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
             // 
-            // btn_maximize
-            // 
-            this.btn_maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.btn_maximize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_maximize.BackgroundImage")));
-            this.btn_maximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_maximize.FlatAppearance.BorderSize = 0;
-            this.btn_maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_maximize.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btn_maximize.Location = new System.Drawing.Point(33, 3);
-            this.btn_maximize.Name = "btn_maximize";
-            this.btn_maximize.Size = new System.Drawing.Size(25, 33);
-            this.btn_maximize.TabIndex = 5;
-            this.btn_maximize.UseVisualStyleBackColor = false;
-            this.btn_maximize.Click += new System.EventHandler(this.btn_maximize_Click);
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(264, 36);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1369, 36);
             this.flowLayoutPanel1.TabIndex = 7;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.pictureBox1.Image = global::SweetLiberty.Properties.Resources.Screenshot_2024_04_29_003510;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(81, 29);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // control1
             // 
@@ -449,8 +416,6 @@
             this.Load += new System.EventHandler(this.MainFormLoad);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
@@ -468,11 +433,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button btn_maximize;
         private System.Windows.Forms.Button btn_minimize;
         private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Control control1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.SplitContainer splitContainer1;
