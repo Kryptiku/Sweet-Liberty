@@ -173,3 +173,46 @@ C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\
 C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\outpost death.wav
 C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\pick up.wav
 C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\spotted.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Automaton Fight.mp3
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Extraction.mp3
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\a rat.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\automaton killed.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\bilespewer.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\blizzard.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\button combination.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Cars.mp3
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\Explosion.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\explosion2.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\haze.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\labroom-terminid.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\labroom.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\outpost death.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\pick up.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\Priming.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\spotted.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Long Night of Solace.mp3
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\downSound.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Terminid Fight.mp3
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\The Jail.mp3
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Server Queue.mp3
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\leftSound.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\rightSound.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\upSound.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\terminal.wav
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Resources\FSSinclairTrial-Bold.otf
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sweet Liberty.exe.config
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sweet Liberty.exe
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Sweet Liberty.pdb
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\Interop.WMPLib.dll
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.AssemblyReference.cache
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Interop.WMPLib.dll
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.ResolveComReference.cache
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\SweetLiberty.MainForm.resources
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\SweetLiberty.Properties.Resources.resources
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.exe
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.pdb
+C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\SweetLiberty.LandingPage.resources

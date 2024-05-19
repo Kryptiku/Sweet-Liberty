@@ -16,7 +16,8 @@ namespace Initial_UI_Design
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SweetLiberty.MainForm());
+
+            Application.Run(new SweetLiberty.LandingPage());
         }
     }
 }
