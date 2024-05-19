@@ -157,6 +157,12 @@
     <None Include="Resources\buttonPickupPress.png" />
     <None Include="Resources\buttonUseDefault.png" />
     <None Include="Resources\buttonUsePress.png" />
+    <None Include="Resources\buttonJustPlayDefault.png" />
+    <None Include="Resources\buttonJustPlayPress.png" />
+    <None Include="Resources\buttonLoginDefault.png" />
+    <None Include="Resources\buttonLoginPress.png" />
+    <None Include="Resources\buttonSignupDefault.png" />
+    <None Include="Resources\buttonSignupPress.png" />
     <Content Include="Sound Effects\a rat.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

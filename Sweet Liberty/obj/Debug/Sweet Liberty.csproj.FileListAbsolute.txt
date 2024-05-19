@@ -216,3 +216,4 @@ C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Deb
 C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.exe
 C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\Sweet Liberty.pdb
 C:\Users\ACER\Documents\_FINAL Sweet Liberty\Sweet-Liberty\Sweet Liberty\obj\Debug\SweetLiberty.LandingPage.resources
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\obj\Debug\SweetLiberty.LandingPage.resources

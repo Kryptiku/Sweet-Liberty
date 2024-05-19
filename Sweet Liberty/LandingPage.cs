@@ -82,7 +82,38 @@ namespace SweetLiberty
             WindowState = FormWindowState.Minimized;
         }
 
-        
+        private void login_MouseDown(object sender, MouseEventArgs e)
+        {
+            login.BackgroundImage = Properties.Resources.buttonLoginDefault;
+        }
+
+        private void login_MouseUp(object sender, MouseEventArgs e)
+        {
+            login.BackgroundImage = Properties.Resources.buttonLoginPress;
+            login.BackgroundImage = Properties.Resources.buttonLoginDefault;
+        }
+
+        private void signup_MouseDown(object sender, MouseEventArgs e)
+        {
+            signup.BackgroundImage = Properties.Resources.buttonSignupDefault;
+        }
+
+        private void signup_MouseUp(object sender, MouseEventArgs e)
+        {
+            signup.BackgroundImage = Properties.Resources.buttonSignupPress;
+            signup.BackgroundImage = Properties.Resources.buttonSignupDefault;
+        }
+
+        private void playButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            playButton.BackgroundImage = Properties.Resources.buttonJustPlayDefault;
+        }
+
+        private void playButton_MouseUp(object sender, MouseEventArgs e)
+        {
+            playButton.BackgroundImage = Properties.Resources.buttonJustPlayPress;
+            playButton.BackgroundImage = Properties.Resources.buttonJustPlayDefault;
+        }
     }
 
     public class User

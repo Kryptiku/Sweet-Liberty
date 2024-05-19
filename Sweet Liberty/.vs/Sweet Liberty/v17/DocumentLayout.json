@@ -1,30 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\",
+  "WorkspaceRootPath": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\acer\\documents\\_final sweet liberty\\sweet-liberty\\sweet liberty\\landingpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:landingpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\acer\\documents\\_final sweet liberty\\sweet-liberty\\sweet liberty\\userdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:userdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\acer\\documents\\_final sweet liberty\\sweet-liberty\\sweet liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\acer\\documents\\_final sweet liberty\\sweet-liberty\\sweet liberty\\landingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:landingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\acer\\documents\\_final sweet liberty\\sweet-liberty\\sweet liberty\\landingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\landingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:landingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\acer\\documents\\_final sweet liberty\\sweet-liberty\\sweet liberty\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\landingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:landingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\paulv\\source\\repos\\sweet-liberty\\sweet liberty\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|c:\\users\\paulv\\source\\repos\\sweet-liberty\\sweet liberty\\landingpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:landingpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\userdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{05771659-3DF3-4F37-97E3-77CF6342ADFD}|Sweet Liberty.csproj|solutionrelative:userdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,62 +38,58 @@
       "DocumentGroups": [
         {
           "DockedHeight": 353,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserData.csv",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\UserData.csv",
-              "RelativeDocumentMoniker": "UserData.csv",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\UserData.csv",
-              "RelativeToolTip": "UserData.csv",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2024-05-19T10:51:01.933Z",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AQIAAPoCAAAAAAAAAAAewAcDAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T11:46:45.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "LandingPage.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\LandingPage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\LandingPage.Designer.cs",
               "RelativeDocumentMoniker": "LandingPage.Designer.cs",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\LandingPage.Designer.cs",
+              "ToolTip": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\LandingPage.Designer.cs",
               "RelativeToolTip": "LandingPage.Designer.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAwwIoAAAAkAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T10:12:38.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "LandingPage.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\LandingPage.cs",
+              "DocumentMoniker": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\LandingPage.cs",
               "RelativeDocumentMoniker": "LandingPage.cs",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\LandingPage.cs",
+              "ToolTip": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\LandingPage.cs",
               "RelativeToolTip": "LandingPage.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAYwDMAAAAJAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAMwGIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T09:41:43.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\Program.cs",
+              "ToolTip": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -98,11 +98,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "LandingPage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\LandingPage.cs",
+              "DocumentMoniker": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\LandingPage.cs",
               "RelativeDocumentMoniker": "LandingPage.cs",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\LandingPage.cs [Design]",
+              "ToolTip": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\LandingPage.cs [Design]",
               "RelativeToolTip": "LandingPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T09:21:08.469Z",
@@ -110,15 +110,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\ACER\\Documents\\_FINAL Sweet Liberty\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\MainForm.cs [Design]",
               "RelativeToolTip": "MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T09:17:51.614Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserData.csv",
+              "DocumentMoniker": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\UserData.csv",
+              "RelativeDocumentMoniker": "UserData.csv",
+              "ToolTip": "C:\\Users\\paulv\\source\\repos\\Sweet-Liberty\\Sweet Liberty\\UserData.csv",
+              "RelativeToolTip": "UserData.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-05-19T10:51:01.933Z"
             }
           ]
         },
