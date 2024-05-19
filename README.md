@@ -1,7 +1,7 @@
 # Sweet Liberty
 <p align="center">
   <picture align="center">
-    <img alt="Sweet Liberty"     src="att.s0NNM4oy3Pi6xBNxr3uhjPbkMv5-2ZmGLUfT2m3KCAI.jpg" width="200" height="200">
+    <img alt="Sweet Liberty"     src="Readme Assets/att.s0NNM4oy3Pi6xBNxr3uhjPbkMv5-2ZmGLUfT2m3KCAI.jpg" width="200" height="200">
  </picture>
 </p>
 
@@ -23,7 +23,7 @@
 ## SDG
 <p align="center">
   <picture align="center">
-    <img alt="SDG 16: Peace, Justice, and Strong Institutions"     src="SDG_16-1024x1024.png" width="200" height="200">
+    <img alt="SDG 16: Peace, Justice, and Strong Institutions"     src="Readme Assets/SDG_16-1024x1024 (1).png" width="200" height="200">
  </picture>
 </p>
 
