@@ -9,5 +9,12 @@ public class Log : Item
     public Log(string name, string description, string message) : base(name, description)
     {
         Message = message;
+        // for debugging
+        // DisplayInfo();
+    }
+
+    public override void DisplayInfo()
+    {
+        Console.WriteLine($"Log: {Name}, Description: {Description}, Message: {Message}");
     }
 }

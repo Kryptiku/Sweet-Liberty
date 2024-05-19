@@ -12,6 +12,12 @@ public class Item
     {
         Name = name;
         Description = description;
+        // for debugging
+        // DisplayInfo();
     }
 
+    public virtual void DisplayInfo()
+    {
+        Console.WriteLine($"Item: {Name}, Description: {Description}");
+    }
 }

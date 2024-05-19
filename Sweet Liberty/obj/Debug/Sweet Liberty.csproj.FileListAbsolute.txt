@@ -160,3 +160,16 @@ C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\e
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\labroom.wav
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\labroom-terminid.wav
 C:\Users\Ryce\source\repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\bilespewer.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\a rat.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\automaton killed.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\bilespewer.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\blizzard.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\button combination.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Music\Cars.mp3
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\explosion2.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\haze.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\labroom-terminid.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\labroom.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\outpost death.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\pick up.wav
+C:\Users\paulv\Source\Repos\Sweet-Liberty\Sweet Liberty\bin\Debug\Sound Effects\spotted.wav

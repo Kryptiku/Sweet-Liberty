@@ -9,6 +9,12 @@ using System.Threading.Tasks;
         public FirstAid(string name, string description, int value) : base(name, description)
         {
             Value = value;
+            // for debugging
+            // DisplayInfo();
         }
 
+    public override void DisplayInfo()
+    {
+        Console.WriteLine($"Item: {Name}, Description: {Description}, Healing Value: {Value}");
     }
+}

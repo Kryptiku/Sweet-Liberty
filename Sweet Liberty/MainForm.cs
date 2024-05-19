@@ -191,7 +191,6 @@ namespace SweetLiberty
 
             // Logs
             dictItems.Add("Log 3AD", new Log("Log 3AD", "A log left behind by some scientists.",  "Log 3AD. The Terminid population is decreasing, but we don't know why this is happening. We need to run more tests. This cannot happen."));
-
             // Locations 
             AddLocations();
 
