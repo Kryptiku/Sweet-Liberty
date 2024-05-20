@@ -5,6 +5,13 @@
  </picture>
 </p>
 
+## Table of Contents
+- [Description](#description)
+- [Features and Mecchanics](#features-and-mechanics)
+- [SDG](#sdg)
+- [Team Members](#team-members)
+
+## Description
 <p style="text-align: justify;">A text-based, windows form game that follows the story of Alpha-Three, a stranded Helldiver on a planet. You have to explore areas and use your critical thinking to use and hold items in order to survive through multiple encounters. The game is inspired by the game, Helldivers 2, as the lore, enemies, and items are inspired from that game.<br></p>
 
 
@@ -29,7 +36,7 @@
 
 
 ## Team Members
-1. Antony, Aldrich Ryan
-2. Calvo, Paul Vincent
-3. Capistrano, Vency Gyro
-4. Peñaflorida, Ace
+1. [Antony, Aldrich Ryan](https://github.com/Kryptiku)
+2. [Calvo, Paul Vincent](https://github.com/PaulVincent-Calvo)
+3. [Capistrano, Vency Gyro](https://github.com/KazuMoment)
+4. [Peñaflorida, Ace](https://github.com/AcePenaflorida)
