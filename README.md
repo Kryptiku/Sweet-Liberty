@@ -7,8 +7,7 @@
 
 
 <p align="center">
-  To watch the video presentation, click on this <a href="Presentation">link.</a>
-  <a href="https://drive.google.com/file/d/1Le8Wehgdv6KpMAw1-kDOh76mvmHAZOLB/view?usp=sharing"> </a>
+  To watch the video presentation, click on this <a href="https://drive.google.com/file/d/1Le8Wehgdv6KpMAw1-kDOh76mvmHAZOLB/view?usp=sharing">link.</a>
 </p>
 
 
